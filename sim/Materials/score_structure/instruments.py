@@ -28,5 +28,5 @@ voice_to_name_dict = {
     "Voice 1": "pianovoice1",
     "Voice 2": "pianovoice2",
     "Voice 3": "pianovoice3",
-    "Voice 4": "pianovoice4"
-    }
+    "Voice 4": "pianovoice4",
+}

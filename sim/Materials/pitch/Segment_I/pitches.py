@@ -14,7 +14,7 @@ from sim.Materials.score_structure.instruments import (
 )
 
 
-#voice 1
+# voice 1
 chord_1 = [[27, 32], 28, 27, 25, 26, 29, 31, 32, 31]
 
 voice_1_chords = [chord_1]
@@ -28,7 +28,7 @@ for l in voice_1_chords:
         else:
             continue
 
-#voice 2
+# voice 2
 chord_2 = [8, 23, 22, 20, 18, 13, 11, 10]
 
 voice_2_chords = [chord_2]
@@ -42,7 +42,7 @@ for l in voice_2_chords:
         else:
             continue
 
-#voice 3
+# voice 3
 chord_3 = [-4, -6, -8, -9, -11, -13, -14, -16]
 
 voice_3_chords = [chord_3]
@@ -56,7 +56,7 @@ for l in voice_3_chords:
         else:
             continue
 
-#voice 4
+# voice 4
 chord_4 = [-25, -26, -25, -37, -9, -8, -9, -8, [-6, 3], [-4, 4], [-4, 3], -5]
 
 voice_4_chords = [chord_4]

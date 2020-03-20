@@ -7,9 +7,7 @@ from sim.Materials.timespans.Segment_I.convert_timespans import (
     segment_I_timespans,
 )
 from sim.Materials.score_structure.score_structure import score
-from sim.Materials.score_structure.Segment_I.time_signatures import (
-    time_signatures,
-)
+from sim.Materials.score_structure.Segment_I.time_signatures import time_signatures
 from sim.Materials.pitch.Segment_I.clef_handlers import clef_handlers
 
 

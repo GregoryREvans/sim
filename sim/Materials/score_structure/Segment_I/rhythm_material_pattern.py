@@ -58,7 +58,7 @@ key_list_2 = [
     "rhythm_handler_two",
     "rhythm_handler_two",
     "rhythm_handler_two",
-    ]
+]
 key_list_3 = [
     "rhythm_handler_one",
     "rhythm_handler_one",
@@ -114,7 +114,7 @@ key_list_3 = [
     "rhythm_handler_two",
     "rhythm_handler_two",
     "rhythm_handler_two",
-    ]
+]
 key_list_4 = ["rhythm_handler_one" for _ in range(54)]
 
 dict = {
