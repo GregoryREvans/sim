@@ -26,46 +26,46 @@
                     \overlay
                         {
                             \translate
-                                #'(90.99999999999999 . 1)
+                                #'(1.0 . 1)
                                 \sans
                                     \fontsize
                                         #-3
                                         \center-align
                                             \fraction
-                                                3
-                                                2
+                                                0
+                                                1
                             \translate
-                                #'(105.99999999999999 . 1)
+                                #'(106.0 . 1)
                                 \sans
                                     \fontsize
                                         #-3
                                         \center-align
                                             \fraction
-                                                7
-                                                4
+                                                9
+                                                2
                         }
                     \pad-to-box
-                        #'(0 . 103.99999999999999)
+                        #'(0 . 104.0)
                         #'(0 . 2.5)
                         \postscript
                             #"
                             0.2 setlinewidth
-                            90.99999999999999 0.5 moveto
-                            105.99999999999999 0.5 lineto
+                            1 0.5 moveto
+                            106 0.5 lineto
                             stroke
-                            90.99999999999999 1.25 moveto
-                            90.99999999999999 -0.25 lineto
+                            1 1.25 moveto
+                            1 -0.25 lineto
                             stroke
-                            105.99999999999999 1.25 moveto
-                            105.99999999999999 -0.25 lineto
+                            106 1.25 moveto
+                            106 -0.25 lineto
                             stroke
                             0.1 setlinewidth
                             [ 0.1 0.2 ] 0 setdash
-                            90.99999999999999 2.5 moveto
-                            90.99999999999999 1 lineto
+                            1 2.5 moveto
+                            1 1 lineto
                             stroke
-                            105.99999999999999 2.5 moveto
-                            105.99999999999999 1 lineto
+                            106 2.5 moveto
+                            106 1 lineto
                             stroke
                             0 0 moveto
                             0.99 setgray
@@ -98,52 +98,25 @@
                                                 0
                                                 1
                             \translate
-                                #'(23.499999999999996 . 1)
+                                #'(12.666666666666666 . 1)
                                 \sans
                                     \fontsize
                                         #-3
                                         \center-align
                                             \fraction
-                                                3
-                                                8
-                            \translate
-                                #'(38.49999999999999 . 1)
-                                \sans
-                                    \fontsize
-                                        #-3
-                                        \center-align
-                                            \fraction
-                                                5
-                                                8
-                            \translate
-                                #'(53.49999999999999 . 1)
-                                \sans
-                                    \fontsize
-                                        #-3
-                                        \center-align
-                                            \fraction
-                                                7
-                                                8
-                            \translate
-                                #'(75.99999999999999 . 1)
-                                \sans
-                                    \fontsize
-                                        #-3
-                                        \center-align
-                                            \fraction
-                                                5
-                                                4
-                            \translate
-                                #'(90.99999999999999 . 1)
-                                \sans
-                                    \fontsize
-                                        #-3
-                                        \center-align
-                                            \fraction
-                                                3
+                                                1
                                                 2
                             \translate
-                                #'(105.99999999999999 . 1)
+                                #'(30.166666666666664 . 1)
+                                \sans
+                                    \fontsize
+                                        #-3
+                                        \center-align
+                                            \fraction
+                                                5
+                                                4
+                            \translate
+                                #'(41.83333333333333 . 1)
                                 \sans
                                     \fontsize
                                         #-3
@@ -151,89 +124,158 @@
                                             \fraction
                                                 7
                                                 4
+                            \translate
+                                #'(59.33333333333333 . 1)
+                                \sans
+                                    \fontsize
+                                        #-3
+                                        \center-align
+                                            \fraction
+                                                5
+                                                2
+                            \translate
+                                #'(71.0 . 1)
+                                \sans
+                                    \fontsize
+                                        #-3
+                                        \center-align
+                                            \fraction
+                                                3
+                                                1
+                            \translate
+                                #'(82.66666666666666 . 1)
+                                \sans
+                                    \fontsize
+                                        #-3
+                                        \center-align
+                                            \fraction
+                                                7
+                                                2
+                            \translate
+                                #'(94.33333333333333 . 1)
+                                \sans
+                                    \fontsize
+                                        #-3
+                                        \center-align
+                                            \fraction
+                                                4
+                                                1
+                            \translate
+                                #'(106.0 . 1)
+                                \sans
+                                    \fontsize
+                                        #-3
+                                        \center-align
+                                            \fraction
+                                                9
+                                                2
                         }
                     \pad-to-box
-                        #'(0 . 103.99999999999999)
+                        #'(0 . 104.0)
                         #'(0 . 2.5)
                         \postscript
                             #"
                             0.2 setlinewidth
                             1 0.5 moveto
-                            23.499999999999996 0.5 lineto
+                            12.666666666666666 0.5 lineto
                             stroke
                             1 1.25 moveto
                             1 -0.25 lineto
                             stroke
-                            23.499999999999996 1.25 moveto
-                            23.499999999999996 -0.25 lineto
+                            12.666666666666666 1.25 moveto
+                            12.666666666666666 -0.25 lineto
                             stroke
-                            23.499999999999996 0.5 moveto
-                            38.49999999999999 0.5 lineto
+                            12.666666666666666 0.5 moveto
+                            30.166666666666664 0.5 lineto
                             stroke
-                            23.499999999999996 1.25 moveto
-                            23.499999999999996 -0.25 lineto
+                            12.666666666666666 1.25 moveto
+                            12.666666666666666 -0.25 lineto
                             stroke
-                            38.49999999999999 1.25 moveto
-                            38.49999999999999 -0.25 lineto
+                            30.166666666666664 1.25 moveto
+                            30.166666666666664 -0.25 lineto
                             stroke
-                            38.49999999999999 0.5 moveto
-                            53.49999999999999 0.5 lineto
+                            30.166666666666664 0.5 moveto
+                            41.83333333333333 0.5 lineto
                             stroke
-                            38.49999999999999 1.25 moveto
-                            38.49999999999999 -0.25 lineto
+                            30.166666666666664 1.25 moveto
+                            30.166666666666664 -0.25 lineto
                             stroke
-                            53.49999999999999 1.25 moveto
-                            53.49999999999999 -0.25 lineto
+                            41.83333333333333 1.25 moveto
+                            41.83333333333333 -0.25 lineto
                             stroke
-                            53.49999999999999 0.5 moveto
-                            75.99999999999999 0.5 lineto
+                            41.83333333333333 0.5 moveto
+                            59.33333333333333 0.5 lineto
                             stroke
-                            53.49999999999999 1.25 moveto
-                            53.49999999999999 -0.25 lineto
+                            41.83333333333333 1.25 moveto
+                            41.83333333333333 -0.25 lineto
                             stroke
-                            75.99999999999999 1.25 moveto
-                            75.99999999999999 -0.25 lineto
+                            59.33333333333333 1.25 moveto
+                            59.33333333333333 -0.25 lineto
                             stroke
-                            75.99999999999999 0.5 moveto
-                            90.99999999999999 0.5 lineto
+                            59.33333333333333 0.5 moveto
+                            71 0.5 lineto
                             stroke
-                            75.99999999999999 1.25 moveto
-                            75.99999999999999 -0.25 lineto
+                            59.33333333333333 1.25 moveto
+                            59.33333333333333 -0.25 lineto
                             stroke
-                            90.99999999999999 1.25 moveto
-                            90.99999999999999 -0.25 lineto
+                            71 1.25 moveto
+                            71 -0.25 lineto
                             stroke
-                            90.99999999999999 0.5 moveto
-                            105.99999999999999 0.5 lineto
+                            71 0.5 moveto
+                            82.66666666666666 0.5 lineto
                             stroke
-                            90.99999999999999 1.25 moveto
-                            90.99999999999999 -0.25 lineto
+                            71 1.25 moveto
+                            71 -0.25 lineto
                             stroke
-                            105.99999999999999 1.25 moveto
-                            105.99999999999999 -0.25 lineto
+                            82.66666666666666 1.25 moveto
+                            82.66666666666666 -0.25 lineto
+                            stroke
+                            82.66666666666666 0.5 moveto
+                            94.33333333333333 0.5 lineto
+                            stroke
+                            82.66666666666666 1.25 moveto
+                            82.66666666666666 -0.25 lineto
+                            stroke
+                            94.33333333333333 1.25 moveto
+                            94.33333333333333 -0.25 lineto
+                            stroke
+                            94.33333333333333 0.5 moveto
+                            106 0.5 lineto
+                            stroke
+                            94.33333333333333 1.25 moveto
+                            94.33333333333333 -0.25 lineto
+                            stroke
+                            106 1.25 moveto
+                            106 -0.25 lineto
                             stroke
                             0.1 setlinewidth
                             [ 0.1 0.2 ] 0 setdash
                             1 2.5 moveto
                             1 1 lineto
                             stroke
-                            23.499999999999996 2.5 moveto
-                            23.499999999999996 1 lineto
+                            12.666666666666666 2.5 moveto
+                            12.666666666666666 1 lineto
                             stroke
-                            38.49999999999999 2.5 moveto
-                            38.49999999999999 1 lineto
+                            30.166666666666664 2.5 moveto
+                            30.166666666666664 1 lineto
                             stroke
-                            53.49999999999999 2.5 moveto
-                            53.49999999999999 1 lineto
+                            41.83333333333333 2.5 moveto
+                            41.83333333333333 1 lineto
                             stroke
-                            75.99999999999999 2.5 moveto
-                            75.99999999999999 1 lineto
+                            59.33333333333333 2.5 moveto
+                            59.33333333333333 1 lineto
                             stroke
-                            90.99999999999999 2.5 moveto
-                            90.99999999999999 1 lineto
+                            71 2.5 moveto
+                            71 1 lineto
                             stroke
-                            105.99999999999999 2.5 moveto
-                            105.99999999999999 1 lineto
+                            82.66666666666666 2.5 moveto
+                            82.66666666666666 1 lineto
+                            stroke
+                            94.33333333333333 2.5 moveto
+                            94.33333333333333 1 lineto
+                            stroke
+                            106 2.5 moveto
+                            106 1 lineto
                             stroke
                             0 0 moveto
                             0.99 setgray
@@ -257,130 +299,172 @@
                     \overlay
                         {
                             \translate
-                                #'(15.999999999999998 . 1)
+                                #'(12.666666666666666 . 1)
                                 \sans
                                     \fontsize
                                         #-3
                                         \center-align
                                             \fraction
                                                 1
-                                                4
+                                                2
                             \translate
-                                #'(38.49999999999999 . 1)
+                                #'(24.333333333333332 . 1)
                                 \sans
                                     \fontsize
                                         #-3
                                         \center-align
                                             \fraction
-                                                5
-                                                8
+                                                1
+                                                1
                             \translate
-                                #'(53.49999999999999 . 1)
+                                #'(41.83333333333333 . 1)
                                 \sans
                                     \fontsize
                                         #-3
                                         \center-align
                                             \fraction
                                                 7
-                                                8
+                                                4
                             \translate
-                                #'(68.49999999999999 . 1)
+                                #'(53.5 . 1)
                                 \sans
                                     \fontsize
                                         #-3
                                         \center-align
                                             \fraction
                                                 9
-                                                8
+                                                4
                             \translate
-                                #'(90.99999999999999 . 1)
+                                #'(71.0 . 1)
                                 \sans
                                     \fontsize
                                         #-3
                                         \center-align
                                             \fraction
                                                 3
-                                                2
+                                                1
                             \translate
-                                #'(105.99999999999999 . 1)
+                                #'(82.66666666666666 . 1)
                                 \sans
                                     \fontsize
                                         #-3
                                         \center-align
                                             \fraction
                                                 7
+                                                2
+                            \translate
+                                #'(94.33333333333333 . 1)
+                                \sans
+                                    \fontsize
+                                        #-3
+                                        \center-align
+                                            \fraction
                                                 4
+                                                1
+                            \translate
+                                #'(106.0 . 1)
+                                \sans
+                                    \fontsize
+                                        #-3
+                                        \center-align
+                                            \fraction
+                                                9
+                                                2
                         }
                     \pad-to-box
-                        #'(0 . 103.99999999999999)
+                        #'(0 . 104.0)
                         #'(0 . 2.5)
                         \postscript
                             #"
                             0.2 setlinewidth
-                            15.999999999999998 0.5 moveto
-                            38.49999999999999 0.5 lineto
+                            12.666666666666666 0.5 moveto
+                            24.333333333333332 0.5 lineto
                             stroke
-                            15.999999999999998 1.25 moveto
-                            15.999999999999998 -0.25 lineto
+                            12.666666666666666 1.25 moveto
+                            12.666666666666666 -0.25 lineto
                             stroke
-                            38.49999999999999 1.25 moveto
-                            38.49999999999999 -0.25 lineto
+                            24.333333333333332 1.25 moveto
+                            24.333333333333332 -0.25 lineto
                             stroke
-                            38.49999999999999 0.5 moveto
-                            53.49999999999999 0.5 lineto
+                            24.333333333333332 0.5 moveto
+                            41.83333333333333 0.5 lineto
                             stroke
-                            38.49999999999999 1.25 moveto
-                            38.49999999999999 -0.25 lineto
+                            24.333333333333332 1.25 moveto
+                            24.333333333333332 -0.25 lineto
                             stroke
-                            53.49999999999999 1.25 moveto
-                            53.49999999999999 -0.25 lineto
+                            41.83333333333333 1.25 moveto
+                            41.83333333333333 -0.25 lineto
                             stroke
-                            53.49999999999999 0.5 moveto
-                            68.49999999999999 0.5 lineto
+                            41.83333333333333 0.5 moveto
+                            53.5 0.5 lineto
                             stroke
-                            53.49999999999999 1.25 moveto
-                            53.49999999999999 -0.25 lineto
+                            41.83333333333333 1.25 moveto
+                            41.83333333333333 -0.25 lineto
                             stroke
-                            68.49999999999999 1.25 moveto
-                            68.49999999999999 -0.25 lineto
+                            53.5 1.25 moveto
+                            53.5 -0.25 lineto
                             stroke
-                            68.49999999999999 0.5 moveto
-                            90.99999999999999 0.5 lineto
+                            53.5 0.5 moveto
+                            71 0.5 lineto
                             stroke
-                            68.49999999999999 1.25 moveto
-                            68.49999999999999 -0.25 lineto
+                            53.5 1.25 moveto
+                            53.5 -0.25 lineto
                             stroke
-                            90.99999999999999 1.25 moveto
-                            90.99999999999999 -0.25 lineto
+                            71 1.25 moveto
+                            71 -0.25 lineto
                             stroke
-                            90.99999999999999 0.5 moveto
-                            105.99999999999999 0.5 lineto
+                            71 0.5 moveto
+                            82.66666666666666 0.5 lineto
                             stroke
-                            90.99999999999999 1.25 moveto
-                            90.99999999999999 -0.25 lineto
+                            71 1.25 moveto
+                            71 -0.25 lineto
                             stroke
-                            105.99999999999999 1.25 moveto
-                            105.99999999999999 -0.25 lineto
+                            82.66666666666666 1.25 moveto
+                            82.66666666666666 -0.25 lineto
+                            stroke
+                            82.66666666666666 0.5 moveto
+                            94.33333333333333 0.5 lineto
+                            stroke
+                            82.66666666666666 1.25 moveto
+                            82.66666666666666 -0.25 lineto
+                            stroke
+                            94.33333333333333 1.25 moveto
+                            94.33333333333333 -0.25 lineto
+                            stroke
+                            94.33333333333333 0.5 moveto
+                            106 0.5 lineto
+                            stroke
+                            94.33333333333333 1.25 moveto
+                            94.33333333333333 -0.25 lineto
+                            stroke
+                            106 1.25 moveto
+                            106 -0.25 lineto
                             stroke
                             0.1 setlinewidth
                             [ 0.1 0.2 ] 0 setdash
-                            15.999999999999998 2.5 moveto
-                            15.999999999999998 1 lineto
+                            12.666666666666666 2.5 moveto
+                            12.666666666666666 1 lineto
                             stroke
-                            38.49999999999999 2.5 moveto
-                            38.49999999999999 1 lineto
+                            24.333333333333332 2.5 moveto
+                            24.333333333333332 1 lineto
                             stroke
-                            53.49999999999999 2.5 moveto
-                            53.49999999999999 1 lineto
+                            41.83333333333333 2.5 moveto
+                            41.83333333333333 1 lineto
                             stroke
-                            68.49999999999999 2.5 moveto
-                            68.49999999999999 1 lineto
+                            53.5 2.5 moveto
+                            53.5 1 lineto
                             stroke
-                            90.99999999999999 2.5 moveto
-                            90.99999999999999 1 lineto
+                            71 2.5 moveto
+                            71 1 lineto
                             stroke
-                            105.99999999999999 2.5 moveto
-                            105.99999999999999 1 lineto
+                            82.66666666666666 2.5 moveto
+                            82.66666666666666 1 lineto
+                            stroke
+                            94.33333333333333 2.5 moveto
+                            94.33333333333333 1 lineto
+                            stroke
+                            106 2.5 moveto
+                            106 1 lineto
                             stroke
                             0 0 moveto
                             0.99 setgray
@@ -404,46 +488,46 @@
                     \overlay
                         {
                             \translate
-                                #'(90.99999999999999 . 1)
+                                #'(1.0 . 1)
                                 \sans
                                     \fontsize
                                         #-3
                                         \center-align
                                             \fraction
-                                                3
-                                                2
+                                                0
+                                                1
                             \translate
-                                #'(105.99999999999999 . 1)
+                                #'(106.0 . 1)
                                 \sans
                                     \fontsize
                                         #-3
                                         \center-align
                                             \fraction
-                                                7
-                                                4
+                                                9
+                                                2
                         }
                     \pad-to-box
-                        #'(0 . 103.99999999999999)
+                        #'(0 . 104.0)
                         #'(0 . 2.5)
                         \postscript
                             #"
                             0.2 setlinewidth
-                            90.99999999999999 0.5 moveto
-                            105.99999999999999 0.5 lineto
+                            1 0.5 moveto
+                            106 0.5 lineto
                             stroke
-                            90.99999999999999 1.25 moveto
-                            90.99999999999999 -0.25 lineto
+                            1 1.25 moveto
+                            1 -0.25 lineto
                             stroke
-                            105.99999999999999 1.25 moveto
-                            105.99999999999999 -0.25 lineto
+                            106 1.25 moveto
+                            106 -0.25 lineto
                             stroke
                             0.1 setlinewidth
                             [ 0.1 0.2 ] 0 setdash
-                            90.99999999999999 2.5 moveto
-                            90.99999999999999 1 lineto
+                            1 2.5 moveto
+                            1 1 lineto
                             stroke
-                            105.99999999999999 2.5 moveto
-                            105.99999999999999 1 lineto
+                            106 2.5 moveto
+                            106 1 lineto
                             stroke
                             0 0 moveto
                             0.99 setgray

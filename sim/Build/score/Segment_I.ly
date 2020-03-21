@@ -185,10 +185,6 @@
             \time 2/4                                                          %! scaling time signatures
             s1 * 1/2
 
-            \once \override TimeSignature.color = #white                       %! applying ending skips
-            \time 1/8                                                          %! scaling time signatures
-            s1 * 1/8
-
         }
 
         \context PianoStaff = "Staff Group"
@@ -209,21 +205,28 @@
 
                     r8
 
-                    e'''8
+                    <ef''' af'''>8
                     ~
 
-                    e'''2
+                    <ef''' af'''>2
                     ~
 
-                    e'''8
+                    <ef''' af'''>8
 
                     r4
+
+                    r8
+
+                    e'''4
 
                     r8
 
                     ef'''4
+                    ~
 
-                    r8
+                    ef'''4
+
+                    r4
 
                     cs'''4
                     ~
@@ -232,151 +235,168 @@
 
                     r4
 
-                    d'''4
-                    ~
+                    d'''2.
 
-                    d'''4
+                    r8
+
+                    f'''4
 
                     r4
 
-                    f'''2.
+                    g'''4.
+                    ~
+
+                    g'''8
+
+                    r4
+
+                    af'''2
+
+                    r4
 
                     r8
+
+                    g'''8
+                    ~
 
                     g'''4
-
-                    r4
-
-                    af'''4.
                     ~
 
-                    af'''8
+                    g'''4.
 
                     r4
 
-                    g'''2
+                    <ef''' af'''>4
 
                     r4
-
-                    r8
-
-                    e'''8
-                    ~
 
                     e'''4
                     ~
 
-                    e'''4.
+                    e'''4
+
+                    r8
 
                     r4
 
                     ef'''4
-
-                    r4
-
-                    cs'''4
                     ~
-
-                    cs'''4
-
-                    r8
-
-                    r4
-
-                    d'''4
-                    ~
-
-                    d'''4
-
-                    r8
-
-                    f'''2.
-
-                    r4
-
-                    g'''4
-
-                    r4
-
-                    r8
-
-                    af'''8
-                    ~
-
-                    af'''4
-                    ~
-
-                    af'''8
-
-                    r8
-
-                    g'''4
-                    ~
-
-                    g'''4
-
-                    r8
-
-                    r8
-
-                    e'''8
-                    ~
-
-                    e'''2
-                    ~
-
-                    e'''8
-
-                    r4
-
-                    r8
 
                     ef'''4
 
                     r8
 
-                    cs'''4
-                    ~
-
-                    cs'''4
+                    cs'''2.
 
                     r4
-
-                    d'''4
-                    ~
 
                     d'''4
 
                     r4
 
-                    f'''2.
+                    r8
+
+                    f'''8
+                    ~
+
+                    f'''4
+                    ~
+
+                    f'''8
 
                     r8
 
                     g'''4
+                    ~
 
-                    r4
+                    g'''4
 
-                    af'''4.
+                    r8
+
+                    r8
+
+                    af'''8
+                    ~
+
+                    af'''2
                     ~
 
                     af'''8
 
                     r4
 
-                    g'''2
+                    r8
 
-                    r4
+                    g'''4
 
                     r8
 
-                    e'''8
+                    <ef''' af'''>4
                     ~
+
+                    <ef''' af'''>4
+
+                    r4
 
                     e'''4
                     ~
 
-                    e'''4.
+                    e'''4
+
+                    r4
+
+                    ef'''2.
+
+                    r8
+
+                    cs'''4
+
+                    r4
+
+                    d'''4.
+                    ~
+
+                    d'''8
+
+                    r4
+
+                    f'''2
+
+                    r4
+
+                    r8
+
+                    g'''8
+                    ~
+
+                    g'''4
+                    ~
+
+                    g'''4.
+
+                    r4
+
+                    af'''4
+
+                    r4
+
+                    g'''4
+                    ~
+
+                    g'''4
+
+                    r8
+
+                    r4
+
+                    <ef''' af'''>4
+                    ~
+
+                    <ef''' af'''>4
+
+                    r8
+
+                    e'''2.
 
                     r4
 
@@ -384,14 +404,17 @@
 
                     r4
 
-                    cs'''4
+                    r8
+
+                    cs'''8
                     ~
 
                     cs'''4
+                    ~
+
+                    cs'''8
 
                     r8
-
-                    r4
 
                     d'''4
                     ~
@@ -400,172 +423,145 @@
 
                     r8
 
-                    f'''2.
+                    r8
+
+                    f'''8
+                    ~
+
+                    f'''2
+                    ~
+
+                    f'''8
 
                     r4
+
+                    r8
 
                     g'''4
 
-                    r4
-
                     r8
-
-                    af'''8
-                    ~
 
                     af'''4
                     ~
 
-                    af'''8
+                    af'''4
 
-                    r8
+                    r4
 
                     g'''4
                     ~
 
                     g'''4
 
-                    r8
-
-                    r8
-
-                    e'''8
-                    ~
-
-                    e'''2
-                    ~
-
-                    e'''8
-
                     r4
 
-                    r8
-
-                    ef'''4
+                    <ef''' af'''>2.
 
                     r8
-
-                    cs'''4
-                    ~
-
-                    cs'''4
-
-                    r4
-
-                    d'''4
-                    ~
-
-                    d'''4
-
-                    r4
-
-                    f'''2.
-
-                    r8
-
-                    g'''4
-
-                    r4
-
-                    af'''4.
-                    ~
-
-                    af'''8
-
-                    r4
-
-                    g'''2
-
-                    r4
-
-                    r8
-
-                    e'''8
-                    ~
 
                     e'''4
-                    ~
-
-                    e'''4.
 
                     r4
 
-                    ef'''4
-
-                    r4
-
-                    cs'''4
-                    ~
-
-                    cs'''4
-
-                    r8
-
-                    r4
-
-                    d'''4
-                    ~
-
-                    d'''4
-
-                    r8
-
-                    f'''2.
-
-                    r4
-
-                    g'''4
-
-                    r4
-
-                    r8
-
-                    af'''8
-                    ~
-
-                    af'''4
-                    ~
-
-                    af'''8
-
-                    r8
-
-                    g'''4
-                    ~
-
-                    g'''4
-
-                    r8
-
-                    r8
-
-                    e'''8
-                    ~
-
-                    e'''2
-                    ~
-
-                    e'''8
-
-                    r4
-
-                    r8
-
-                    ef'''8
+                    ef'''4.
                     ~
 
                     ef'''8
 
-                    r8
+                    r4
 
                     cs'''2
 
                     r4
 
-                    d'''4
+                    r8
+
+                    d'''8
                     ~
 
                     d'''4
+                    ~
+
+                    d'''4.
+
+                    r4
+
+                    f'''4
+
+                    r4
+
+                    g'''4
+                    ~
+
+                    g'''4
+
+                    r8
+
+                    r4
+
+                    af'''4
+                    ~
+
+                    af'''4
+
+                    r8
+
+                    g'''2.
+
+                    r4
+
+                    <ef''' af'''>4
+
+                    r4
+
+                    r8
+
+                    e'''8
+                    ~
+
+                    e'''4
+                    ~
+
+                    e'''8
+
+                    r8
+
+                    ef'''4
+                    ~
+
+                    ef'''4
+
+                    r8
+
+                    r8
+
+                    cs'''8
+                    ~
+
+                    cs'''2
+                    ~
+
+                    cs'''8
+
+                    r4
+
+                    r8
+
+                    d'''8
+                    ~
+
+                    d'''8
+
+                    r8
+
+                    f'''2
+
+                    r4
+
+                    g'''4
+                    ~
+
+                    g'''4
 
                     r8
 
@@ -574,18 +570,6 @@
 
                     R1 * 1/4
                     \bar "||"
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/16
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/16
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ushortfermata"                           %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
 
                 }
                 }
@@ -1507,18 +1491,6 @@
 
                     r4
                     \bar "||"
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/16
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/16
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ushortfermata"                           %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
 
                 }
                 }
@@ -2478,18 +2450,6 @@
 
                     }
 
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/16
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/16
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ushortfermata"                           %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
-
                 }
                 }
 
@@ -2570,35 +2530,35 @@
 
                     r8
 
+                    <fs ef'>4
+                    ~
+
+                    <fs ef'>2
+
+                    r4
+
                     <af e'>4
-                    ~
-
-                    <af e'>2
-
-                    r4
-
-                    g4
 
                     r8
 
                     r8
 
-                    b,,8
+                    <af ef'>8
                     ~
 
-                    b,,4
+                    <af ef'>4
                     ~
 
-                    b,,8
+                    <af ef'>8
 
                     r8
 
                     r4
 
-                    bf,,4.
+                    g4.
                     ~
 
-                    bf,,8
+                    g8
 
                     r8
 
@@ -2613,70 +2573,13 @@
                     b,,4
 
                     r4
-
-                    b,,,4
-
-                    r4
-
-                    r8
-
-                    ef8
-                    ~
-
-                    ef4
-                    ~
-
-                    ef8
-
-                    r8
-
-                    e2
-
-                    r4
-
-                    ef4.
-                    ~
-
-                    ef4
-                    ~
-
-                    ef8
-
-                    r8
-
-                    r4
-
-                    e4
-
-                    r8
-
-                    <af e'>4.
-                    ~
-
-                    <af e'>8
-
-                    r4
-
-                    g2
-
-                    r4
-
-                    r8
-
-                    b,,8
-                    ~
-
-                    b,,2
-                    ~
-
-                    b,,8
-
-                    r8
 
                     bf,,4
 
                     r4
 
+                    r8
+
                     b,,8
                     ~
 
@@ -2685,92 +2588,25 @@
 
                     b,,8
 
+                    r8
+
+                    b,,,2
+
                     r4
 
-                    b,,,4.
+                    ef4.
                     ~
-
-                    b,,,8
-
-                    r8
 
                     ef4
                     ~
 
-                    ef2
+                    ef8
+
+                    r8
 
                     r4
 
                     e4
-
-                    r8
-
-                    r8
-
-                    ef8
-                    ~
-
-                    ef4
-                    ~
-
-                    ef8
-
-                    r8
-
-                    r4
-
-                    e4.
-                    ~
-
-                    e8
-
-                    r8
-
-                    r8
-
-                    <af e'>8
-                    ~
-
-                    <af e'>4.
-                    ~
-
-                    <af e'>4
-
-                    r4
-
-                    g4
-
-                    r4
-
-                    r8
-
-                    b,,8
-                    ~
-
-                    b,,4
-                    ~
-
-                    b,,8
-
-                    r8
-
-                    bf,,2
-
-                    r4
-
-                    b,,4.
-                    ~
-
-                    b,,4
-                    ~
-
-                    b,,8
-
-                    r8
-
-                    r4
-
-                    b,,,4
 
                     r8
 
@@ -2787,27 +2623,27 @@
 
                     r8
 
-                    ef8
+                    <fs ef'>8
                     ~
 
-                    ef2
+                    <fs ef'>2
                     ~
 
-                    ef8
+                    <fs ef'>8
 
                     r8
 
-                    e4
+                    <af e'>4
 
                     r4
 
-                    <af e'>8
+                    <af ef'>8
                     ~
 
-                    <af e'>4
+                    <af ef'>4
                     ~
 
-                    <af e'>8
+                    <af ef'>8
 
                     r4
 
@@ -2882,52 +2718,164 @@
 
                     r4
 
-                    <af e'>4.
+                    <fs ef'>4.
                     ~
+
+                    <fs ef'>4
+                    ~
+
+                    <fs ef'>8
+
+                    r8
+
+                    r4
 
                     <af e'>4
-                    ~
-
-                    <af e'>8
 
                     r8
+
+                    <af ef'>4.
+                    ~
+
+                    <af ef'>8
 
                     r4
 
-                    g4
+                    g2
+
+                    r4
 
                     r8
+
+                    b,,8
+                    ~
 
                     b,,2
-
-                    r4
-
-                    bf,,4
                     ~
 
+                    b,,8
+
+                    r8
+
                     bf,,4
 
                     r4
 
-                    r8
+                    b,,8
+                    ~
 
                     b,,4
                     ~
 
+                    b,,8
+
+                    r4
+
+                    b,,,4.
+                    ~
+
+                    b,,,8
+
+                    r8
+
+                    ef4
+                    ~
+
+                    ef2
+
+                    r4
+
+                    e4
+
+                    r8
+
+                    r8
+
+                    ef8
+                    ~
+
+                    ef4
+                    ~
+
+                    ef8
+
+                    r8
+
+                    r4
+
+                    e4.
+                    ~
+
+                    e8
+
+                    r8
+
+                    r8
+
+                    <fs ef'>8
+                    ~
+
+                    <fs ef'>4.
+                    ~
+
+                    <fs ef'>4
+
+                    r4
+
+                    <af e'>4
+
+                    r4
+
+                    r8
+
+                    <af ef'>8
+                    ~
+
+                    <af ef'>4
+                    ~
+
+                    <af ef'>8
+
+                    r8
+
+                    g2
+
+                    r4
+
+                    b,,4.
+                    ~
+
+                    b,,4
+                    ~
+
+                    b,,8
+
+                    r8
+
+                    r4
+
+                    bf,,4
+
+                    r8
+
                     b,,2
+
+                    r4
+
+                    b,,,4
+                    ~
+
+                    b,,,4
+
+                    r4
+
+                    r8
+
+                    ef4
+                    ~
+
+                    ef2
                     \bar "||"
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/16
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/16
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ushortfermata"                           %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
 
                 }
                 }

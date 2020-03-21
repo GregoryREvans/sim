@@ -15,7 +15,7 @@ from sim.Materials.score_structure.instruments import (
 
 
 # voice 1
-chord_1 = [5, 5, 5, 2, 3, 3, 1, 1]
+chord_1 = [8, 23, 22, 20, 18, 13, 11, 10]
 
 voice_1_chords = [chord_1]
 
@@ -29,7 +29,7 @@ for l in voice_1_chords:
             continue
 
 # voice 2
-chord_2 = [8, 23, 22, 20, 18, 13, 11, 10]
+chord_2 = [5, 5, 5, 2, 3, 3, 1, 1]
 
 voice_2_chords = [chord_2]
 

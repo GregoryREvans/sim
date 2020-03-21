@@ -24,7 +24,7 @@ maker = evans.SegmentMaker(
     voicewise_persistent_indicators=None,
     # voicewise_stem_directions=["up", "down", "up", "down"],
     tuplet_bracket_noteheads=False,
-    add_final_grand_pause=True,
+    add_final_grand_pause=False,
     score_includes=[
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
         "/Users/evansdsg2/Scores/sim/sim/Build/first_stylesheet.ily",

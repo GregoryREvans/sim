@@ -17,30 +17,36 @@
                 0.2 setlinewidth
                 [ 2 1 ] 0 setdash
                 1 -1 moveto
-                0 -2 rlineto
+                0 -8 rlineto
                 stroke
-                15.999999999999998 -1 moveto
-                0 -2 rlineto
+                12.666666666666666 -1 moveto
+                0 -8 rlineto
                 stroke
-                23.499999999999996 -1 moveto
+                24.333333333333332 -1 moveto
                 0 -5 rlineto
                 stroke
-                38.49999999999999 -1 moveto
+                30.166666666666664 -1 moveto
+                0 -5 rlineto
+                stroke
+                41.83333333333333 -1 moveto
                 0 -11 rlineto
                 stroke
-                53.49999999999999 -1 moveto
+                53.5 -1 moveto
+                0 -5 rlineto
+                stroke
+                59.33333333333333 -1 moveto
+                0 -5 rlineto
+                stroke
+                71 -1 moveto
                 0 -11 rlineto
                 stroke
-                68.49999999999999 -1 moveto
-                0 -5 rlineto
+                82.66666666666666 -1 moveto
+                0 -11 rlineto
                 stroke
-                75.99999999999999 -1 moveto
-                0 -5 rlineto
+                94.33333333333333 -1 moveto
+                0 -11 rlineto
                 stroke
-                90.99999999999999 -1 moveto
-                0 -17 rlineto
-                stroke
-                105.99999999999999 -1 moveto
+                106 -1 moveto
                 0 -11 rlineto
                 stroke
                 "
@@ -54,76 +60,94 @@
                                 0
                                 1
             \translate
-                #'(15.999999999999998 . 1)
+                #'(12.666666666666666 . 1)
                 \sans
                     \fontsize
                         #-3
                         \center-align
                             \fraction
                                 1
-                                4
+                                2
             \translate
-                #'(23.499999999999996 . 1)
+                #'(24.333333333333332 . 1)
                 \sans
                     \fontsize
                         #-3
                         \center-align
                             \fraction
-                                3
-                                8
+                                1
+                                1
             \translate
-                #'(38.49999999999999 . 1)
+                #'(30.166666666666664 . 1)
                 \sans
                     \fontsize
                         #-3
                         \center-align
                             \fraction
                                 5
-                                8
+                                4
             \translate
-                #'(53.49999999999999 . 1)
+                #'(41.83333333333333 . 1)
                 \sans
                     \fontsize
                         #-3
                         \center-align
                             \fraction
                                 7
-                                8
+                                4
             \translate
-                #'(68.49999999999999 . 1)
+                #'(53.5 . 1)
                 \sans
                     \fontsize
                         #-3
                         \center-align
                             \fraction
                                 9
-                                8
+                                4
             \translate
-                #'(75.99999999999999 . 1)
+                #'(59.33333333333333 . 1)
                 \sans
                     \fontsize
                         #-3
                         \center-align
                             \fraction
                                 5
-                                4
+                                2
             \translate
-                #'(90.99999999999999 . 1)
+                #'(71.0 . 1)
                 \sans
                     \fontsize
                         #-3
                         \center-align
                             \fraction
                                 3
-                                2
+                                1
             \translate
-                #'(105.99999999999999 . 1)
+                #'(82.66666666666666 . 1)
                 \sans
                     \fontsize
                         #-3
                         \center-align
                             \fraction
                                 7
+                                2
+            \translate
+                #'(94.33333333333333 . 1)
+                \sans
+                    \fontsize
+                        #-3
+                        \center-align
+                            \fraction
                                 4
+                                1
+            \translate
+                #'(106.0 . 1)
+                \sans
+                    \fontsize
+                        #-3
+                        \center-align
+                            \fraction
+                                9
+                                2
         }
     }

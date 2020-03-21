@@ -8,8 +8,8 @@ last_leaf = abjad.select().leaf(-1)
 
 rmaker_one = abjadext.rmakers.stack(
     abjadext.rmakers.even_division(
-        [32, 16, 16, 8],
-        extra_counts=[0, 0, 1],
+        [16, 16, 8, 16],
+        extra_counts=[1, 0, 0, 1, -1, 0, 1, 1],
     ),
     abjadext.rmakers.trivialize(abjad.select().tuplets()),
     abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
@@ -19,7 +19,7 @@ rmaker_one = abjadext.rmakers.stack(
 
 rmaker_two = abjadext.rmakers.stack(
     abjadext.rmakers.talea(
-        [1, 1, 1, 1, 2, 3, 1, 2, 2, 3, 2, 1, 1, 2, 3], 16, extra_counts=[0, 1, 0, -1]
+        [3, 1, 2, 2], 8, extra_counts=[0, 1, 0, -1]
     ),
     abjadext.rmakers.trivialize(abjad.select().tuplets()),
     abjadext.rmakers.extract_trivial(abjad.select().tuplets()),

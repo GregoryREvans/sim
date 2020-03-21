@@ -1,5 +1,5 @@
 import evans
-from sim.Materials.pitch.Segment_I.pitches import chord_1, chord_2, chord_3, chord_4
+from sim.Materials.pitch.Segment_II.pitches import chord_1, chord_2, chord_3, chord_4
 
 
 piano_pitch_handler_one = evans.PitchHandler(

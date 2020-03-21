@@ -6,26 +6,28 @@
         {
 
             \tempo 4=120
-            \time 5/8                                                          %! scaling time signatures
+            \time 4/4                                                          %! scaling time signatures
             \mark \markup {
                 \bold
                     {
                     }
                 }
-            s1 * 5/8
+            s1 * 1
+
+            \time 5/4                                                          %! scaling time signatures
+            s1 * 5/4
+
+            \time 1/4                                                          %! scaling time signatures
+            s1 * 1/4
 
             \time 2/4                                                          %! scaling time signatures
             s1 * 1/2
 
-            \time 3/8                                                          %! scaling time signatures
-            s1 * 3/8
+            \time 4/4                                                          %! scaling time signatures
+            s1 * 1
 
             \time 2/4                                                          %! scaling time signatures
             s1 * 1/2
-
-            \once \override TimeSignature.color = #white                       %! applying ending skips
-            \time 1/8                                                          %! scaling time signatures
-            s1 * 1/8
 
         }
 
@@ -41,9 +43,19 @@
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "treble"
-                    r1 * 5/16
+                    r1 * 1/2
 
-                    R1 * 5/16
+                    R1 * 1/2
+
+                    \once \override Rest.transparent = ##t                     %! applying invisibility
+                    r1 * 5/8
+
+                    R1 * 5/8
+
+                    \once \override Rest.transparent = ##t                     %! applying invisibility
+                    r1 * 1/8
+
+                    R1 * 1/8
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
                     r1 * 1/4
@@ -51,42 +63,15 @@
                     R1 * 1/4
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/16
+                    r1 * 1/2
 
-                    R1 * 3/16
+                    R1 * 1/2
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    e'''32
-                    [
+                    \once \override Rest.transparent = ##t                     %! applying invisibility
+                    r1 * 1/4
 
-                    ef'''32
-
-                    cs'''32
-
-                    d'''32
-
-                    f'''32
-
-                    g'''32
-
-                    af'''32
-
-                    \revert Staff.Stem.stemlet-length
-                    g'''32
-                    ]
+                    R1 * 1/4
                     \bar "||"
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/16
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/16
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ushortfermata"                           %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
 
                 }
                 }
@@ -100,112 +85,180 @@
                 \context Voice = "Voice 2"
                 {
 
-                    \clef "treble"
-                    \override Staff.Stem.stemlet-length = 0.75
-                    af'16
-                    [
+                    \times 8/9 {
 
-                    b''16
-
-                    bf''16
-
-                    af''16
-
-                    \revert Staff.Stem.stemlet-length
-                    fs''8
-                    ]
-
-                    \override Staff.Stem.stemlet-length = 0.75
-                    cs''16
-                    [
-
-                    b'16
-
-                    bf'16
-
-                    \revert Staff.Stem.stemlet-length
-                    af'16
-                    ]
-
-                    \times 4/5 {
-
+                        \clef "treble"
                         \override Staff.Stem.stemlet-length = 0.75
-                        b''8.
+                        f'16
                         [
 
-                        bf''16
+                        f'16
+
+                        f'16
+
+                        d'16
+
+                        ef'16
+
+                        ef'16
+
+                        cs'16
+
+                        cs'16
 
                         \revert Staff.Stem.stemlet-length
-                        af''16
-                        ]
-
-                    }
-
-                    \times 4/5 {
-
-                        \override Staff.Stem.stemlet-length = 0.75
-                        fs''16
-                        [
-
-                        cs''16
-
-                        b'16
-
-                        bf'16
-
-                        \revert Staff.Stem.stemlet-length
-                        af'16
+                        f'16
                         ]
 
                     }
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    b''8
+                    f'16
                     [
 
-                    bf''16
+                    f'16
 
-                    af''16
+                    d'16
+
+                    \revert Staff.Stem.stemlet-length
+                    ef'16
+                    ]
+
+                    \override Staff.Stem.stemlet-length = 0.75
+                    ef'16
+                    [
+
+                    cs'16
+
+                    cs'16
+
+                    \revert Staff.Stem.stemlet-length
+                    f'16
+                    ]
+
+                    \override Staff.Stem.stemlet-length = 0.75
+                    f'8
+                    [
+
+                    \revert Staff.Stem.stemlet-length
+                    f'8
+                    ]
+
+                    d'4
                     ~
 
-                    af''16
+                    \override Staff.Stem.stemlet-length = 0.75
+                    d'8
+                    [
 
                     \revert Staff.Stem.stemlet-length
-                    fs''16
+                    ef'8
+                    ]
+
+                    \times 8/9 {
+
+                        \override Staff.Stem.stemlet-length = 0.75
+                        ef'16
+                        [
+
+                        cs'16
+
+                        cs'16
+
+                        f'16
+
+                        f'16
+
+                        f'16
+
+                        d'16
+
+                        ef'16
+
+                        \revert Staff.Stem.stemlet-length
+                        ef'16
+                        ]
+
+                    }
+
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+
+                        \override Staff.Stem.stemlet-length = 0.75
+                        cs'16
+                        [
+
+                        cs'16
+
+                        \revert Staff.Stem.stemlet-length
+                        f'16
+                        ]
+
+                    }
+
+                    \override Staff.Stem.stemlet-length = 0.75
+                    f'16
+                    [
+
+                    f'16
+
+                    d'16
+
+                    \revert Staff.Stem.stemlet-length
+                    ef'16
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    cs''32
+                    ef'16
                     [
 
-                    b'32
+                    cs'16
 
-                    bf'32
-
-                    af'32
-
-                    b''32
-
-                    bf''32
-
-                    af''32
+                    cs'16
 
                     \revert Staff.Stem.stemlet-length
-                    fs''32
+                    f'16
                     ]
-                    \bar "||"
 
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/16
+                    \times 4/5 {
 
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/16
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ushortfermata"                           %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
+                        f'4
+
+                        f'4
+
+                        d'8
+                        ~
+
+                    }
+
+                    d'4
+
+                    \override Staff.Stem.stemlet-length = 0.75
+                    ef'8
+                    [
+
+                    \revert Staff.Stem.stemlet-length
+                    ef'8
+                    ]
+
+                    \times 4/5 {
+
+                        \override Staff.Stem.stemlet-length = 0.75
+                        cs'8
+                        [
+
+                        cs'8
+
+                        f'8
+
+                        f'8
+
+                        \revert Staff.Stem.stemlet-length
+                        f'8
+                        ]
+                        \bar "||"
+
+                    }
 
                 }
                 }
@@ -220,98 +273,148 @@
                 {
 
                     \clef "bass"
-                    r4
+                    r2
+
+                    \times 8/9 {
+
+                        \override Staff.Stem.stemlet-length = 0.75
+                        b16
+                        [
+
+                        b16
+
+                        a16
+
+                        a16
+
+                        bf16
+
+                        g16
+
+                        g16
+
+                        g16
+
+                        \revert Staff.Stem.stemlet-length
+                        b16
+                        ]
+
+                    }
 
                     \tweak text #tuplet-number::calc-fraction-text
-                    \times 6/5 {
+                    \times 12/13 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        af8
+                        b16
                         [
 
-                        fs8
+                        a16
+
+                        a16
+
+                        bf16
+
+                        g16
+
+                        g16
+
+                        g16
+
+                        b16
+
+                        b16
+
+                        a16
+
+                        a16
+
+                        bf16
 
                         \revert Staff.Stem.stemlet-length
-                        e16
+                        g16
                         ]
 
                     }
 
-                    \times 4/5 {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
 
-                        \override Staff.Stem.stemlet-length = 0.75
-                        ef16
-                        [
+                        g8
 
-                        cs16
-
-                        b,16
-
-                        bf,16
-
-                        \revert Staff.Stem.stemlet-length
-                        af,16
-                        ]
+                        g4
 
                     }
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    af16
-                    [
-
-                    fs16
+                    b4
                     ~
 
-                    fs16
-
-                    \revert Staff.Stem.stemlet-length
-                    e16
-                    ]
-
-                    \override Staff.Stem.stemlet-length = 0.75
-                    ef16
-                    [
-
-                    cs16
-
-                    b,16
-
-                    bf,16
-
-                    af,16
-
-                    \revert Staff.Stem.stemlet-length
-                    af16
-                    ]
-
                     \times 4/5 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        fs8
+                        b8
                         [
 
-                        e16
-
-                        ef16
-
                         \revert Staff.Stem.stemlet-length
-                        cs16
+                        b8
                         ]
-                        \bar "||"
+
+                        a4
+
+                        a8
 
                     }
 
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/16
+                    \override Staff.Stem.stemlet-length = 0.75
+                    bf16
+                    [
 
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/16
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ushortfermata"                           %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
+                    g16
+
+                    g16
+
+                    \revert Staff.Stem.stemlet-length
+                    g16
+                    ]
+
+                    \override Staff.Stem.stemlet-length = 0.75
+                    b16
+                    [
+
+                    b16
+
+                    a16
+
+                    \revert Staff.Stem.stemlet-length
+                    a16
+                    ]
+
+                    \override Staff.Stem.stemlet-length = 0.75
+                    bf8
+                    [
+
+                    \revert Staff.Stem.stemlet-length
+                    g8
+                    ~
+                    ]
+
+                    g4
+
+                    \override Staff.Stem.stemlet-length = 0.75
+                    g8
+                    [
+
+                    \revert Staff.Stem.stemlet-length
+                    g8
+                    ]
+
+                    \override Staff.Stem.stemlet-length = 0.75
+                    b8
+                    [
+
+                    \revert Staff.Stem.stemlet-length
+                    b8
+                    ]
+                    \bar "||"
 
                 }
                 }
@@ -327,9 +430,19 @@
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "bass"
-                    r1 * 5/16
+                    r1 * 1/2
 
-                    R1 * 5/16
+                    R1 * 1/2
+
+                    \once \override Rest.transparent = ##t                     %! applying invisibility
+                    r1 * 5/8
+
+                    R1 * 5/8
+
+                    \once \override Rest.transparent = ##t                     %! applying invisibility
+                    r1 * 1/8
+
+                    R1 * 1/8
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
                     r1 * 1/4
@@ -337,30 +450,15 @@
                     R1 * 1/4
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/16
+                    r1 * 1/2
 
-                    R1 * 3/16
+                    R1 * 1/2
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    b,,8
-                    [
+                    \once \override Rest.transparent = ##t                     %! applying invisibility
+                    r1 * 1/4
 
-                    \revert Staff.Stem.stemlet-length
-                    bf,,8
-                    ]
+                    R1 * 1/4
                     \bar "||"
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/16
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/16
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ushortfermata"                           %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
 
                 }
                 }
