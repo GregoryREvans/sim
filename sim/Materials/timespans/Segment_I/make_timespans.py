@@ -14,13 +14,13 @@ music_specifiers = OrderedDict(
 ########
 # rhythm#
 ########
-rhythm_target_timespan = abjad.Timespan(0, (163, 4))
+rhythm_target_timespan = abjad.Timespan(0, (96, 4))
 
 rhythm_timespan_maker = TaleaTimespanMaker(
-    initial_silence_talea=rmakers.Talea(counts=([9, 0, 2, 5]), denominator=8),
+    initial_silence_talea=rmakers.Talea(counts=([18, 0, 4, 9]), denominator=16),
     playing_talea=rmakers.Talea(counts=([3, 1, 2, 2]), denominator=4),
     silence_talea=rmakers.Talea(
-        counts=([3, 1, 2, 2, 1, 2, 2, 3, 2, 2, 3, 1, 2, 3, 1, 2]), denominator=8
+        counts=([3, 1, 2, 2, 4, 2, 4, 6, 5, 2, 3, 1, 6, 3, 1, 2]), denominator=8
     ),
 )
 
@@ -31,10 +31,10 @@ rhythm_timespan_list = rhythm_timespan_maker(
 #######
 # pitch#
 #######
-pitch_target_timespan = abjad.Timespan(0, (163, 4))
+pitch_target_timespan = abjad.Timespan(0, (96, 4))
 
 pitch_timespan_maker = TaleaTimespanMaker(
-    playing_talea=rmakers.Talea(counts=([163]), denominator=4),
+    playing_talea=rmakers.Talea(counts=([96]), denominator=4),
     silence_talea=rmakers.Talea(counts=([0]), denominator=4),
 )
 
@@ -45,10 +45,10 @@ pitch_timespan_list = pitch_timespan_maker(
 #########
 # dynamic#
 #########
-dynamic_target_timespan = abjad.Timespan(0, (163, 4))
+dynamic_target_timespan = abjad.Timespan(0, (96, 4))
 
 dynamic_timespan_maker = TaleaTimespanMaker(
-    playing_talea=rmakers.Talea(counts=([163]), denominator=4),
+    playing_talea=rmakers.Talea(counts=([96]), denominator=4),
     silence_talea=rmakers.Talea(counts=([0]), denominator=4),
 )
 
@@ -59,10 +59,10 @@ dynamic_timespan_list = dynamic_timespan_maker(
 ##############
 # articulation#
 ##############
-articulation_target_timespan = abjad.Timespan(0, (163, 4))
+articulation_target_timespan = abjad.Timespan(0, (96, 4))
 
 articulation_timespan_maker = TaleaTimespanMaker(
-    playing_talea=rmakers.Talea(counts=([163]), denominator=4),
+    playing_talea=rmakers.Talea(counts=([96]), denominator=4),
     silence_talea=rmakers.Talea(counts=([0]), denominator=4),
 )
 
