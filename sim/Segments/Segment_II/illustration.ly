@@ -20,7 +20,7 @@
         \context TimeSignatureContext = "Global Context"
         {
 
-            \tempo 4=120
+            \tempo 4=112
             \time 4/4                                                          %! scaling time signatures
             \mark \markup {
                 \bold
@@ -104,94 +104,94 @@
 
                         \clef "treble"
                         \override Staff.Stem.stemlet-length = 0.75
-                        af'16
+                        ef'16
                         [
 
-                        af'16
+                        ef'16
+
+                        ef'16
+
+                        ef'16
+
+                        ef'16
 
                         af'16
 
                         af'16
 
                         af'16
-
-                        cs''16
-
-                        cs''16
-
-                        cs''16
 
                         \revert Staff.Stem.stemlet-length
-                        b'16
+                        fs'16
                         ]
 
                     }
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    b'16
+                    fs'16
                     [
 
-                    bf'16
+                    f'16
 
-                    bf'16
+                    f'16
 
                     \revert Staff.Stem.stemlet-length
-                    bf'16
+                    f'16
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    bf'16
+                    f'16
                     [
 
-                    cs'''16
+                    af''16
 
-                    cs'''16
+                    af''16
 
                     \revert Staff.Stem.stemlet-length
-                    cs''16
+                    af'16
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    b'8
+                    fs'8
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    bf'8
+                    f'8
                     ]
 
-                    af'4
+                    ef'4
                     ~
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    af'8
+                    ef'8
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    bf'8
+                    f'8
                     ]
 
                     \times 8/9 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        af'16
+                        ef'16
                         [
 
-                        bf'16
+                        f'16
 
-                        b'16
-
-                        cs''16
-
-                        cs'''16
-
-                        cs''16
-
-                        b'16
+                        fs'16
 
                         af'16
+
+                        af''16
+
+                        af'16
+
+                        fs'16
+
+                        ef'16
 
                         \revert Staff.Stem.stemlet-length
-                        af'16
+                        ef'16
                         ]
 
                     }
@@ -200,76 +200,76 @@
                     \times 4/3 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        af'16
+                        ef'16
                         [
 
-                        af'16
+                        ef'16
 
                         \revert Staff.Stem.stemlet-length
-                        af'16
+                        ef'16
                         ]
 
                     }
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    cs''16
+                    af'16
                     [
 
-                    cs''16
+                    af'16
 
-                    cs''16
+                    af'16
 
                     \revert Staff.Stem.stemlet-length
-                    b'16
+                    fs'16
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    b'16
+                    fs'16
                     [
 
-                    bf'16
+                    f'16
 
-                    bf'16
+                    f'16
 
                     \revert Staff.Stem.stemlet-length
-                    bf'16
+                    f'16
                     ]
 
                     \times 4/5 {
 
-                        bf'4
+                        f'4
 
-                        cs'''4
+                        af''4
 
-                        cs'''8
+                        af''8
                         ~
 
                     }
 
-                    cs'''4
+                    af''4
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    cs''8
+                    af'8
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    b'8
+                    fs'8
                     ]
 
                     \times 4/5 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        bf'8
+                        f'8
                         [
 
-                        af'8
+                        ef'8
 
-                        bf'8
+                        f'8
 
-                        af'8
+                        ef'8
 
                         \revert Staff.Stem.stemlet-length
-                        bf'8
+                        f'8
                         ]
                         \bar "||"
 
@@ -293,25 +293,25 @@
                     \times 8/9 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        fs16
+                        cs16
                         [
 
-                        fs16
+                        cs16
 
-                        fs16
+                        cs16
 
-                        fs16
+                        cs16
 
-                        af16
+                        ef16
 
-                        af16
+                        ef16
 
-                        e16
+                        b,16
 
-                        e16
+                        b,16
 
                         \revert Staff.Stem.stemlet-length
-                        e16
+                        b,16
                         ]
 
                     }
@@ -320,33 +320,33 @@
                     \times 12/13 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        e16
+                        b,16
                         [
 
-                        e16
-
-                        fs16
-
-                        fs16
-
-                        e16
-
-                        ef16
+                        b,16
 
                         cs16
 
-                        bf,16
+                        cs16
+
+                        b,16
 
                         bf,16
 
-                        bf,16
+                        af,16
+
+                        f,16
+
+                        f,16
+
+                        f,16
+
+                        f,16
 
                         bf,16
-
-                        ef16
 
                         \revert Staff.Stem.stemlet-length
-                        cs16
+                        af,16
                         ]
 
                     }
@@ -354,80 +354,80 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
 
-                        ef8
+                        bf,8
 
-                        cs4
+                        af,4
 
                     }
 
-                    fs4
+                    cs4
                     ~
 
                     \times 4/5 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        fs8
+                        cs8
                         [
 
                         \revert Staff.Stem.stemlet-length
-                        fs8
+                        cs8
                         ]
 
-                        fs4
+                        cs4
 
-                        fs8
+                        cs8
 
                     }
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    af16
+                    ef16
                     [
 
-                    af16
+                    ef16
 
-                    e16
+                    b,16
 
                     \revert Staff.Stem.stemlet-length
-                    e16
+                    b,16
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    e16
+                    b,16
                     [
 
-                    e16
+                    b,16
 
-                    e16
+                    b,16
 
                     \revert Staff.Stem.stemlet-length
-                    fs16
+                    cs16
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    fs8
+                    cs8
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    e8
+                    b,8
                     ~
                     ]
 
-                    e4
+                    b,4
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    ef8
+                    bf,8
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    cs8
+                    af,8
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    bf,8
+                    f,8
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    bf,8
+                    f,8
                     ]
                     \bar "||"
 
