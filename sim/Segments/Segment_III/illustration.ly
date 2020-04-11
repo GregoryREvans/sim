@@ -158,12 +158,10 @@
 
                     }
 
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 5/8 {
+                    g''16
+                    ~
 
-                        g''2
-
-                    }
+                    g''4
 
                     \times 2/3 {
                         % [Voice 1 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -181,11 +179,11 @@
                         ]
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 5/8 {
+                        \times 5/4 {
 
-                            b''2
+                            b''4
 
-                            g''2
+                            g''4
 
                         }
 
@@ -204,21 +202,21 @@
 
                             g''32
 
-                            \revert Staff.Stem.stemlet-length
                             b''32
-                            ]
 
                         }
 
                         \tweak text #tuplet-number::calc-fraction-text
                         \tweak edge-height #'(0.7 . 0)
-                        \times 5/9 {
+                        \times 10/9 {
 
-                            c'''4
+                            c'''8
 
-                            b''4
+                            b''8
 
-                            c'''4
+                            \revert Staff.Stem.stemlet-length
+                            c'''8
+                            ]
 
                         }
 
@@ -236,20 +234,20 @@
                         a'16
                         [
 
-                        \revert Staff.Stem.stemlet-length
                         d''16
-                        ]
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 5/8 {
+                        \times 5/4 {
 
-                            a'4
+                            a'8
 
-                            g'4
+                            g'8
 
-                            a'4
+                            a'8
 
-                            d''4
+                            \revert Staff.Stem.stemlet-length
+                            d''8
+                            ]
 
                         }
 
@@ -425,12 +423,10 @@
 
                         }
 
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 5/8 {
+                        e''4
+                        ~
 
-                            e''2
-
-                        }
+                        e''16
 
                     }
                     % [Voice 1 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -522,13 +518,9 @@
 
                     \scaleDurations #'(1 . 1) {
 
-                        \scaleDurations #'(1 . 1) {
-
-                            \override Staff.Stem.stemlet-length = 0.75
-                            c''16
-                            [
-
-                        }
+                        \override Staff.Stem.stemlet-length = 0.75
+                        c''16
+                        [
 
                         \times 4/5 {
 
@@ -732,18 +724,18 @@
                     \times 2/3 {
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 5/8 {
+                        \times 5/4 {
                             % [Voice 2 measure 5]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            a'16
+                            a'32
                             [
 
-                            g'16
+                            g'32
 
-                            a'16
+                            a'32
 
-                            g'16
+                            g'32
 
                         }
 
@@ -787,14 +779,14 @@
                     \times 2/3 {
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 5/8 {
+                        \times 5/4 {
                             % [Voice 2 measure 6]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            a'8
+                            a'16
                             [
 
-                            g'8
+                            g'16
 
                         }
 
@@ -814,29 +806,32 @@
 
                     \scaleDurations #'(1 . 1) {
 
-                        \tweak text #tuplet-number::calc-fraction-text
                         \tweak edge-height #'(0.7 . 0)
-                        \times 5/6 {
+                        \times 2/3 {
 
                             a'2
+                            ~
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            a'8
+                            [
 
                         }
 
+                        \tweak text #tuplet-number::calc-fraction-text
                         \tweak edge-height #'(0.7 . 0)
-                        \times 8/15 {
+                        \times 16/15 {
 
-                            \override Staff.Stem.stemlet-length = 0.75
-                            d''32
-                            [
+                            d''64
 
-                            a'32
+                            a'64
 
-                            g'32
+                            g'64
 
-                            d'32
+                            d'64
 
                             \revert Staff.Stem.stemlet-length
-                            g'32
+                            g'64
                             ]
 
                         }
@@ -867,11 +862,13 @@
 
                         }
 
-                        \tweak text #tuplet-number::calc-fraction-text
                         \tweak edge-height #'(0.7 . 0)
-                        \times 25/48 {
+                        \times 2/3 {
 
-                            g'1
+                            g'2.
+                            ~
+
+                            g'32
 
                         }
 
@@ -894,16 +891,16 @@
 
                         d'64
 
-                        \revert Staff.Stem.stemlet-length
                         fs'64
-                        ]
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 5/8 {
+                        \times 5/4 {
 
-                            a'4
+                            a'8
 
-                            fs'4
+                            \revert Staff.Stem.stemlet-length
+                            fs'8
+                            ]
 
                         }
 
@@ -919,17 +916,17 @@
 
                         \tweak text #tuplet-number::calc-fraction-text
                         \tweak edge-height #'(0.7 . 0)
-                        \times 5/9 {
+                        \times 10/9 {
                             % [Voice 2 measure 10]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            d'16
+                            d'32
                             [
 
-                            fs'16
+                            fs'32
 
                             \revert Staff.Stem.stemlet-length
-                            d'16
+                            d'32
                             ]
 
                         }
@@ -958,16 +955,16 @@
                         b'64
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 5/8 {
+                        \times 5/4 {
 
-                            d''16
+                            d''32
 
-                            b'16
+                            b'32
 
-                            g'16
+                            g'32
 
                             \revert Staff.Stem.stemlet-length
-                            fs'16
+                            fs'32
                             ]
 
                         }
@@ -1056,29 +1053,29 @@
 
                         \tweak text #tuplet-number::calc-fraction-text
                         \tweak edge-height #'(0.7 . 0)
-                        \times 5/9 {
+                        \times 10/9 {
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            e'8
+                            e'16
                             [
 
-                            g'8
+                            g'16
 
-                            \revert Staff.Stem.stemlet-length
-                            e'8
-                            ]
+                            e'16
 
                         }
 
                         \tweak text #tuplet-number::calc-fraction-text
                         \tweak edge-height #'(0.7 . 0)
-                        \times 5/9 {
+                        \times 10/9 {
 
-                            c'4
+                            c'8
 
-                            e'4
+                            e'8
 
-                            g'4
+                            \revert Staff.Stem.stemlet-length
+                            g'8
+                            ]
 
                         }
 
@@ -1139,30 +1136,26 @@
                     }
 
                     \tweak text #tuplet-number::calc-fraction-text
-                    \times 3/5 {
+                    \times 6/5 {
                         % [Voice 2 measure 17]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        g'16
+                        g'32
                         [
 
-                        e'16
+                        e'32
 
-                        c'16
+                        c'32
 
-                        e'16
+                        e'32
 
                         \revert Staff.Stem.stemlet-length
-                        ef''16
+                        ef''32
                         ]
 
                     }
 
-                    \scaleDurations #'(1 . 1) {
-
-                        b'8.
-
-                    }
+                    b'8.
 
                     r4
                     % [Voice 2 measure 18]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -1268,13 +1261,9 @@
 
                     \scaleDurations #'(1 . 1) {
 
-                        \scaleDurations #'(1 . 1) {
-
-                            \override Staff.Stem.stemlet-length = 0.75
-                            d16
-                            [
-
-                        }
+                        \override Staff.Stem.stemlet-length = 0.75
+                        d16
+                        [
 
                         \times 4/5 {
 
@@ -1443,21 +1432,21 @@
                     \times 2/3 {
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 5/8 {
+                        \times 5/4 {
 
-                            d,,4
+                            \override Staff.Stem.stemlet-length = 0.75
+                            d,,8
+                            [
 
-                            a,,4
+                            a,,8
 
-                            d,4
+                            d,8
 
-                            a,,4
+                            a,,8
 
                         }
 
-                        \override Staff.Stem.stemlet-length = 0.75
                         d,,16
-                        [
 
                         \revert Staff.Stem.stemlet-length
                         a,,16
@@ -1472,15 +1461,15 @@
 
                         \tweak text #tuplet-number::calc-fraction-text
                         \tweak edge-height #'(0.7 . 0)
-                        \times 5/9 {
+                        \times 10/9 {
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            d,16
+                            d,32
                             [
 
-                            fs,16
+                            fs,32
 
-                            d,16
+                            d,32
 
                         }
 
@@ -1500,12 +1489,16 @@
                     }
 
                     \tweak text #tuplet-number::calc-fraction-text
-                    \times 5/8 {
+                    \times 5/4 {
                         % [Voice 3 measure 9]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        a,4
+                        \override Staff.Stem.stemlet-length = 0.75
+                        a,8
+                        [
 
-                        fs,4
+                        \revert Staff.Stem.stemlet-length
+                        fs,8
+                        ]
 
                     }
 
@@ -1523,30 +1516,33 @@
 
                     \scaleDurations #'(1 . 1) {
 
-                        \tweak text #tuplet-number::calc-fraction-text
                         \tweak edge-height #'(0.7 . 0)
-                        \times 5/6 {
+                        \times 2/3 {
                             % [Voice 3 measure 10]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             \override Staff.Stem.stemlet-length = 0.75
                             fs8
+                            ~
                             [
+
+                            fs32
 
                         }
 
+                        \tweak text #tuplet-number::calc-fraction-text
                         \tweak edge-height #'(0.7 . 0)
-                        \times 8/15 {
+                        \times 16/15 {
 
-                            d128
+                            d256
 
-                            a,128
+                            a,256
 
-                            fs,128
+                            fs,256
 
-                            d,128
+                            d,256
 
                             \revert Staff.Stem.stemlet-length
-                            a,,128
+                            a,,256
                             ]
 
                         }
@@ -1557,30 +1553,33 @@
 
                     \scaleDurations #'(1 . 1) {
 
+                        \tweak text #tuplet-number::calc-fraction-text
                         \tweak edge-height #'(0.7 . 0)
-                        \times 8/15 {
+                        \times 16/15 {
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            b,64
+                            b,128
                             [
 
-                            g,64
+                            g,128
 
-                            fs,64
+                            fs,128
 
-                            g,64
+                            g,128
 
                             \revert Staff.Stem.stemlet-length
-                            b,64
+                            b,128
                             ]
 
                         }
 
-                        \tweak text #tuplet-number::calc-fraction-text
                         \tweak edge-height #'(0.7 . 0)
-                        \times 5/6 {
+                        \times 2/3 {
 
                             g,4
+                            ~
+
+                            g,16
 
                         }
 
@@ -1602,11 +1601,11 @@
                     ]
 
                     \tweak text #tuplet-number::calc-fraction-text
-                    \times 5/8 {
+                    \times 5/4 {
 
-                        b,,2
+                        b,,4
 
-                        g,,2
+                        g,,4
 
                     }
 
@@ -1650,16 +1649,16 @@
                         e,64
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 5/8 {
+                        \times 5/4 {
 
-                            g,16
+                            g,32
 
-                            e,16
+                            e,32
 
-                            c,16
+                            c,32
 
                             \revert Staff.Stem.stemlet-length
-                            b,,16
+                            b,,32
                             ]
 
                         }
@@ -1840,11 +1839,7 @@
 
                         }
 
-                        \scaleDurations #'(1 . 1) {
-
-                            b,4
-
-                        }
+                        b,4
 
                     }
                     % [Voice 3 measure 20]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -1971,20 +1966,18 @@
                     r2
 
                     \scaleDurations #'(1 . 1) {
+                        % [Voice 4 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 5/8 {
-                            % [Voice 4 measure 6]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        d,,4
+                        ~
 
-                            d,,2
-
-                        }
+                        \override Staff.Stem.stemlet-length = 0.75
+                        d,,16
+                        [
 
                         \scaleDurations #'(1 . 1) {
 
-                            \override Staff.Stem.stemlet-length = 0.75
                             a,,16
-                            [
 
                             d,16
 
@@ -2174,18 +2167,18 @@
                     \times 2/3 {
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 5/8 {
+                        \times 5/4 {
                             % [Voice 4 measure 13]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            g,8
+                            g,16
                             [
 
-                            e,8
+                            e,16
 
-                            g,8
+                            g,16
 
-                            e,8
+                            e,16
 
                         }
 
@@ -2236,17 +2229,17 @@
                     \times 2/3 {
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 5/8 {
+                        \times 5/4 {
 
-                            c4
+                            \override Staff.Stem.stemlet-length = 0.75
+                            c8
+                            [
 
-                            a,4
+                            a,8
 
                         }
 
-                        \override Staff.Stem.stemlet-length = 0.75
                         g,64
-                        [
 
                         e,64
 
@@ -2257,14 +2250,12 @@
                         ]
 
                     }
+                    % [Voice 4 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 5/8 {
-                        % [Voice 4 measure 16]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    c,4
+                    ~
 
-                        c,2
-
-                    }
+                    c,16
 
                     \times 4/5 {
 
@@ -2286,31 +2277,34 @@
 
                     \scaleDurations #'(1 . 1) {
 
+                        \tweak text #tuplet-number::calc-fraction-text
                         \tweak edge-height #'(0.7 . 0)
-                        \times 8/15 {
+                        \times 16/15 {
                             % [Voice 4 measure 17]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            c,64
+                            c,128
                             [
 
-                            a,,64
+                            a,,128
 
-                            g,,64
+                            g,,128
 
-                            a,,64
+                            a,,128
 
                             \revert Staff.Stem.stemlet-length
-                            c,64
+                            c,128
                             ]
 
                         }
 
-                        \tweak text #tuplet-number::calc-fraction-text
                         \tweak edge-height #'(0.7 . 0)
-                        \times 5/6 {
+                        \times 2/3 {
 
                             e,4
+                            ~
+
+                            e,16
 
                         }
 
@@ -2334,11 +2328,15 @@
                     ]
 
                     \tweak text #tuplet-number::calc-fraction-text
-                    \times 5/8 {
+                    \times 5/4 {
 
-                        fs4
+                        \override Staff.Stem.stemlet-length = 0.75
+                        fs8
+                        [
 
-                        ef4
+                        \revert Staff.Stem.stemlet-length
+                        ef8
+                        ]
 
                     }
 
@@ -2360,14 +2358,14 @@
 
                         \tweak text #tuplet-number::calc-fraction-text
                         \tweak edge-height #'(0.7 . 0)
-                        \times 5/9 {
+                        \times 10/9 {
 
-                            a,16
+                            a,32
 
-                            fs,16
+                            fs,32
 
                             \revert Staff.Stem.stemlet-length
-                            ef,16
+                            ef,32
                             ]
 
                         }
