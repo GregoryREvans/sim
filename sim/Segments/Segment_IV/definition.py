@@ -39,6 +39,111 @@ maker = evans.SegmentMaker(
     clef_handlers=clef_handlers,
     voicewise_persistent_indicators=None,
     # voicewise_stem_directions=["up", "down", "up", "down"],
+    voicewise_direct_attachments=[
+        [
+            (
+                abjad.select().leaves().get([0], 1000),
+                abjad.Arpeggio(),
+            ),
+        ],
+        [
+            (
+                abjad.select().leaves().get([0], 1000),
+                abjad.Arpeggio(),
+            ),
+        ],
+        [
+            (
+                abjad.select().leaves().get([0], 1000),
+                abjad.Arpeggio(),
+            ),
+        ],
+        [
+            (
+                abjad.select().leaves().get([0], 1000),
+                abjad.Arpeggio(),
+            ),
+            (
+                abjad.select().leaves().get([0], 1000),
+                abjad.LilyPondLiteral(
+                    [
+                    r"\sustainOn",
+                    ],
+                    format_slot="after",
+                ),
+            ),
+            (
+                abjad.select().leaves().get([7], 1000),
+                abjad.LilyPondLiteral(
+                    [
+                    r"\sustainOff",
+                    r"\sustainOn",
+                    ],
+                    format_slot="after",
+                ),
+            ),
+            (
+                abjad.select().leaves().get([14], 1000),
+                abjad.LilyPondLiteral(
+                    [
+                    r"\sustainOff",
+                    r"\sustainOn",
+                    ],
+                    format_slot="after",
+                ),
+            ),
+            (
+                abjad.select().leaves().get([21], 1000),
+                abjad.LilyPondLiteral(
+                    [
+                    r"\sustainOff",
+                    r"\sustainOn",
+                    ],
+                    format_slot="after",
+                ),
+            ),
+            (
+                abjad.select().leaves().get([28], 1000),
+                abjad.LilyPondLiteral(
+                    [
+                    r"\sustainOff",
+                    r"\sustainOn",
+                    ],
+                    format_slot="after",
+                ),
+            ),
+            (
+                abjad.select().leaves().get([37], 1000),
+                abjad.LilyPondLiteral(
+                    [
+                    r"\sustainOff",
+                    r"\sustainOn",
+                    ],
+                    format_slot="after",
+                ),
+            ),
+            (
+                abjad.select().leaves().get([43], 1000),
+                abjad.LilyPondLiteral(
+                    [
+                    r"\sustainOff",
+                    r"\sustainOn",
+                    ],
+                    format_slot="after",
+                ),
+            ),
+            (
+                abjad.select().leaves().get([52], 1000),
+                abjad.LilyPondLiteral(
+                    [
+                    r"\sustainOff",
+                    r"\sustainOn",
+                    ],
+                    format_slot="after",
+                ),
+            ),
+        ],
+    ],
     global_direct_attachments=[
         [
             (

@@ -319,6 +319,7 @@
 
                     \clef "bass"
                     r2
+                    _ \markup{\italic {tre corde} }
 
                     \times 8/9 {
 

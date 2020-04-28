@@ -11,6 +11,20 @@ from sim.Materials.score_structure.Segment_III.time_signatures import time_signa
 from sim.Materials.pitch.Segment_III.clef_handlers import clef_handlers
 
 
+c = abjad.LilyPondLiteral(
+    r"""
+        _ \markup {
+            \override #'(font-name . "STIXGeneral")
+            \with-color #black
+            \right-column {
+                \line { Miami, Fl. \hspace #0.75 - \hspace #0.75 Spring Valley, Oh. }
+                \line { March 2019 \hspace #0.75 - \hspace #0.75 April 2020 }
+            }
+        }
+    """,
+    format_slot="absolute_after",
+)
+
 maker = evans.SegmentMaker(
     instruments=insts,
     names=["a", "b", "c", "d"],
@@ -23,6 +37,37 @@ maker = evans.SegmentMaker(
     clef_handlers=clef_handlers,
     voicewise_persistent_indicators=None,
     # voicewise_stem_directions=["up", "down", "up", "down"],
+    voicewise_direct_attachments=[
+        [],
+        [],
+        [
+            (
+                abjad.select().leaves().get([0], 1000),
+                abjad.LilyPondLiteral(
+                    [
+                    r"\sustainOn",
+                    ],
+                    format_slot="after",
+                ),
+            ),
+            (
+                abjad.select().leaves().get([60], 1000),
+                c,
+            ),
+        ],
+        [],
+    ],
+    voicewise_direct_detachments=[
+        [],
+        [],
+        [
+            (
+                abjad.select().leaves().get([61], 1000),
+                abjad.Markup.musicglyph("scripts.ushortfermata", direction=abjad.Up),
+            ),
+        ],
+        [],
+    ],
     global_direct_attachments=[
         [
             (
@@ -37,7 +82,7 @@ maker = evans.SegmentMaker(
         ],
     ],
     tuplet_bracket_noteheads=False,
-    add_final_grand_pause=False,
+    add_final_grand_pause=True,
     score_includes=[
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
         "/Users/evansdsg2/Scores/sim/sim/Build/first_stylesheet.ily",
@@ -52,10 +97,11 @@ maker = evans.SegmentMaker(
     cutaway=False,
     beam_pattern="meter",
     beam_rests=False,
-    barline="||",
+    barline="|.",
     tempo=((1, 4), 37),
     rehearsal_mark="",
     page_break_counts=[90],
+    colophon=c,
     midi=False,
 )
 

@@ -84,6 +84,7 @@
 
                     \clef "treble"
                     c'''4
+                    \arpeggio
 
                     cs'''2
 
@@ -380,6 +381,7 @@
 
                         \clef "treble"
                         fs'2
+                        \arpeggio
 
                         \times 2/3 {
 
@@ -642,6 +644,7 @@
 
                         \clef "bass"
                         b,2.
+                        \arpeggio
 
                         \override Staff.Stem.stemlet-length = 0.75
                         c8
@@ -922,6 +925,8 @@
 
                     \clef "bass"
                     f,,4
+                    \arpeggio
+                    \sustainOn
 
                     fs,,4
 
@@ -945,6 +950,8 @@
                             \override Staff.Stem.stemlet-length = 0.75
                             d,8
                             [
+                            \sustainOff
+                            \sustainOn
 
                             c,8
 
@@ -975,6 +982,8 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         a,,8
                         [
+                        \sustainOff
+                        \sustainOn
 
                         fs,,16
 
@@ -1005,6 +1014,8 @@
                             \override Staff.Stem.stemlet-length = 0.75
                             d,,16
                             [
+                            \sustainOff
+                            \sustainOn
 
                             f,,16
 
@@ -1034,6 +1045,8 @@
                         \times 2/3 {
 
                             cs,4
+                            \sustainOff
+                            \sustainOn
 
                             c,4
 
@@ -1067,6 +1080,8 @@
 
                         af,8.
                         ~
+                        \sustainOff
+                        \sustainOn
 
                     }
 
@@ -1089,6 +1104,8 @@
 
                     cs,,2
                     ~
+                    \sustainOff
+                    \sustainOn
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/4 {
@@ -1127,6 +1144,8 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         fs,,8
                         [
+                        \sustainOff
+                        \sustainOn
 
                         a,,16
 

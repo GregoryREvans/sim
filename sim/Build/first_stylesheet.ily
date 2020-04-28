@@ -69,13 +69,15 @@
     }
     \context {
         \Score
+		\consists "Span_arpeggio_engraver"
 		\remove Metronome_mark_engraver
         \remove Bar_number_engraver
 		\remove Mark_engraver
         \accepts TimeSignatureContext
+		\override Arpeggio.arpeggio-direction = #UP
 		\override BarLine.bar-extent = #'(-2 . 2)
 		\override BarLine.hair-thickness = #0.9
-		\override BarLine.thick-thickness = #2.7
+		\override BarLine.thick-thickness = #8
 		%\override BarLine.stencil = ##f
         \override Beam.breakable = ##t
 		\override Beam.concaveness = #10000
@@ -106,6 +108,7 @@
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
 		\override TupletNumber.font-size = 0.7
 		proportionalNotationDuration = #(ly:make-moment 1 18)
+		connectArpeggios = ##t
         autoBeaming = ##f
         tupletFullLength = ##t
     }
@@ -115,6 +118,7 @@
     }
     \context {
         \Staff \RemoveEmptyStaves
+		pedalSustainStyle = #'mixed
 		\remove Time_signature_engraver
 		fontSize = #-3
     }

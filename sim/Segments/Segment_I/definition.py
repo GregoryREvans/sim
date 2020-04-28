@@ -23,6 +23,24 @@ maker = evans.SegmentMaker(
     clef_handlers=clef_handlers,
     voicewise_persistent_indicators=None,
     # voicewise_stem_directions=["up", "down", "up", "down"],
+    voicewise_direct_attachments=[
+        [],
+        [],
+        [],
+        [
+            (
+                abjad.select().leaves().get([0], 1000),
+                abjad.LilyPondLiteral(
+                    [
+                    r"\sustainOff",
+                    r"\unaCorda",
+                    r"\sustainOn",
+                    ],
+                    format_slot="after",
+                ),
+            ),
+        ],
+    ],
     global_direct_attachments=[
         [
             (

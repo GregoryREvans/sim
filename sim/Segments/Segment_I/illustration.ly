@@ -1393,6 +1393,9 @@
 
                     \clef "bass"
                     r2
+                    \sustainOff
+                    \unaCorda
+                    \sustainOn
 
                     r16
 

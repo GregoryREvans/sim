@@ -116,6 +116,11 @@
 
             \time 2/4                                                          %! scaling time signatures
             s1 * 1/2
+            % [Global Context measure 21]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+            \once \override TimeSignature.color = #white                       %! applying ending skips
+            \time 1/8                                                          %! scaling time signatures
+            s1 * 1/8
 
         }
 
@@ -249,7 +254,20 @@
                     r1 * 1/4
 
                     R1 * 1/4
-                    \bar "||"
+                    % [Voice 1 measure 21]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
+                    \once \override Rest.color = #white                        %! applying ending skips
+                    r1 * 1/16
+
+                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
+                    R1 * 1/16
+                    ^ \markup {                                                %! applying ending skips
+                        \musicglyph                                            %! applying ending skips
+                            #"scripts.ushortfermata"                           %! applying ending skips
+                        }                                                      %! applying ending skips
+                    \bar "|."
+                    \stopStaff                                                 %! applying ending skips
 
                 }
                 }
@@ -399,7 +417,20 @@
                     b'4
 
                     r4
-                    \bar "||"
+                    % [Voice 2 measure 21]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
+                    \once \override Rest.color = #white                        %! applying ending skips
+                    r1 * 1/16
+
+                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
+                    R1 * 1/16
+                    ^ \markup {                                                %! applying ending skips
+                        \musicglyph                                            %! applying ending skips
+                            #"scripts.ushortfermata"                           %! applying ending skips
+                        }                                                      %! applying ending skips
+                    \bar "|."
+                    \stopStaff                                                 %! applying ending skips
 
                 }
                 }
@@ -417,6 +448,7 @@
                     \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "bass"
                     r1 * 1/4
+                    \sustainOn
 
                     R1 * 1/4
                     % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -564,7 +596,26 @@
                     % [Voice 3 measure 20]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     ef2
-                    \bar "||"
+                    % [Voice 3 measure 21]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
+                    \once \override Rest.color = #white                        %! applying ending skips
+                    r1 * 1/16
+
+                            _ \markup {
+                                \override #'(font-name . "STIXGeneral")
+                                \with-color #black
+                                \right-column {
+                                    \line { Miami, Fl. \hspace #0.75 - \hspace #0.75 Spring Valley, Oh. }
+                                    \line { March 2019 \hspace #0.75 - \hspace #0.75 April 2020 }
+                                }
+                            }
+
+
+                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
+                    R1 * 1/16
+                    \bar "|."
+                    \stopStaff                                                 %! applying ending skips
 
                 }
                 }
@@ -698,7 +749,30 @@
                     r1 * 1/4
 
                     R1 * 1/4
-                    \bar "||"
+                    % [Voice 4 measure 21]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
+                    \once \override Rest.color = #white                        %! applying ending skips
+                    r1 * 1/16
+
+                            _ \markup {
+                                \override #'(font-name . "STIXGeneral")
+                                \with-color #black
+                                \right-column {
+                                    \line { Miami, Fl. \hspace #0.75 - \hspace #0.75 Spring Valley, Oh. }
+                                    \line { March 2019 \hspace #0.75 - \hspace #0.75 April 2020 }
+                                }
+                            }
+
+
+                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
+                    R1 * 1/16
+                    ^ \markup {                                                %! applying ending skips
+                        \musicglyph                                            %! applying ending skips
+                            #"scripts.ushortfermata"                           %! applying ending skips
+                        }                                                      %! applying ending skips
+                    \bar "|."
+                    \stopStaff                                                 %! applying ending skips
 
                 }
                 }
