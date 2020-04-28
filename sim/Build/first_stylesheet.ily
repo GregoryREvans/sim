@@ -6,11 +6,11 @@
 \header {
 	tagline = ##f
 	breakbefore = ##t
-	dedication = \markup \override #'(font-name . "Didot") \fontsize #0.75 \center-column {"t    o        M    a    t    t        A.        M    a    s    o    n"}
-	title =  \markup \override #'(font-name . "Didot") \fontsize #6 \bold\center-column {"S i m b e l m y n ë" }
-	subtitle = \markup \override #'(font-name . "Didot") \fontsize #0.4 \center-column {";    o  r      f  l  o  w  e  r  s     i  n     t  h  e     g  a  p"}
-	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #0.25 \center-column {"f   o   r              p   i   a   n   o              a   l   o   n   e"}
-	composer = \markup \override #'(font-name . "Didot") \fontsize #3 {"Gregory Rowland Evans" \override #'(font-name . "MaestroTimes") "(*1995)"}
+	dedication = \markup \override #'(font-name . "STIXGeneral") \fontsize #0.75 \center-column {"t    o        M    a    t    t        A.        M    a    s    o    n"}
+	title =  \markup \override #'(font-name . "STIXGeneral") \fontsize #6 \bold\center-column {"S i m b e l m y n ë" }
+	subtitle = \markup \override #'(font-name . "STIXGeneral") \fontsize #0.4 \center-column {";    o  r      f  l  o  w  e  r  s     i  n     t  h  e     g  a  p"}
+	subsubtitle = \markup \override #'(font-name . "STIXGeneral") \fontsize #0.25 \center-column {"f   o   r              p   i   a   n   o              a   l   o   n   e"}
+	composer = \markup \override #'(font-name . "STIXGeneral") \fontsize #3 {"Gregory Rowland Evans (*1995)"}
 }
 
 \layout {
@@ -32,7 +32,7 @@
 		\override BarNumber.Y-extent = #'(0 . 0)
 		\override BarNumber.Y-offset = 0
 		\override BarNumber.extra-offset = #'(-4 . 0)
-		\override BarNumber.font-name = "MaestroTimes"
+		\override BarNumber.font-name = "STIXGeneral"
 		%{ \override BarNumber.stencil = #(make-stencil-boxer 0.1 0.7 ly:text-interface::print) %}
 		\override BarNumber.stencil = #(make-stencil-circler 0.1 0.7 ly:text-interface::print)
 		\override BarNumber.font-size = 2
@@ -43,13 +43,14 @@
 		\override MetronomeMark.break-align-symbols = #'(left-edge)
 		\override MetronomeMark.extra-offset = #'(0 . 1)
 		\override MetronomeMark.font-size = 3
+		\override MetronomeMark.stencil = ##f
 		%\override RehearsalMark.stencil = #(make-stencil-circler 0.1 0.7 ly:text-interface::print)
 		\override RehearsalMark.X-extent = #'(0 . 0)
 		\override RehearsalMark.X-offset = 6
 		\override RehearsalMark.Y-offset = -2.5
 		\override RehearsalMark.break-align-symbols = #'(time-signature)
 		\override RehearsalMark.break-visibility = #end-of-line-invisible
-		\override RehearsalMark.font-name = "Didot"
+		\override RehearsalMark.font-name = "STIXGeneral"
 		\override RehearsalMark.font-size = 9.5
 		\override RehearsalMark.outside-staff-priority = 500
 		\override RehearsalMark.self-alignment-X = #center
@@ -58,7 +59,8 @@
         \override TimeSignature.Y-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = ##f
         \override TimeSignature.break-visibility = #end-of-line-invisible
-        \override TimeSignature.font-size = #2
+		\override TimeSignature.font-name = "STIXGeneral"
+        \override TimeSignature.font-size = #7
         \override TimeSignature.self-alignment-X = #center
 		%\override TimeSignature.stencil = ##f
 		\override TimeSignature.whiteout-style = #'outline
@@ -71,7 +73,6 @@
         \remove Bar_number_engraver
 		\remove Mark_engraver
         \accepts TimeSignatureContext
-		\override Accidental.X-extent = ##f
 		\override BarLine.bar-extent = #'(-2 . 2)
 		\override BarLine.hair-thickness = #0.9
 		\override BarLine.thick-thickness = #2.7
@@ -150,10 +151,10 @@
 	evenHeaderMarkup = \markup ""
 	oddFooterMarkup = \markup
         \fill-line {
-            \override #'(font-name . "Didot")
+            \override #'(font-name . "STIXGeneral")
                 \bold \fontsize #3 "Simbelmynë - GR Evans"
             \concat {
-                \override #'(font-name . "MaestroTimes")
+                \override #'(font-name . "STIXGeneral")
                     \bold \fontsize #3
                         %{ \on-the-fly #print-page-number-check-first %}
                         \fromproperty #'page:page-number-string
@@ -162,12 +163,12 @@
     evenFooterMarkup = \markup
         \fill-line {
             \concat {
-                \override #'(font-name . "MaestroTimes")
+                \override #'(font-name . "STIXGeneral")
                     \bold \fontsize #3
                         %{ \on-the-fly #print-page-number-check-first %}
                         \fromproperty #'page:page-number-string
                 }
-            \override #'(font-name . "Didot")
+            \override #'(font-name . "STIXGeneral")
                 \bold \fontsize #3 "Simbelmynë - GR Evans"
             }
 }

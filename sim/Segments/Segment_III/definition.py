@@ -23,6 +23,19 @@ maker = evans.SegmentMaker(
     clef_handlers=clef_handlers,
     voicewise_persistent_indicators=None,
     # voicewise_stem_directions=["up", "down", "up", "down"],
+    global_direct_attachments=[
+        [
+            (
+                abjad.select().leaves().get([0], 1000),
+                evans.metric_modulation(
+                    metronome_mark=((1, 4), 106.6),
+                    left_note=(abjad.Tuplet(multiplier=(4, 5), components=[abjad.Note("c'8")])),
+                    right_note=(abjad.Tuplet(multiplier=(5, 6), components=[abjad.Note("c'16")])),
+                    modulated_beat=(abjad.Note("c'4")),
+                ),
+            ),
+        ],
+    ],
     tuplet_bracket_noteheads=False,
     add_final_grand_pause=False,
     score_includes=[
@@ -40,7 +53,7 @@ maker = evans.SegmentMaker(
     beam_pattern="meter",
     beam_rests=False,
     barline="||",
-    tempo=((1, 4), 40),
+    tempo=((1, 4), 37),
     rehearsal_mark="",
     page_break_counts=[90],
     midi=False,

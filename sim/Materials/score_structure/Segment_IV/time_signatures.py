@@ -1,10 +1,10 @@
 import abjad
 import pathlib
-from sim.Materials.timespans.Segment_III.make_timespans import rhythm_timespan_list
+from sim.Materials.timespans.Segment_IV.make_timespans import rhythm_timespan_list
 
 offset_counter = abjad.OffsetCounter(rhythm_timespan_list)
 
-counter_path = f"""{pathlib.Path(__file__).parent}/segment_III_offset_counter.pdf"""
+counter_path = f"""{pathlib.Path(__file__).parent}/segment_IV_offset_counter.pdf"""
 persisted_counter = abjad.persist(offset_counter).as_pdf(counter_path, scale=0.70)
 
 permitted_meters = abjad.MeterList(
@@ -27,7 +27,7 @@ permitted_meters = abjad.MeterList(
 )
 
 fitted_meters = abjad.Meter.fit_meters(
-    argument=offset_counter, meters=permitted_meters, maximum_run_length=3
+    argument=offset_counter, meters=permitted_meters, maximum_run_length=20
 )
 
 time_signatures = [abjad.TimeSignature(_) for _ in fitted_meters]

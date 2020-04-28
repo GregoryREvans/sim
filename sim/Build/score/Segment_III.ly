@@ -6,7 +6,7 @@
         {
             % [Global Context measure 1]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-            \tempo 4=40
+            \tempo 4=37
             \time 4/4                                                          %! scaling time signatures
             \mark \markup {
                 \bold
@@ -14,6 +14,98 @@
                     }
                 }
             s1 * 1
+            ^ \markup {
+              \huge
+              \concat {
+                  \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"55" #"25" #"48"
+                  \hspace #1
+                  \upright [
+                  {
+                \score
+                    {
+                        \new Score
+                        \with
+                        {
+                            \override SpacingSpanner.spacing-increment = #0.5
+                            proportionalNotationDuration = ##f
+                        }
+                        <<
+                            \new RhythmicStaff
+                            \with
+                            {
+                                \remove Time_signature_engraver
+                                \remove Staff_symbol_engraver
+                                \override Stem.direction = #up
+                                \override Stem.length = #5
+                                \override TupletBracket.bracket-visibility = ##t
+                                \override TupletBracket.direction = #up
+                                \override TupletBracket.minimum-length = #4
+                                \override TupletBracket.padding = #1.25
+                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                \override TupletNumber.font-size = #0
+                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                tupletFullLength = ##t
+                            }
+                            {
+                                \tweak edge-height #'(0.7 . 0)
+                                \times 4/5 {
+                                    c'8
+                                }
+                            }
+                        >>
+                        \layout {
+                            indent = #0
+                            ragged-right = ##t
+                        }
+                    }
+                =
+                \hspace
+                    #-0.5
+                \score
+                    {
+                        \new Score
+                        \with
+                        {
+                            \override SpacingSpanner.spacing-increment = #0.5
+                            proportionalNotationDuration = ##f
+                        }
+                        <<
+                            \new RhythmicStaff
+                            \with
+                            {
+                                \remove Time_signature_engraver
+                                \remove Staff_symbol_engraver
+                                \override Stem.direction = #up
+                                \override Stem.length = #5
+                                \override TupletBracket.bracket-visibility = ##t
+                                \override TupletBracket.direction = #up
+                                \override TupletBracket.minimum-length = #4
+                                \override TupletBracket.padding = #1.25
+                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                \override TupletNumber.font-size = #0
+                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                tupletFullLength = ##t
+                            }
+                            {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \tweak edge-height #'(0.7 . 0)
+                                \times 5/6 {
+                                    c'16
+                                }
+                            }
+                        >>
+                        \layout {
+                            indent = #0
+                            ragged-right = ##t
+                        }
+                    }
+                }
+                  \hspace #0.5
+                  \upright ]
+              }
+            }
             % [Global Context measure 2]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 3/8                                                          %! scaling time signatures

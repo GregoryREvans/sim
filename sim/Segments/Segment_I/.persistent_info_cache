@@ -642,3 +642,51 @@ voice_2
 voice_3
 [LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
 
+2020-04-26 22:21:44.704519
+voice_0
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-04-26 22:21:44.707977
+voice_1
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-04-26 22:21:44.709959
+voice_2
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-04-26 22:21:44.711786
+voice_3
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-04-26 22:23:30.615300
+voice_0
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-04-26 22:23:30.617522
+voice_1
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-04-26 22:23:30.619401
+voice_2
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-04-26 22:23:30.621450
+voice_3
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-04-26 22:26:25.627971
+voice_0
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-04-26 22:26:25.630295
+voice_1
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-04-26 22:26:25.632355
+voice_2
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-04-26 22:26:25.634362
+voice_3
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
