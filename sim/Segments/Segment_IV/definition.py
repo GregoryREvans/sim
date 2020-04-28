@@ -45,11 +45,9 @@ maker = evans.SegmentMaker(
                 abjad.select().leaves().get([0], 1000),
                 abjad.Arpeggio(),
             ),
-        ],
-        [
             (
                 abjad.select().leaves().get([0], 1000),
-                abjad.Arpeggio(),
+                abjad.Dynamic("ff"),
             ),
         ],
         [
@@ -57,11 +55,29 @@ maker = evans.SegmentMaker(
                 abjad.select().leaves().get([0], 1000),
                 abjad.Arpeggio(),
             ),
+            (
+                abjad.select().leaves().get([0], 1000),
+                abjad.Dynamic("f"),
+            ),
         ],
         [
             (
                 abjad.select().leaves().get([0], 1000),
                 abjad.Arpeggio(),
+            ),
+            (
+                abjad.select().leaves().get([0], 1000),
+                abjad.Dynamic("f"),
+            ),
+        ],
+        [
+            (
+                abjad.select().leaves().get([0], 1000),
+                abjad.Arpeggio(),
+            ),
+            (
+                abjad.select().leaves().get([0], 1000),
+                abjad.Dynamic("ff"),
             ),
             (
                 abjad.select().leaves().get([0], 1000),

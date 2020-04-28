@@ -60,7 +60,7 @@
         \override TimeSignature.break-align-symbol = ##f
         \override TimeSignature.break-visibility = #end-of-line-invisible
 		\override TimeSignature.font-name = "STIXGeneral"
-        \override TimeSignature.font-size = #7
+        \override TimeSignature.font-size = #5
         \override TimeSignature.self-alignment-X = #center
 		%\override TimeSignature.stencil = ##f
 		\override TimeSignature.whiteout-style = #'outline
@@ -93,7 +93,7 @@
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
-        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 9) (minimum-distance . 9) (padding . 0))
+        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 12) (minimum-distance . 12) (padding . 0))
 		\override Stem.stemlet-length = #1.15
 		\override StemTremolo.slope = #0.3
 		%{ \override StemTremolo.shape = #'rectangle %}
@@ -103,7 +103,7 @@
 		\override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
         \override TupletBracket.padding = #1
-		\override TupletBracket.staff-padding = #1
+		\override TupletBracket.staff-padding = #2
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
 		\override TupletNumber.font-size = 0.7
@@ -138,7 +138,7 @@
 }
 
 \paper {
-	system-system-spacing = #'((basic-distance . 9) (minimum-distance . 9) (padding . 3))
+	system-system-spacing = #'((basic-distance . 12) (minimum-distance . 12) (padding . 3))
 
 	%{ top-margin = 1\cm
 	bottom-margin = 0.4\cm

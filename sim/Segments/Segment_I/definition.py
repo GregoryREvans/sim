@@ -24,10 +24,29 @@ maker = evans.SegmentMaker(
     voicewise_persistent_indicators=None,
     # voicewise_stem_directions=["up", "down", "up", "down"],
     voicewise_direct_attachments=[
-        [],
-        [],
-        [],
         [
+            (
+                abjad.select().leaves().get([3], 1000),
+                abjad.Dynamic("ppp"),
+            ),
+        ],
+        [
+            (
+                abjad.select().leaves().get([0], 1000),
+                abjad.Dynamic("pp"),
+            ),
+        ],
+        [
+            (
+                abjad.select().leaves().get([1], 1000),
+                abjad.Dynamic("pp"),
+            ),
+        ],
+        [
+            (
+                abjad.select().leaves().get([2], 1000),
+                abjad.Dynamic("ppp"),
+            ),
             (
                 abjad.select().leaves().get([0], 1000),
                 abjad.LilyPondLiteral(

@@ -167,6 +167,7 @@
                     r8
 
                     <ef''' af'''>8
+                    \ppp
                     ~
                     % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -431,6 +432,7 @@
 
                     \clef "treble"
                     af'2
+                    \pp
 
                     r4
 
@@ -924,6 +926,7 @@
                     r4
 
                     af2
+                    \pp
 
                     r2
                     % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -1385,6 +1388,7 @@
                     r16
 
                     b,,8.
+                    \ppp
                     ~
 
                     b,,2

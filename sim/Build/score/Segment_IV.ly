@@ -84,6 +84,7 @@
 
                     \clef "treble"
                     c'''4
+                    \ff
                     \arpeggio
 
                     cs'''2
@@ -267,84 +268,82 @@
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 8/7 {
-                        % [Voice 1 measure 11]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                        \override Staff.Stem.stemlet-length = 0.75
-                        cs''8
-                        [
-
-                        ef''8
-
-                        fs''8
-
-                        b'8
 
                         \times 4/5 {
+                            % [Voice 1 measure 11]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs''16
+                            [
+
+                            ef''16
+
+                            fs''32
+
+                        }
+
+                        \times 4/5 {
+
+                            b'8
 
                             c''16
 
-                            e''16
-
-                            cs'''32
+                            e''8
 
                         }
 
-                        \times 4/5 {
+                        cs'''8
 
-                            e'''8
+                        e'''8
 
-                            ef'''16
+                        ef'''8
 
-                            \revert Staff.Stem.stemlet-length
-                            bf'''8
-                            ~
-                            ]
-
-                        }
+                        \revert Staff.Stem.stemlet-length
+                        bf'''8
+                        ~
+                        ]
 
                     }
 
                     \times 4/5 {
                         % [Voice 1 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        bf'''2.
-
                         \override Staff.Stem.stemlet-length = 0.75
-                        f'''8
+                        bf'''16
                         [
 
-                        c''''16
+                        f'''16
 
-                        b'''16
+                        c''''8
 
                         \times 2/3 {
 
+                            b'''8
+
                             g'''8
 
-                            ef'''8
-
                             \revert Staff.Stem.stemlet-length
-                            c'''8
-                            ~
+                            ef'''8
                             ]
 
                         }
 
-                    }
-                    % [Voice 1 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        c'''2.
+                        ~
 
-                    c'''2
+                    }
 
                     \times 2/3 {
+                        % [Voice 1 measure 13]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \override Staff.Stem.stemlet-length = 0.75
+                        c'''8
+                        [
+
                         cs'''8
-                        [
-
-                        fs''8
 
                         \revert Staff.Stem.stemlet-length
-                        b''8
+                        fs''8
                         ]
 
                     }
@@ -352,17 +351,19 @@
                     \times 2/3 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        f''8
+                        b''8
                         [
 
-                        a''8
+                        f''8
 
                         \revert Staff.Stem.stemlet-length
-                        b''8
+                        a''8
                         ]
-                        \bar "||"
 
                     }
+
+                    b''2
+                    \bar "||"
 
                 }
                 }
@@ -381,6 +382,7 @@
 
                         \clef "treble"
                         fs'2
+                        \f
                         \arpeggio
 
                         \times 2/3 {
@@ -412,55 +414,100 @@
 
                     ef''2
                     ~
-                    % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    ef''4
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 6/5 {
+                        % [Voice 2 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    cs''2
+                        \override Staff.Stem.stemlet-length = 0.75
+                        ef''8
+                        [
 
-                    bf'4
+                        \revert Staff.Stem.stemlet-length
+                        cs''8
+                        ]
+
+                        bf'4
+
+                        f''8
+
+                    }
+
+                    e''4
                     ~
                     % [Voice 2 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    bf'4
+                    \override Staff.Stem.stemlet-length = 0.75
+                    e''8
+                    [
 
-                    f''4
+                    \revert Staff.Stem.stemlet-length
+                    c''8
+                    ]
 
-                    e''4
+                    \override Staff.Stem.stemlet-length = 0.75
+                    bf'8
+                    [
+
+                    \revert Staff.Stem.stemlet-length
+                    g'8
+                    ]
+
+                    d'4
                     ~
 
-                    e''4
+                    \override Staff.Stem.stemlet-length = 0.75
+                    d'8
+                    [
 
-                    c''4
+                    \revert Staff.Stem.stemlet-length
+                    af'8
+                    ]
 
-                    bf'2
+                    \override Staff.Stem.stemlet-length = 0.75
+                    f'8
+                    [
+
+                    \revert Staff.Stem.stemlet-length
+                    cs'8
+                    ]
+
+                    ef'2
                     ~
-                    % [Voice 2 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    bf'2
+                    \times 2/3 {
+                        % [Voice 2 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        ef'4
+
+                        fs'4
+
+                        b4
+
+                    }
 
                     \times 4/5 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        g'8.
+                        c'8.
                         [
 
-                        d'16
+                        e'16
 
                         \revert Staff.Stem.stemlet-length
-                        af'16
+                        b'16
                         ]
 
                     }
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    f'16
+                    d''16
                     [
 
-                    cs'16
+                    cs''16
 
                     \revert Staff.Stem.stemlet-length
-                    ef'8
+                    e''8
                     ~
                     ]
 
@@ -468,44 +515,56 @@
                     \times 6/5 {
                         % [Voice 2 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        ef'4.
-
                         \override Staff.Stem.stemlet-length = 0.75
-                        fs'16
+                        e''8
                         [
 
-                        b32
+                        af''8
 
-                        c'32
+                        fs''8
+
+                        ef''16
+
+                        bf''32
+
+                        a''32
 
                         \times 2/3 {
 
+                            f''16
+
                             e'16
 
-                            b'16
-
                             \revert Staff.Stem.stemlet-length
-                            d''16
+                            cs'16
                             ~
                             ]
 
                         }
 
                     }
-                    % [Voice 2 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    d''2
+                    \times 2/3 {
+                        % [Voice 2 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        cs'4
+
+                        d'4
+
+                        g4
+
+                    }
 
                     \times 2/3 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        cs''8
+                        a8
                         [
 
-                        e''8
+                        c'8
 
                         \revert Staff.Stem.stemlet-length
-                        af''8
+                        f8
                         ]
 
                     }
@@ -513,119 +572,123 @@
                     \times 2/3 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        fs''8
+                        fs8
                         [
 
-                        ef''8
+                        bf8
 
                         \revert Staff.Stem.stemlet-length
-                        bf''8
+                        g'8
                         ~
                         ]
 
                     }
 
-                    \times 2/3 {
-                        % [Voice 2 measure 8]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    \scaleDurations #'(1 . 1) {
 
-                        bf''2
+                        \tweak edge-height #'(0.7 . 0)
+                        \times 8/9 {
+                            % [Voice 2 measure 8]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        \times 2/3 {
+                            \override Staff.Stem.stemlet-length = 0.75
+                            g'8
+                            [
 
-                            a''4
+                            bf'8
 
-                            f''4
-
-                            e'4
+                            a'8
 
                         }
 
-                        \times 2/3 {
+                        \tweak edge-height #'(0.7 . 0)
+                        \times 8/9 {
 
-                            cs'4
+                            e''8
 
-                            d'4
+                            b'8
 
-                            g4
+                            fs''8
+
+                        }
+
+                        \tweak edge-height #'(0.7 . 0)
+                        \times 8/9 {
+
+                            f''8
+
+                            cs''8
+
+                            \revert Staff.Stem.stemlet-length
+                            a'8
                             ~
+                            ]
 
                         }
 
                     }
                     % [Voice 2 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    g2.
+                    a'2.
                     ~
 
-                    g2
+                    a'2
                     ~
                     % [Voice 2 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    g4
+                    a'4
 
-                    a2
+                    fs'2
 
-                    c'4
+                    g'4
                     ~
 
                     \times 2/3 {
                         % [Voice 2 measure 11]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        g'2
+
                         c'2
 
-                        f2
-
-                        fs2
+                        f'2
                         ~
 
                     }
                     % [Voice 2 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    fs4
+                    f'4
 
-                    bf4
+                    b4
 
-                    g'2
+                    ef'2
                     ~
+                    % [Voice 2 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 8/7 {
-                        % [Voice 2 measure 13]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    ef'2
+
+                    \times 4/5 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        g'8
+                        f'8.
                         [
 
-                        bf'8
+                        af'16
 
-                        a'8
-
-                        e''8
-
-                        \times 4/5 {
-
-                            b'16
-
-                            fs''16
-
-                            f''32
-
-                        }
-
-                        \times 4/5 {
-
-                            cs''8
-
-                            a'16
-
-                            \revert Staff.Stem.stemlet-length
-                            fs'8
-                            ]
-                            \bar "||"
-
-                        }
+                        \revert Staff.Stem.stemlet-length
+                        g'16
+                        ]
 
                     }
+
+                    \override Staff.Stem.stemlet-length = 0.75
+                    d''16
+                    [
+
+                    a'16
+
+                    \revert Staff.Stem.stemlet-length
+                    ef''8
+                    ]
+                    \bar "||"
 
                 }
                 }
@@ -644,6 +707,7 @@
 
                         \clef "bass"
                         b,2.
+                        \f
                         \arpeggio
 
                         \override Staff.Stem.stemlet-length = 0.75
@@ -768,110 +832,111 @@
                         ~
 
                     }
-                    % [Voice 3 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    g2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 8/7 {
 
-                    \times 4/5 {
+                        \times 4/5 {
+                            % [Voice 3 measure 7]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        \override Staff.Stem.stemlet-length = 0.75
-                        fs8.
-                        [
+                            \override Staff.Stem.stemlet-length = 0.75
+                            g16
+                            [
 
-                        a16
+                            fs16
+
+                            a32
+
+                        }
+
+                        \times 4/5 {
+
+                            cs'8
+
+                            b16
+
+                            af8
+
+                        }
+
+                        ef'8
+
+                        d'8
+
+                        bf8
 
                         \revert Staff.Stem.stemlet-length
-                        cs'16
+                        a,8
+                        ~
                         ]
 
                     }
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    b16
-                    [
-
-                    af16
-
-                    \revert Staff.Stem.stemlet-length
-                    ef'8
-                    ~
-                    ]
-
                     \times 4/5 {
                         % [Voice 3 measure 8]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        ef'2.
-
                         \override Staff.Stem.stemlet-length = 0.75
-                        d'8
+                        a,16
                         [
 
-                        bf16
+                        fs,16
 
-                        a,16
+                        g,8
 
                         \times 2/3 {
 
-                            fs,8
+                            c,8
 
-                            g,8
+                            d,8
 
                             \revert Staff.Stem.stemlet-length
-                            c,8
-                            ~
+                            f,8
                             ]
 
                         }
+
+                        bf,,2.
+                        ~
 
                     }
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/4 {
-                        % [Voice 3 measure 9]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                        c,2
 
                         \times 2/3 {
+                            % [Voice 3 measure 9]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            d,8
-                            [
-
-                            f,8
-
                             bf,,8
-
-                        }
-
-                        \times 2/3 {
+                            [
 
                             b,,8
 
                             ef,8
 
-                            \revert Staff.Stem.stemlet-length
+                        }
+
+                        \times 2/3 {
+
                             c8
-                            ~
+
+                            ef8
+
+                            \revert Staff.Stem.stemlet-length
+                            d8
                             ]
 
                         }
+
+                        a2
+                        ~
 
                     }
 
                     \times 2/3 {
                         % [Voice 3 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        c2
-
-                        \times 2/3 {
-
-                            ef4
-
-                            d4
-
-                            a4
-
-                        }
+                        a2
 
                         \times 2/3 {
 
@@ -880,6 +945,16 @@
                             b4
 
                             bf4
+
+                        }
+
+                        \times 2/3 {
+
+                            fs4
+
+                            d4
+
+                            b,4
                             ~
 
                         }
@@ -887,23 +962,40 @@
                     }
                     % [Voice 3 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    bf1
+                    b,1
                     ~
-                    % [Voice 3 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    bf4
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 6/5 {
+                        % [Voice 3 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    fs2
+                        \override Staff.Stem.stemlet-length = 0.75
+                        b,8
+                        [
 
-                    d4
+                        \revert Staff.Stem.stemlet-length
+                        c8
+                        ]
+
+                        f,4
+
+                        bf,8
+
+                    }
+
+                    e,4
                     ~
 
                     \times 2/3 {
                         % [Voice 3 measure 13]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        d2
+                        e,4
 
-                        b,2
+                        af,4
+
+                        bf,4
+
+                        cs4
 
                         c2
                         \bar "||"
@@ -924,79 +1016,96 @@
                     % [Voice 4 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \clef "bass"
-                    f,,4
+                    \override Staff.Stem.stemlet-length = 0.75
+                    f,,8
+                    \ff
                     \arpeggio
+                    [
                     \sustainOn
 
-                    fs,,4
+                    \revert Staff.Stem.stemlet-length
+                    fs,,8
+                    ]
 
-                    af,,2
+                    \override Staff.Stem.stemlet-length = 0.75
+                    af,,8
+                    [
+
+                    \revert Staff.Stem.stemlet-length
+                    cs,8
+                    ]
+
+                    g,,2
                     ~
 
                     \tweak text #tuplet-number::calc-fraction-text
-                    \times 5/7 {
-                        % [Voice 4 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    \times 5/4 {
 
-                        af,,4
+                        \times 2/3 {
+                            % [Voice 4 measure 2]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        cs,4
+                            g,,4
 
-                        g,,4
+                            bf,,4
 
-                        bf,,4
+                            d,4
+                            \sustainOff
+                            \sustainOn
+
+                        }
 
                         \times 4/5 {
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            d,8
+                            c,8.
                             [
-                            \sustainOff
-                            \sustainOn
 
-                            c,8
-
-                            \revert Staff.Stem.stemlet-length
                             a,,16
-                            ]
+
+                            e,16
 
                         }
 
-                        \times 4/5 {
+                        ef,16
 
-                            e,4
+                        b,,16
 
-                            ef,8
-
-                            b,,4
-                            ~
-
-                        }
+                        \revert Staff.Stem.stemlet-length
+                        a,,8
+                        ~
+                        ]
 
                     }
 
                     \times 4/5 {
                         % [Voice 4 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        b,,2.
-
-                        \override Staff.Stem.stemlet-length = 0.75
-                        a,,8
-                        [
+                        a,,4
                         \sustainOff
                         \sustainOn
 
-                        fs,,16
+                        fs,,4
 
-                        cs,,16
+                        cs,,4
+
+                        \override Staff.Stem.stemlet-length = 0.75
+                        g,,8
+                        [
+
+                        e,,16
+
+                        c,,16
 
                         \times 2/3 {
 
-                            g,,8
+                            d,,8
 
-                            e,,8
+                            f,,8
+                            \sustainOff
+                            \sustainOn
 
                             \revert Staff.Stem.stemlet-length
-                            c,,8
+                            bf,,,8
                             ~
                             ]
 
@@ -1005,32 +1114,40 @@
                     }
 
                     \scaleDurations #'(1 . 1) {
-                        % [Voice 4 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                        c,,4.
 
                         \scaleDurations #'(1 . 1) {
+                            % [Voice 4 measure 4]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            d,,16
+                            bf,,,8
                             [
-                            \sustainOff
-                            \sustainOn
 
-                            f,,16
+                            b,,,8
 
-                            bf,,,16
+                            ef,,8
 
                         }
 
                         \scaleDurations #'(1 . 1) {
 
-                            b,,,16
+                            bf,,16
 
-                            ef,,16
+                            cs,16
+
+                            c,16
+                            \sustainOff
+                            \sustainOn
+
+                        }
+
+                        \scaleDurations #'(1 . 1) {
+
+                            ef,16
+
+                            g,16
 
                             \revert Staff.Stem.stemlet-length
-                            bf,,16
+                            f,16
                             ~
                             ]
 
@@ -1038,99 +1155,114 @@
 
                     }
 
-                    \times 2/3 {
+                    \scaleDurations #'(1 . 1) {
 
-                        bf,,2
+                        \tweak edge-height #'(0.7 . 0)
+                        \times 8/9 {
 
-                        \times 2/3 {
+                            \override Staff.Stem.stemlet-length = 0.75
+                            f,8
+                            [
 
-                            cs,4
-                            \sustainOff
-                            \sustainOn
+                            d,8
 
-                            c,4
-
-                            ef,4
+                            a,8
 
                         }
 
-                        \times 2/3 {
+                        \tweak edge-height #'(0.7 . 0)
+                        \times 8/9 {
 
-                            g,4
+                            af,8
 
-                            f,4
+                            e,8
 
-                            d,4
+                            ef,,8
+                            \sustainOff
+                            \sustainOn
+
+                        }
+
+                        \tweak edge-height #'(0.7 . 0)
+                        \times 8/9 {
+
+                            c,,8
+
+                            cs,,8
+
+                            \revert Staff.Stem.stemlet-length
+                            fs,,8
                             ~
+                            ]
 
                         }
 
                     }
                     % [Voice 4 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    d,1
+                    fs,,1
                     ~
 
                     \scaleDurations #'(1 . 1) {
                         % [Voice 4 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        d,8.
+                        fs,,8.
 
-                        a,4.
-
-                        af,8.
-                        ~
+                        af,,4.
                         \sustainOff
                         \sustainOn
+
+                        b,,,8.
+                        ~
 
                     }
 
                     \times 2/3 {
                         % [Voice 4 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        af,2
+                        b,,,2
 
-                        e,2
+                        e,,2
 
-                        ef,,2
+                        f,,2
                         ~
 
                     }
                     % [Voice 4 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    ef,,4
+                    f,,4
 
-                    c,,4
+                    a,,,4
 
-                    cs,,2
+                    fs,,2
                     ~
-                    \sustainOff
-                    \sustainOn
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/4 {
                         % [Voice 4 measure 9]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        cs,,2
+                        fs,,2
 
                         \times 4/5 {
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            fs,,8.
+                            a,,8.
                             [
+                            \sustainOff
+                            \sustainOn
 
                             af,,16
 
-                            b,,,16
+                            ef,16
 
                         }
 
-                        e,,16
+                        bf,,16
 
-                        f,,16
+                        f,16
 
                         \revert Staff.Stem.stemlet-length
-                        a,,,8
+                        e,8
                         ~
                         ]
 
@@ -1139,26 +1271,24 @@
                     \times 4/5 {
                         % [Voice 4 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        a,,,2.
+                        e,2.
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        fs,,8
+                        c,8
                         [
-                        \sustainOff
-                        \sustainOn
-
-                        a,,16
 
                         af,,16
 
+                        f,,16
+
                         \times 2/3 {
 
-                            ef,8
+                            fs,,8
 
-                            bf,,8
+                            b,,,8
 
                             \revert Staff.Stem.stemlet-length
-                            f,8
+                            e,,8
                             ~
                             ]
 
@@ -1167,18 +1297,18 @@
                     }
                     % [Voice 4 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    f,2
+                    e,,2
 
                     \times 2/3 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        e,8
+                        bf,,,8
                         [
 
-                        c,8
+                        d,,8
 
                         \revert Staff.Stem.stemlet-length
-                        af,,8
+                        e,,8
                         ]
 
                     }
@@ -1186,13 +1316,13 @@
                     \times 2/3 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        f,,8
+                        g,,8
                         [
 
                         fs,,8
 
                         \revert Staff.Stem.stemlet-length
-                        b,,,8
+                        cs,8
                         ~
                         ]
 
@@ -1201,25 +1331,25 @@
                     \times 2/3 {
                         % [Voice 4 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        b,,,2
+                        cs,2
 
                         \times 2/3 {
 
-                            e,,4
+                            af,,4
 
-                            bf,,,4
+                            d,4
 
-                            d,,4
+                            cs,,4
 
                         }
 
                         \times 2/3 {
 
+                            b,,,4
+
                             e,,4
 
-                            g,,4
-
-                            fs,,4
+                            a,,,4
                             ~
 
                         }
@@ -1227,7 +1357,7 @@
                     }
                     % [Voice 4 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    fs,,1
+                    a,,,1
                     \bar "||"
 
                 }

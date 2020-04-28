@@ -129,6 +129,7 @@
                         \clef "treble"
                         \override Staff.Stem.stemlet-length = 0.75
                         ef'16
+                        \mf
                         [
 
                         e'16
@@ -153,6 +154,7 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     d''16
+                    \mp
                     [
 
                     cs''16
@@ -178,6 +180,7 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     af'8
+                    \f
                     [
 
                     \revert Staff.Stem.stemlet-length
@@ -199,6 +202,7 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         d''16
+                        \mf
                         [
 
                         cs''16
@@ -240,6 +244,7 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     d''16
+                    \mp
                     [
 
                     cs''16
@@ -266,6 +271,7 @@
                         % [Voice 2 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         af'4
+                        \f
 
                         c''4
 
@@ -325,6 +331,7 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         af16
+                        \mf
                         [
 
                         c16
@@ -387,6 +394,7 @@
                     \times 4/3 {
 
                         ef8
+                        \f
 
                         d'4
 
@@ -416,6 +424,7 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     a16
+                    \mp
                     [
 
                     b16
@@ -440,6 +449,7 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     af8
+                    \f
                     [
 
                     \revert Staff.Stem.stemlet-length

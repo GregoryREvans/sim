@@ -414,3 +414,35 @@ voice_2
 voice_3
 [LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before'), LilyPondLiteral('\n        _ \\markup {\n            \\override #\'(font-name . "STIXGeneral")\n            \\with-color #black\n            \\right-column {\n                \\line { Miami, Fl. \\hspace #0.75 - \\hspace #0.75 Spring Valley, Oh. }\n                \\line { March 2019 \\hspace #0.75 - \\hspace #0.75 April 2020 }\n            }\n        }\n    ', format_slot='absolute_after')]
 
+2020-04-28 10:41:53.911765
+voice_0
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-04-28 10:41:53.913073
+voice_1
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-04-28 10:41:53.914628
+voice_2
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before'), LilyPondLiteral('\n        _ \\markup {\n            \\override #\'(font-name . "STIXGeneral")\n            \\with-color #black\n            \\right-column {\n                \\line { Miami, Fl. \\hspace #0.75 - \\hspace #0.75 Spring Valley, Oh. }\n                \\line { March 2019 \\hspace #0.75 - \\hspace #0.75 April 2020 }\n            }\n        }\n    ', format_slot='absolute_after')]
+
+2020-04-28 10:41:53.915973
+voice_3
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before'), LilyPondLiteral('\n        _ \\markup {\n            \\override #\'(font-name . "STIXGeneral")\n            \\with-color #black\n            \\right-column {\n                \\line { Miami, Fl. \\hspace #0.75 - \\hspace #0.75 Spring Valley, Oh. }\n                \\line { March 2019 \\hspace #0.75 - \\hspace #0.75 April 2020 }\n            }\n        }\n    ', format_slot='absolute_after')]
+
+2020-04-28 10:45:55.553651
+voice_0
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-04-28 10:45:55.554811
+voice_1
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-04-28 10:45:55.555922
+voice_2
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before'), LilyPondLiteral('\n        _ \\markup {\n            \\override #\'(font-name . "STIXGeneral")\n            \\with-color #black\n            \\right-column {\n                \\line { Miami, Fl. \\hspace #0.75 - \\hspace #0.75 Spring Valley, Oh. }\n                \\line { March 2019 \\hspace #0.75 - \\hspace #0.75 April 2020 }\n            }\n        }\n    ', format_slot='absolute_after')]
+
+2020-04-28 10:45:55.557059
+voice_3
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before'), LilyPondLiteral('\n        _ \\markup {\n            \\override #\'(font-name . "STIXGeneral")\n            \\with-color #black\n            \\right-column {\n                \\line { Miami, Fl. \\hspace #0.75 - \\hspace #0.75 Spring Valley, Oh. }\n                \\line { March 2019 \\hspace #0.75 - \\hspace #0.75 April 2020 }\n            }\n        }\n    ', format_slot='absolute_after')]
+

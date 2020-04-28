@@ -25,8 +25,49 @@ maker = evans.SegmentMaker(
     # voicewise_stem_directions=["up", "down", "up", "down"],
     voicewise_direct_attachments=[
         [],
-        [],
         [
+            (
+                abjad.select().leaves().get([0], 1000),
+                abjad.Dynamic("mf"),
+            ),
+            (
+                abjad.select().leaves().get([9], 1000),
+                abjad.Dynamic("mp"),
+            ),
+            (
+                abjad.select().leaves().get([17], 1000),
+                abjad.Dynamic("f"),
+            ),
+            (
+                abjad.select().leaves().get([22], 1000),
+                abjad.Dynamic("mf"),
+            ),
+            (
+                abjad.select().leaves().get([34], 1000),
+                abjad.Dynamic("mp"),
+            ),
+            (
+                abjad.select().leaves().get([42], 1000),
+                abjad.Dynamic("f"),
+            ),
+        ],
+        [
+            (
+                abjad.select().leaves().get([1], 1000),
+                abjad.Dynamic("mf"),
+            ),
+            (
+                abjad.select().leaves().get([23], 1000),
+                abjad.Dynamic("f"),
+            ),
+            (
+                abjad.select().leaves().get([30], 1000),
+                abjad.Dynamic("mp"),
+            ),
+            (
+                abjad.select().leaves().get([38], 1000),
+                abjad.Dynamic("f"),
+            ),
             (
                 abjad.select().leaves().get([0], 1000),
                 abjad.LilyPondLiteral(
