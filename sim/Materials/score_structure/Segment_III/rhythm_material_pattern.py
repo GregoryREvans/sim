@@ -2,11 +2,10 @@ import evans
 from sim.Materials.rhythm.Segment_III.rhythm_handlers import *
 
 
-key_list_1 = ["rhythm_handler_one"]
-key_list_2 = ["rhythm_handler_one"]
+key_list_1 = ["silence_maker"]
+key_list_2 = ["rhythm_handler_one" for _ in range(32)]
 key_list_3 = ["rhythm_handler_one"]
-
-key_list_4 = ["rhythm_handler_one"]
+key_list_4 = ["silence_maker"]
 
 dict = {"rhythm_handler_one": rhythm_handler_one, "silence_maker": silence_maker}
 

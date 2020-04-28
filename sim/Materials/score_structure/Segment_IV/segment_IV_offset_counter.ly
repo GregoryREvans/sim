@@ -22,10 +22,10 @@
                 8.5 -1 moveto
                 0 -23 rlineto
                 stroke
-                15.999999999999998 -1 moveto
+                17.874999999999996 -1 moveto
                 0 -23 rlineto
                 stroke
-                23.499999999999996 -1 moveto
+                25.374999999999996 -1 moveto
                 0 -23 rlineto
                 stroke
                 30.999999999999996 -1 moveto
@@ -37,13 +37,13 @@
                 45.99999999999999 -1 moveto
                 0 -23 rlineto
                 stroke
-                53.49999999999999 -1 moveto
+                51.62499999999999 -1 moveto
                 0 -23 rlineto
                 stroke
-                60.99999999999999 -1 moveto
+                59.12499999999999 -1 moveto
                 0 -23 rlineto
                 stroke
-                68.49999999999999 -1 moveto
+                66.62499999999999 -1 moveto
                 0 -23 rlineto
                 stroke
                 75.99999999999999 -1 moveto
@@ -81,23 +81,23 @@
                                 1
                                 1
             \translate
-                #'(15.999999999999998 . 1)
+                #'(17.874999999999996 . 1)
                 \sans
                     \fontsize
                         #-3
                         \center-align
                             \fraction
-                                2
-                                1
+                                9
+                                4
             \translate
-                #'(23.499999999999996 . 1)
+                #'(25.374999999999996 . 1)
                 \sans
                     \fontsize
                         #-3
                         \center-align
                             \fraction
-                                3
-                                1
+                                13
+                                4
             \translate
                 #'(30.999999999999996 . 1)
                 \sans
@@ -126,32 +126,32 @@
                                 6
                                 1
             \translate
-                #'(53.49999999999999 . 1)
+                #'(51.62499999999999 . 1)
                 \sans
                     \fontsize
                         #-3
                         \center-align
                             \fraction
-                                7
-                                1
+                                27
+                                4
             \translate
-                #'(60.99999999999999 . 1)
+                #'(59.12499999999999 . 1)
                 \sans
                     \fontsize
                         #-3
                         \center-align
                             \fraction
-                                8
-                                1
+                                31
+                                4
             \translate
-                #'(68.49999999999999 . 1)
+                #'(66.62499999999999 . 1)
                 \sans
                     \fontsize
                         #-3
                         \center-align
                             \fraction
-                                9
-                                1
+                                35
+                                4
             \translate
                 #'(75.99999999999999 . 1)
                 \sans
