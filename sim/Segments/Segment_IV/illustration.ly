@@ -21,7 +21,7 @@
         {
             % [Global Context measure 1]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-            \tempo 4=40
+            \tempo 4=30
             \time 4/4                                                          %! scaling time signatures
             \mark \markup {
                 \bold
@@ -32,7 +32,7 @@
             ^ \markup {
               \huge
               \concat {
-                  \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                  \abjad-metronome-mark-markup #2 #0 #1 #"30"
               }
             }
             % [Global Context measure 2]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()

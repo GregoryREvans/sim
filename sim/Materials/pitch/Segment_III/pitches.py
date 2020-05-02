@@ -93,7 +93,7 @@ voice_2_chord_1 = evans.rotate(voice_2_chord_1, 18)
 voice_2_chord_1 = [
     x
     for x in evans.random_walk(
-        random_seed=2, length=5000, step_list=[1], mapped_list=voice_2_chord_1
+        random_seed=4, length=5000, step_list=[1], mapped_list=voice_2_chord_1
     )
 ]
 
@@ -102,7 +102,7 @@ voice_3_chord_1 = evans.rotate(voice_3_chord_1, 18)
 voice_3_chord_1 = [
     x
     for x in evans.random_walk(
-        random_seed=2, length=5000, step_list=[1], mapped_list=voice_3_chord_1
+        random_seed=5, length=5000, step_list=[1], mapped_list=voice_3_chord_1
     )
 ]
 
@@ -190,20 +190,20 @@ voice_1_chord_2 = [
 ]
 
 voice_2_chord_2 = evans.mirror(voice_2_chord_2, sequential_duplicates=False)
-voice_2_chord_2 = evans.rotate(voice_2_chord_2, 18)
+voice_2_chord_2 = evans.rotate(voice_2_chord_2, 15)
 voice_2_chord_2 = [
     x
     for x in evans.random_walk(
-        random_seed=2, length=5000, step_list=[1], mapped_list=voice_2_chord_2
+        random_seed=4, length=5000, step_list=[1], mapped_list=voice_2_chord_2
     )
 ]
 
 voice_3_chord_2 = evans.mirror(voice_3_chord_2, sequential_duplicates=False)
-voice_3_chord_2 = evans.rotate(voice_3_chord_2, 18)
+voice_3_chord_2 = evans.rotate(voice_3_chord_2, 16)
 voice_3_chord_2 = [
     x
     for x in evans.random_walk(
-        random_seed=2, length=5000, step_list=[1], mapped_list=voice_3_chord_2
+        random_seed=5, length=5000, step_list=[1], mapped_list=voice_3_chord_2
     )
 ]
 
@@ -286,20 +286,20 @@ voice_1_chord_3 = [
 ]
 
 voice_2_chord_3 = evans.mirror(voice_2_chord_3, sequential_duplicates=False)
-voice_2_chord_3 = evans.rotate(voice_2_chord_3, 18)
+voice_2_chord_3 = evans.rotate(voice_2_chord_3, 15)
 voice_2_chord_3 = [
     x
     for x in evans.random_walk(
-        random_seed=2, length=5000, step_list=[1], mapped_list=voice_2_chord_3
+        random_seed=4, length=5000, step_list=[1], mapped_list=voice_2_chord_3
     )
 ]
 
 voice_3_chord_3 = evans.mirror(voice_3_chord_3, sequential_duplicates=False)
-voice_3_chord_3 = evans.rotate(voice_3_chord_3, 18)
+voice_3_chord_3 = evans.rotate(voice_3_chord_3, 16)
 voice_3_chord_3 = [
     x
     for x in evans.random_walk(
-        random_seed=2, length=5000, step_list=[1], mapped_list=voice_3_chord_3
+        random_seed=5, length=5000, step_list=[1], mapped_list=voice_3_chord_3
     )
 ]
 
@@ -382,20 +382,20 @@ voice_1_chord_4 = [
 ]
 
 voice_2_chord_4 = evans.mirror(voice_2_chord_4, sequential_duplicates=False)
-voice_2_chord_4 = evans.rotate(voice_2_chord_4, 18)
+voice_2_chord_4 = evans.rotate(voice_2_chord_4, 16)
 voice_2_chord_4 = [
     x
     for x in evans.random_walk(
-        random_seed=2, length=5000, step_list=[1], mapped_list=voice_2_chord_4
+        random_seed=4, length=5000, step_list=[1], mapped_list=voice_2_chord_4
     )
 ]
 
 voice_3_chord_4 = evans.mirror(voice_3_chord_4, sequential_duplicates=False)
-voice_3_chord_4 = evans.rotate(voice_3_chord_4, 18)
+voice_3_chord_4 = evans.rotate(voice_3_chord_4, 15)
 voice_3_chord_4 = [
     x
     for x in evans.random_walk(
-        random_seed=2, length=5000, step_list=[1], mapped_list=voice_3_chord_4
+        random_seed=5, length=5000, step_list=[1], mapped_list=voice_3_chord_4
     )
 ]
 
@@ -483,20 +483,20 @@ voice_1_chord_5 = [
 ]
 
 voice_2_chord_5 = evans.mirror(voice_2_chord_5, sequential_duplicates=False)
-voice_2_chord_5 = evans.rotate(voice_2_chord_5, 18)
+voice_2_chord_5 = evans.rotate(voice_2_chord_5, 16)
 voice_2_chord_5 = [
     x
     for x in evans.random_walk(
-        random_seed=2, length=5000, step_list=[1], mapped_list=voice_2_chord_5
+        random_seed=4, length=5000, step_list=[1], mapped_list=voice_2_chord_5
     )
 ]
 
 voice_3_chord_5 = evans.mirror(voice_3_chord_5, sequential_duplicates=False)
-voice_3_chord_5 = evans.rotate(voice_3_chord_5, 18)
+voice_3_chord_5 = evans.rotate(voice_3_chord_5, 15)
 voice_3_chord_5 = [
     x
     for x in evans.random_walk(
-        random_seed=2, length=5000, step_list=[1], mapped_list=voice_3_chord_5
+        random_seed=5, length=5000, step_list=[1], mapped_list=voice_3_chord_5
     )
 ]
 
@@ -585,20 +585,20 @@ voice_1_chord_6 = [
 ]
 
 voice_2_chord_6 = evans.mirror(voice_2_chord_6, sequential_duplicates=False)
-voice_2_chord_6 = evans.rotate(voice_2_chord_6, 18)
+voice_2_chord_6 = evans.rotate(voice_2_chord_6, 16)
 voice_2_chord_6 = [
     x
     for x in evans.random_walk(
-        random_seed=2, length=5000, step_list=[1], mapped_list=voice_2_chord_6
+        random_seed=4, length=5000, step_list=[1], mapped_list=voice_2_chord_6
     )
 ]
 
 voice_3_chord_6 = evans.mirror(voice_3_chord_6, sequential_duplicates=False)
-voice_3_chord_6 = evans.rotate(voice_3_chord_6, 18)
+voice_3_chord_6 = evans.rotate(voice_3_chord_6, 15)
 voice_3_chord_6 = [
     x
     for x in evans.random_walk(
-        random_seed=2, length=5000, step_list=[1], mapped_list=voice_3_chord_6
+        random_seed=5, length=5000, step_list=[1], mapped_list=voice_3_chord_6
     )
 ]
 
@@ -687,20 +687,20 @@ voice_1_chord_7 = [
 ]
 
 voice_2_chord_7 = evans.mirror(voice_2_chord_7, sequential_duplicates=False)
-voice_2_chord_7 = evans.rotate(voice_2_chord_7, 18)
+voice_2_chord_7 = evans.rotate(voice_2_chord_7, 15)
 voice_2_chord_7 = [
     x
     for x in evans.random_walk(
-        random_seed=2, length=5000, step_list=[1], mapped_list=voice_2_chord_7
+        random_seed=4, length=5000, step_list=[1], mapped_list=voice_2_chord_7
     )
 ]
 
 voice_3_chord_7 = evans.mirror(voice_3_chord_7, sequential_duplicates=False)
-voice_3_chord_7 = evans.rotate(voice_3_chord_7, 18)
+voice_3_chord_7 = evans.rotate(voice_3_chord_7, 14)
 voice_3_chord_7 = [
     x
     for x in evans.random_walk(
-        random_seed=2, length=5000, step_list=[1], mapped_list=voice_3_chord_7
+        random_seed=5, length=5000, step_list=[1], mapped_list=voice_3_chord_7
     )
 ]
 
@@ -790,20 +790,20 @@ voice_1_chord_8 = [
 ]
 
 voice_2_chord_8 = evans.mirror(voice_2_chord_8, sequential_duplicates=False)
-voice_2_chord_8 = evans.rotate(voice_2_chord_8, 18)
+voice_2_chord_8 = evans.rotate(voice_2_chord_8, 15)
 voice_2_chord_8 = [
     x
     for x in evans.random_walk(
-        random_seed=2, length=5000, step_list=[1], mapped_list=voice_2_chord_8
+        random_seed=4, length=5000, step_list=[1], mapped_list=voice_2_chord_8
     )
 ]
 
 voice_3_chord_8 = evans.mirror(voice_3_chord_8, sequential_duplicates=False)
-voice_3_chord_8 = evans.rotate(voice_3_chord_8, 18)
+voice_3_chord_8 = evans.rotate(voice_3_chord_8, 14)
 voice_3_chord_8 = [
     x
     for x in evans.random_walk(
-        random_seed=2, length=5000, step_list=[1], mapped_list=voice_3_chord_8
+        random_seed=5, length=5000, step_list=[1], mapped_list=voice_3_chord_8
     )
 ]
 
@@ -815,3 +815,23 @@ voice_4_chord_8 = [
         random_seed=2, length=5000, step_list=[1], mapped_list=voice_4_chord_8
     )
 ]
+
+
+voice_2_chord_1 = evans.grouper(voice_2_chord_1, [1, 1, 1])
+voice_2_chord_2 = evans.grouper(voice_2_chord_1, [1, 1, 2])
+voice_2_chord_3 = evans.grouper(voice_2_chord_1, [1, 2, 2])
+voice_2_chord_4 = evans.grouper(voice_2_chord_1, [1, 3, 2])
+voice_2_chord_5 = evans.grouper(voice_2_chord_1, [2, 3, 3])
+voice_2_chord_6 = evans.grouper(voice_2_chord_1, [2, 2, 3])
+voice_2_chord_7 = evans.grouper(voice_2_chord_1, [3, 2, 1])
+voice_2_chord_8 = evans.grouper(voice_2_chord_1, [2, 1, 3, 1])
+
+voice_3_chord_1 = evans.grouper(voice_3_chord_1, [1, 1, 1, 1])
+voice_3_chord_2 = evans.grouper(voice_3_chord_1, [1, 2, 1, 2])
+voice_3_chord_3 = evans.grouper(voice_3_chord_1, [2, 1, 3, 2])
+voice_3_chord_4 = evans.grouper(voice_3_chord_1, [2, 3, 3, 2])
+voice_3_chord_5 = evans.grouper(voice_3_chord_1, [2, 3, 3, 2])
+voice_3_chord_6 = evans.grouper(voice_3_chord_1, [1, 2, 1, 3])
+voice_3_chord_7 = evans.grouper(voice_3_chord_1, [1, 1, 3, 2])
+voice_3_chord_8 = evans.grouper(voice_3_chord_1, [1, 1, 3, 2])
+#3 each?

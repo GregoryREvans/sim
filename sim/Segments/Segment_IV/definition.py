@@ -13,7 +13,7 @@ from sim.Materials.pitch.Segment_IV.clef_handlers import clef_handlers
 
 met = abjad.MetronomeMark.make_tempo_equation_markup(
     (1, 4),
-    40,
+    30,
 )
 mark = abjad.LilyPondLiteral(
     [
@@ -185,7 +185,7 @@ maker = evans.SegmentMaker(
     beam_pattern="meter",
     beam_rests=False,
     barline="||",
-    tempo=((1, 4), 40),
+    tempo=((1, 4), 30),
     rehearsal_mark="",
     page_break_counts=[90],
     midi=False,

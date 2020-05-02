@@ -6,7 +6,7 @@
         {
             % [Global Context measure 1]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-            \tempo 4=37
+            \tempo 4=50
             \time 2/4                                                          %! scaling time signatures
             \mark \markup {
                 \bold
@@ -17,7 +17,7 @@
             ^ \markup {
               \huge
               \concat {
-                  \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"5" #"8"
+                  \abjad-metronome-mark-markup #2 #0 #1 #"50"
                   \hspace #1
                   \upright [
                   \abjad-metric-modulation-tuplet-lhs #3 #0 #4 #5 #4 #0 #'(0.6 . 0.6)
@@ -272,135 +272,135 @@
                     \pp
                     % [Voice 2 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    d''8
+                    g''8
 
                     r8
 
-                    b'4
+                    d'''4
                     % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4.
 
-                    d''2.
+                    fs''2.
                     % [Voice 2 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4
 
-                    c''2
+                    fs''2
                     ~
 
-                    c''4
+                    fs''4
                     ~
 
-                    c''8
+                    fs''8
 
                     r8
 
                     r4
 
-                    a'4
+                    fs''4
                     % [Voice 2 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    g'4
+                    <g'' d'''>4
 
                     r8
                     % [Voice 2 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    d'4.
+                    <fs'' g''>4.
                     % [Voice 2 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    g'4
+                    fs''4
 
                     r8
                     % [Voice 2 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    a'4
+                    <g'' d'''>4
 
                     r4
                     % [Voice 2 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r8
 
-                    a'4
+                    fs''4
                     ~
 
-                    a'2
+                    fs''2
                     % [Voice 2 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4
 
-                    fs'2
+                    <fs'' g'' d'''>2
                     ~
 
-                    fs'4
+                    <fs'' g'' d'''>4
                     ~
 
-                    fs'8
+                    <fs'' g'' d'''>8
 
                     r8
 
                     r4
 
-                    d''4
+                    <fs'' g''>4
                     % [Voice 2 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    b'4
+                    <fs'' g'' d'''>4
 
                     r8
                     % [Voice 2 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    g'4.
+                    <fs'' g'' d'''>4.
                     % [Voice 2 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    c''4
+                    <fs'' g''>4
 
                     r8
                     % [Voice 2 measure 14]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    b'4
+                    <fs'' d'''>4
 
                     r4
                     % [Voice 2 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r8
 
-                    g'4
+                    <fs'' g'' d'''>4
                     ~
 
-                    g'2
+                    <fs'' g'' d'''>2
                     % [Voice 2 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4
 
-                    g'2
+                    <fs'' g'' d'''>2
                     ~
 
-                    g'4
+                    <fs'' g'' d'''>4
                     ~
 
-                    g'8
+                    <fs'' g'' d'''>8
 
                     r8
 
                     r4
 
-                    e'4
+                    <fs'' g''>4
                     % [Voice 2 measure 17]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    ef''4
+                    <fs'' g''>4
 
                     r8
                     % [Voice 2 measure 18]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    b'4.
+                    d'''4.
                     % [Voice 2 measure 19]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    a'4
+                    <fs'' g'' d'''>4
 
                     r8
                     % [Voice 2 measure 20]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    b'4
+                    fs''4
 
                     r4
                     % [Voice 2 measure 21]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -455,118 +455,118 @@
                     d4.
                     % [Voice 3 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    g,4
+                    fs4
                     ~
 
-                    g,8
+                    fs8
 
                     r8
 
                     r8
 
-                    c,8
+                    <d e>8
                     ~
 
-                    c,4
+                    <d e>4
                     ~
 
-                    c,8
+                    <d e>8
 
                     r8
 
                     r4
 
-                    d,,4
+                    <e fs>4
                     % [Voice 3 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    a,,4.
+                    d4.
                     % [Voice 3 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r8
 
-                    d,4
+                    <b, e fs>4
                     % [Voice 3 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r8
 
-                    a,,4
+                    <b, d>4
                     % [Voice 3 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    d,,2
+                    <e fs>2
                     % [Voice 3 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4.
 
-                    d,,2
+                    <e fs>2
                     % [Voice 3 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    a,,4
+                    <b, d fs>4
                     ~
 
-                    a,,8
+                    <b, d fs>8
 
                     r8
 
                     r8
 
-                    b,8
+                    <e fs>8
                     ~
 
-                    b,4
+                    <e fs>4
                     ~
 
-                    b,8
+                    <e fs>8
 
                     r8
 
                     r4
 
-                    g,4
+                    <b, d fs>4
                     % [Voice 3 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    fs,4.
+                    <b, d e>4.
                     % [Voice 3 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r8
 
-                    g,4
+                    <e fs>4
                     % [Voice 3 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r8
 
-                    c4
+                    fs4
                     % [Voice 3 measure 14]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    b,2
+                    <d e>2
                     % [Voice 3 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4.
 
-                    g,2
+                    b,2
                     % [Voice 3 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    c4
+                    fs4
                     ~
 
-                    c8
+                    fs8
 
                     r8
 
                     r8
 
-                    a,8
+                    e8
                     ~
 
-                    a,4
+                    e4
                     ~
 
-                    a,8
+                    e8
 
                     r8
 
                     r4
 
-                    g,4
+                    <b, d fs>4
                     % [Voice 3 measure 17]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     fs4.
@@ -574,15 +574,15 @@
 
                     r8
 
-                    ef4
+                    e4
                     % [Voice 3 measure 19]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r8
 
-                    b,4
+                    <b, d fs>4
                     % [Voice 3 measure 20]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    ef2
+                    <d e>2
                     % [Voice 3 measure 21]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips

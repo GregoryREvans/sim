@@ -6,7 +6,7 @@
         {
             % [Global Context measure 1]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-            \tempo 4=60
+            \tempo 4=45
             \time 5/4                                                          %! scaling time signatures
             \mark \markup {
                 \bold
@@ -17,7 +17,7 @@
             ^ \markup {
               \huge
               \concat {
-                  \abjad-metronome-mark-markup #2 #0 #1 #"60"
+                  \abjad-metronome-mark-markup #2 #0 #1 #"45"
                   \hspace #1
                   \upright [
                   \abjad-metric-modulation-tuplet-lhs #1 #0 #2 #3 #1 #0 #'(0.6 . 0.6)

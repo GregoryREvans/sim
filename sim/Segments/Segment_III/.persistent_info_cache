@@ -446,3 +446,67 @@ voice_2
 voice_3
 [LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before'), LilyPondLiteral('\n        _ \\markup {\n            \\override #\'(font-name . "STIXGeneral")\n            \\with-color #black\n            \\right-column {\n                \\line { Miami, Fl. \\hspace #0.75 - \\hspace #0.75 Spring Valley, Oh. }\n                \\line { March 2019 \\hspace #0.75 - \\hspace #0.75 April 2020 }\n            }\n        }\n    ', format_slot='absolute_after')]
 
+2020-05-02 09:55:23.261507
+voice_0
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-05-02 09:55:23.264025
+voice_1
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-05-02 09:55:23.265742
+voice_2
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before'), LilyPondLiteral('\n        _ \\markup {\n            \\override #\'(font-name . "STIXGeneral")\n            \\with-color #black\n            \\right-column {\n                \\line { Miami, Fl. \\hspace #0.75 - \\hspace #0.75 Spring Valley, Oh. }\n                \\line { March 2019 \\hspace #0.75 - \\hspace #0.75 April 2020 }\n            }\n        }\n    ', format_slot='absolute_after')]
+
+2020-05-02 09:55:23.267238
+voice_3
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before'), LilyPondLiteral('\n        _ \\markup {\n            \\override #\'(font-name . "STIXGeneral")\n            \\with-color #black\n            \\right-column {\n                \\line { Miami, Fl. \\hspace #0.75 - \\hspace #0.75 Spring Valley, Oh. }\n                \\line { March 2019 \\hspace #0.75 - \\hspace #0.75 April 2020 }\n            }\n        }\n    ', format_slot='absolute_after')]
+
+2020-05-02 10:10:04.935258
+voice_0
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-05-02 10:10:04.936527
+voice_1
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-05-02 10:10:04.937686
+voice_2
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before'), LilyPondLiteral('\n        _ \\markup {\n            \\override #\'(font-name . "STIXGeneral")\n            \\with-color #black\n            \\right-column {\n                \\line { Miami, Fl. \\hspace #0.75 - \\hspace #0.75 Spring Valley, Oh. }\n                \\line { March 2019 \\hspace #0.75 - \\hspace #0.75 April 2020 }\n            }\n        }\n    ', format_slot='absolute_after')]
+
+2020-05-02 10:10:04.938862
+voice_3
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before'), LilyPondLiteral('\n        _ \\markup {\n            \\override #\'(font-name . "STIXGeneral")\n            \\with-color #black\n            \\right-column {\n                \\line { Miami, Fl. \\hspace #0.75 - \\hspace #0.75 Spring Valley, Oh. }\n                \\line { March 2019 \\hspace #0.75 - \\hspace #0.75 April 2020 }\n            }\n        }\n    ', format_slot='absolute_after')]
+
+2020-05-02 10:13:02.421512
+voice_0
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-05-02 10:13:02.422693
+voice_1
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-05-02 10:13:02.423881
+voice_2
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before'), LilyPondLiteral('\n        _ \\markup {\n            \\override #\'(font-name . "STIXGeneral")\n            \\with-color #black\n            \\right-column {\n                \\line { Miami, Fl. \\hspace #0.75 - \\hspace #0.75 Spring Valley, Oh. }\n                \\line { March 2019 \\hspace #0.75 - \\hspace #0.75 April 2020 }\n            }\n        }\n    ', format_slot='absolute_after')]
+
+2020-05-02 10:13:02.425039
+voice_3
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before'), LilyPondLiteral('\n        _ \\markup {\n            \\override #\'(font-name . "STIXGeneral")\n            \\with-color #black\n            \\right-column {\n                \\line { Miami, Fl. \\hspace #0.75 - \\hspace #0.75 Spring Valley, Oh. }\n                \\line { March 2019 \\hspace #0.75 - \\hspace #0.75 April 2020 }\n            }\n        }\n    ', format_slot='absolute_after')]
+
+2020-05-02 10:29:38.650360
+voice_0
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-05-02 10:29:38.651504
+voice_1
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before')]
+
+2020-05-02 10:29:38.652582
+voice_2
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before'), LilyPondLiteral('\n        _ \\markup {\n            \\override #\'(font-name . "STIXGeneral")\n            \\with-color #black\n            \\right-column {\n                \\line { Miami, Fl. \\hspace #0.75 - \\hspace #0.75 Spring Valley, Oh. }\n                \\line { March 2019 \\hspace #0.75 - \\hspace #0.75 April 2020 }\n            }\n        }\n    ', format_slot='absolute_after')]
+
+2020-05-02 10:29:38.653702
+voice_3
+[LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before'), LilyPondLiteral('\\once \\override Rest.color = #white', format_slot='before'), LilyPondLiteral('\n        _ \\markup {\n            \\override #\'(font-name . "STIXGeneral")\n            \\with-color #black\n            \\right-column {\n                \\line { Miami, Fl. \\hspace #0.75 - \\hspace #0.75 Spring Valley, Oh. }\n                \\line { March 2019 \\hspace #0.75 - \\hspace #0.75 April 2020 }\n            }\n        }\n    ', format_slot='absolute_after')]
+

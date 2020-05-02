@@ -85,7 +85,7 @@ maker = evans.SegmentMaker(
             (
                 abjad.select().leaves().get([0], 1000),
                 evans.metric_modulation(
-                    metronome_mark=((1, 4), 60),
+                    metronome_mark=((1, 4), 45),
                     left_note=(abjad.Note("c'32")),
                     right_note=(abjad.Tuplet(multiplier=(8, 9), components=[abjad.Note("c'16")])),
                     modulated_beat=(abjad.Note("c'4")),
@@ -110,7 +110,7 @@ maker = evans.SegmentMaker(
     beam_pattern="meter",
     beam_rests=False,
     barline="||",
-    tempo=((1, 4), 106),
+    tempo=((1, 4), 80),
     rehearsal_mark="",
     page_break_counts=[90],
     midi=False,
