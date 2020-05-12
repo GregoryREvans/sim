@@ -11,19 +11,9 @@ from sim.Materials.score_structure.Segment_IV.time_signatures import time_signat
 from sim.Materials.pitch.Segment_IV.clef_handlers import clef_handlers
 
 
-met = abjad.MetronomeMark.make_tempo_equation_markup(
-    (1, 4),
-    30,
-)
+met = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 30)
 mark = abjad.LilyPondLiteral(
-    [
-        r"^ \markup {",
-        r"  \huge",
-        r"  \concat {",
-        f"      {str(met)[8:]}",
-        r"  }",
-        r"}",
-    ],
+    [r"^ \markup {", r"  \huge", r"  \concat {", f"      {str(met)[8:]}", r"  }", r"}"],
     format_slot="after",
 )
 
@@ -41,133 +31,69 @@ maker = evans.SegmentMaker(
     # voicewise_stem_directions=["up", "down", "up", "down"],
     voicewise_direct_attachments=[
         [
-            (
-                abjad.select().leaves().get([0], 1000),
-                abjad.Arpeggio(),
-            ),
-            (
-                abjad.select().leaves().get([0], 1000),
-                abjad.Dynamic("ff"),
-            ),
+            (abjad.select().leaves().get([0], 1000), abjad.Arpeggio()),
+            (abjad.select().leaves().get([0], 1000), abjad.Dynamic("ff")),
         ],
         [
-            (
-                abjad.select().leaves().get([0], 1000),
-                abjad.Arpeggio(),
-            ),
-            (
-                abjad.select().leaves().get([0], 1000),
-                abjad.Dynamic("f"),
-            ),
+            (abjad.select().leaves().get([0], 1000), abjad.Arpeggio()),
+            (abjad.select().leaves().get([0], 1000), abjad.Dynamic("f")),
         ],
         [
-            (
-                abjad.select().leaves().get([0], 1000),
-                abjad.Arpeggio(),
-            ),
-            (
-                abjad.select().leaves().get([0], 1000),
-                abjad.Dynamic("f"),
-            ),
+            (abjad.select().leaves().get([0], 1000), abjad.Arpeggio()),
+            (abjad.select().leaves().get([0], 1000), abjad.Dynamic("f")),
         ],
         [
+            (abjad.select().leaves().get([0], 1000), abjad.Arpeggio()),
+            (abjad.select().leaves().get([0], 1000), abjad.Dynamic("ff")),
             (
                 abjad.select().leaves().get([0], 1000),
-                abjad.Arpeggio(),
-            ),
-            (
-                abjad.select().leaves().get([0], 1000),
-                abjad.Dynamic("ff"),
-            ),
-            (
-                abjad.select().leaves().get([0], 1000),
-                abjad.LilyPondLiteral(
-                    [
-                    r"\sustainOn",
-                    ],
-                    format_slot="after",
-                ),
+                abjad.LilyPondLiteral([r"\sustainOn"], format_slot="after"),
             ),
             (
                 abjad.select().leaves().get([7], 1000),
                 abjad.LilyPondLiteral(
-                    [
-                    r"\sustainOff",
-                    r"\sustainOn",
-                    ],
-                    format_slot="after",
+                    [r"\sustainOff", r"\sustainOn"], format_slot="after"
                 ),
             ),
             (
                 abjad.select().leaves().get([14], 1000),
                 abjad.LilyPondLiteral(
-                    [
-                    r"\sustainOff",
-                    r"\sustainOn",
-                    ],
-                    format_slot="after",
+                    [r"\sustainOff", r"\sustainOn"], format_slot="after"
                 ),
             ),
             (
                 abjad.select().leaves().get([21], 1000),
                 abjad.LilyPondLiteral(
-                    [
-                    r"\sustainOff",
-                    r"\sustainOn",
-                    ],
-                    format_slot="after",
+                    [r"\sustainOff", r"\sustainOn"], format_slot="after"
                 ),
             ),
             (
                 abjad.select().leaves().get([28], 1000),
                 abjad.LilyPondLiteral(
-                    [
-                    r"\sustainOff",
-                    r"\sustainOn",
-                    ],
-                    format_slot="after",
+                    [r"\sustainOff", r"\sustainOn"], format_slot="after"
                 ),
             ),
             (
                 abjad.select().leaves().get([37], 1000),
                 abjad.LilyPondLiteral(
-                    [
-                    r"\sustainOff",
-                    r"\sustainOn",
-                    ],
-                    format_slot="after",
+                    [r"\sustainOff", r"\sustainOn"], format_slot="after"
                 ),
             ),
             (
                 abjad.select().leaves().get([43], 1000),
                 abjad.LilyPondLiteral(
-                    [
-                    r"\sustainOff",
-                    r"\sustainOn",
-                    ],
-                    format_slot="after",
+                    [r"\sustainOff", r"\sustainOn"], format_slot="after"
                 ),
             ),
             (
                 abjad.select().leaves().get([52], 1000),
                 abjad.LilyPondLiteral(
-                    [
-                    r"\sustainOff",
-                    r"\sustainOn",
-                    ],
-                    format_slot="after",
+                    [r"\sustainOff", r"\sustainOn"], format_slot="after"
                 ),
             ),
         ],
     ],
-    global_direct_attachments=[
-        [
-            (
-                abjad.select().leaves().get([0], 1000),
-                mark,
-            ),
-        ],
-    ],
+    global_direct_attachments=[[(abjad.select().leaves().get([0], 1000), mark)]],
     tuplet_bracket_noteheads=False,
     add_final_grand_pause=False,
     score_includes=[

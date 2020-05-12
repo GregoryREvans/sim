@@ -39,30 +39,14 @@ maker = evans.SegmentMaker(
     # voicewise_stem_directions=["up", "down", "up", "down"],
     voicewise_direct_attachments=[
         [],
+        [(abjad.select().leaves().get([0], 1000), abjad.Dynamic("pp"))],
         [
+            (abjad.select().leaves().get([2], 1000), abjad.Dynamic("p")),
             (
                 abjad.select().leaves().get([0], 1000),
-                abjad.Dynamic("pp"),
+                abjad.LilyPondLiteral([r"\sustainOn"], format_slot="after"),
             ),
-        ],
-        [
-            (
-                abjad.select().leaves().get([2], 1000),
-                abjad.Dynamic("p"),
-            ),
-            (
-                abjad.select().leaves().get([0], 1000),
-                abjad.LilyPondLiteral(
-                    [
-                    r"\sustainOn",
-                    ],
-                    format_slot="after",
-                ),
-            ),
-            (
-                abjad.select().leaves().get([60], 1000),
-                c,
-            ),
+            (abjad.select().leaves().get([60], 1000), c),
         ],
         [],
     ],
@@ -73,7 +57,7 @@ maker = evans.SegmentMaker(
             (
                 abjad.select().leaves().get([61], 1000),
                 abjad.Markup.musicglyph("scripts.ushortfermata", direction=abjad.Up),
-            ),
+            )
         ],
         [],
     ],
@@ -83,12 +67,14 @@ maker = evans.SegmentMaker(
                 abjad.select().leaves().get([0], 1000),
                 evans.metric_modulation(
                     metronome_mark=((1, 4), 80),
-                    left_note=(abjad.Tuplet(multiplier=(4, 5), components=[abjad.Note("c'8")])),
+                    left_note=(
+                        abjad.Tuplet(multiplier=(4, 5), components=[abjad.Note("c'8")])
+                    ),
                     right_note=(abjad.Note("c'16")),
                     modulated_beat=(abjad.Note("c'4")),
                 ),
-            ),
-        ],
+            )
+        ]
     ],
     tuplet_bracket_noteheads=False,
     add_final_grand_pause=True,

@@ -26,55 +26,22 @@ maker = evans.SegmentMaker(
     voicewise_direct_attachments=[
         [],
         [
-            (
-                abjad.select().leaves().get([0], 1000),
-                abjad.Dynamic("mf"),
-            ),
-            (
-                abjad.select().leaves().get([9], 1000),
-                abjad.Dynamic("mp"),
-            ),
-            (
-                abjad.select().leaves().get([17], 1000),
-                abjad.Dynamic("f"),
-            ),
-            (
-                abjad.select().leaves().get([22], 1000),
-                abjad.Dynamic("mf"),
-            ),
-            (
-                abjad.select().leaves().get([34], 1000),
-                abjad.Dynamic("mp"),
-            ),
-            (
-                abjad.select().leaves().get([42], 1000),
-                abjad.Dynamic("f"),
-            ),
+            (abjad.select().leaves().get([0], 1000), abjad.Dynamic("mf")),
+            (abjad.select().leaves().get([9], 1000), abjad.Dynamic("mp")),
+            (abjad.select().leaves().get([17], 1000), abjad.Dynamic("f")),
+            (abjad.select().leaves().get([22], 1000), abjad.Dynamic("mf")),
+            (abjad.select().leaves().get([34], 1000), abjad.Dynamic("mp")),
+            (abjad.select().leaves().get([42], 1000), abjad.Dynamic("f")),
         ],
         [
-            (
-                abjad.select().leaves().get([1], 1000),
-                abjad.Dynamic("mf"),
-            ),
-            (
-                abjad.select().leaves().get([23], 1000),
-                abjad.Dynamic("f"),
-            ),
-            (
-                abjad.select().leaves().get([30], 1000),
-                abjad.Dynamic("mp"),
-            ),
-            (
-                abjad.select().leaves().get([38], 1000),
-                abjad.Dynamic("f"),
-            ),
+            (abjad.select().leaves().get([1], 1000), abjad.Dynamic("mf")),
+            (abjad.select().leaves().get([23], 1000), abjad.Dynamic("f")),
+            (abjad.select().leaves().get([30], 1000), abjad.Dynamic("mp")),
+            (abjad.select().leaves().get([38], 1000), abjad.Dynamic("f")),
             (
                 abjad.select().leaves().get([0], 1000),
                 abjad.LilyPondLiteral(
-                    [
-                    r"_ \markup{\italic {tre corde} }",
-                    ],
-                    format_slot="after",
+                    [r"_ \markup{\italic {tre corde} }"], format_slot="after"
                 ),
             ),
         ],
@@ -87,11 +54,13 @@ maker = evans.SegmentMaker(
                 evans.metric_modulation(
                     metronome_mark=((1, 4), 45),
                     left_note=(abjad.Note("c'32")),
-                    right_note=(abjad.Tuplet(multiplier=(8, 9), components=[abjad.Note("c'16")])),
+                    right_note=(
+                        abjad.Tuplet(multiplier=(8, 9), components=[abjad.Note("c'16")])
+                    ),
                     modulated_beat=(abjad.Note("c'4")),
                 ),
-            ),
-        ],
+            )
+        ]
     ],
     tuplet_bracket_noteheads=False,
     add_final_grand_pause=False,

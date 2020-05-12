@@ -2,21 +2,13 @@ import evans
 from sim.Materials.pitch.Segment_IV.pitch_handlers import *
 
 
-key_list_1 = [
-    "piano_pitch_handler_one_1",
-]
+key_list_1 = ["piano_pitch_handler_one_1"]
 
-key_list_2 = [
-    "piano_pitch_handler_two_1",
-]
+key_list_2 = ["piano_pitch_handler_two_1"]
 
-key_list_3 = [
-    "piano_pitch_handler_three_1",
-]
+key_list_3 = ["piano_pitch_handler_three_1"]
 
-key_list_4 = [
-    "piano_pitch_handler_four_1",
-]
+key_list_4 = ["piano_pitch_handler_four_1"]
 
 dict = {
     "piano_pitch_handler_one_1": piano_pitch_handler_one_1,

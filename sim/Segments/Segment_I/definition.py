@@ -24,38 +24,15 @@ maker = evans.SegmentMaker(
     voicewise_persistent_indicators=None,
     # voicewise_stem_directions=["up", "down", "up", "down"],
     voicewise_direct_attachments=[
+        [(abjad.select().leaves().get([3], 1000), abjad.Dynamic("ppp"))],
+        [(abjad.select().leaves().get([0], 1000), abjad.Dynamic("pp"))],
+        [(abjad.select().leaves().get([1], 1000), abjad.Dynamic("pp"))],
         [
-            (
-                abjad.select().leaves().get([3], 1000),
-                abjad.Dynamic("ppp"),
-            ),
-        ],
-        [
-            (
-                abjad.select().leaves().get([0], 1000),
-                abjad.Dynamic("pp"),
-            ),
-        ],
-        [
-            (
-                abjad.select().leaves().get([1], 1000),
-                abjad.Dynamic("pp"),
-            ),
-        ],
-        [
-            (
-                abjad.select().leaves().get([2], 1000),
-                abjad.Dynamic("ppp"),
-            ),
+            (abjad.select().leaves().get([2], 1000), abjad.Dynamic("ppp")),
             (
                 abjad.select().leaves().get([0], 1000),
                 abjad.LilyPondLiteral(
-                    [
-                    r"\sustainOff",
-                    r"\unaCorda",
-                    r"\sustainOn",
-                    ],
-                    format_slot="after",
+                    [r"\sustainOff", r"\unaCorda", r"\sustainOn"], format_slot="after"
                 ),
             ),
         ],
@@ -66,12 +43,14 @@ maker = evans.SegmentMaker(
                 abjad.select().leaves().get([0], 1000),
                 evans.metric_modulation(
                     metronome_mark=((1, 4), 30),
-                    left_note=(abjad.Tuplet(multiplier=(2, 3), components=[abjad.Note("c'2")])),
+                    left_note=(
+                        abjad.Tuplet(multiplier=(2, 3), components=[abjad.Note("c'2")])
+                    ),
                     right_note=(abjad.Note("c'2")),
                     modulated_beat=(abjad.Note("c'4")),
                 ),
-            ),
-        ],
+            )
+        ]
     ],
     tuplet_bracket_noteheads=False,
     add_final_grand_pause=False,

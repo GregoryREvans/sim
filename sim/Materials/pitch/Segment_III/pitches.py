@@ -834,4 +834,4 @@ voice_3_chord_5 = evans.grouper(voice_3_chord_1, [2, 3, 3, 2])
 voice_3_chord_6 = evans.grouper(voice_3_chord_1, [1, 2, 1, 3])
 voice_3_chord_7 = evans.grouper(voice_3_chord_1, [1, 1, 3, 2])
 voice_3_chord_8 = evans.grouper(voice_3_chord_1, [1, 1, 3, 2])
-#3 each?
+# 3 each?

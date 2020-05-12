@@ -40,7 +40,7 @@ sequences = first_sequence + second_sequence
 transpositions = evans.CyclicList(
     lst=[6, 10, 11, 4, 7, 9, 5, 2, 8, 3, 1, 0, 6, 2, 1, 8, 5, 3, 7, 10, 4, 9, 11, 12],
     continuous=True,
-    count=-1
+    count=-1,
 )
 
 for i, sequence in enumerate(sequences):
