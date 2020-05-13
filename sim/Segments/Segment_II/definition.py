@@ -1,15 +1,15 @@
+import pathlib
+
 import abjad
 import evans
-import pathlib
+from sim.Materials.pitch.Segment_II.clef_handlers import clef_handlers
+from sim.Materials.score_structure.Segment_II.time_signatures import time_signatures
 from sim.Materials.score_structure.instruments import instruments as insts
+from sim.Materials.score_structure.score_structure import score
 from sim.Materials.timespans.Segment_II.convert_timespans import (
     segment_II_rhythm_timespans,
     segment_II_timespans,
 )
-from sim.Materials.score_structure.score_structure import score
-from sim.Materials.score_structure.Segment_II.time_signatures import time_signatures
-from sim.Materials.pitch.Segment_II.clef_handlers import clef_handlers
-
 
 maker = evans.SegmentMaker(
     instruments=insts,

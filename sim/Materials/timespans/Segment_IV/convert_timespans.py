@@ -1,22 +1,21 @@
-import evans
 import pathlib
 
-from sim.Materials.score_structure.Segment_IV.rhythm_material_pattern import (
-    rhythm_material_list,
+import evans
+from sim.Materials.score_structure.Segment_IV.dynamic_material_pattern import (
+    dynamic_material_list,
 )
 from sim.Materials.score_structure.Segment_IV.pitch_material_pattern import (
     pitch_material_list,
 )
-from sim.Materials.score_structure.Segment_IV.dynamic_material_pattern import (
-    dynamic_material_list,
-)
-from sim.Materials.timespans.Segment_IV.make_timespans import (
-    rhythm_timespan_list,
-    pitch_timespan_list,
-    dynamic_timespan_list,
+from sim.Materials.score_structure.Segment_IV.rhythm_material_pattern import (
+    rhythm_material_list,
 )
 from sim.Materials.score_structure.Segment_IV.time_signatures import bounds
-
+from sim.Materials.timespans.Segment_IV.make_timespans import (
+    dynamic_timespan_list,
+    pitch_timespan_list,
+    rhythm_timespan_list,
+)
 
 ########
 # rhythm#

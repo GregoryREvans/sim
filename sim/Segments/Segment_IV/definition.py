@@ -1,15 +1,15 @@
+import pathlib
+
 import abjad
 import evans
-import pathlib
+from sim.Materials.pitch.Segment_IV.clef_handlers import clef_handlers
+from sim.Materials.score_structure.Segment_IV.time_signatures import time_signatures
 from sim.Materials.score_structure.instruments import instruments as insts
+from sim.Materials.score_structure.score_structure import score
 from sim.Materials.timespans.Segment_IV.convert_timespans import (
     segment_IV_rhythm_timespans,
     segment_IV_timespans,
 )
-from sim.Materials.score_structure.score_structure import score
-from sim.Materials.score_structure.Segment_IV.time_signatures import time_signatures
-from sim.Materials.pitch.Segment_IV.clef_handlers import clef_handlers
-
 
 met = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 30)
 mark = abjad.LilyPondLiteral(

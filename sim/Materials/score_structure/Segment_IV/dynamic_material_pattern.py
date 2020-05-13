@@ -1,6 +1,5 @@
 from sim.Materials.dynamics.Segment_IV.dynamic_handlers import *
 
-
 key_list_1 = ["dynamic_handler_one"]
 
 dict = {"dynamic_handler_one": dynamic_handler_one}

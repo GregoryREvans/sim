@@ -1,18 +1,15 @@
 import abjad
 import evans
 from sim.Materials.score_structure.instruments import (
-    instrument_one_range_lowest,
-    instrument_two_range_lowest,
-    instrument_three_range_lowest,
-    instrument_four_range_lowest,
-)
-from sim.Materials.score_structure.instruments import (
-    instrument_one_range_highest,
-    instrument_two_range_highest,
-    instrument_three_range_highest,
     instrument_four_range_highest,
+    instrument_four_range_lowest,
+    instrument_one_range_highest,
+    instrument_one_range_lowest,
+    instrument_three_range_highest,
+    instrument_three_range_lowest,
+    instrument_two_range_highest,
+    instrument_two_range_lowest,
 )
-
 
 # voice 1
 chord_1 = [8, 23, 22, 20, 18, 13, 11, 10]

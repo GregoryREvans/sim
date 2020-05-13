@@ -1,6 +1,5 @@
 import abjad
 
-
 instrument_one = abjad.Piano()
 instrument_one_range = instrument_one.pitch_range
 instrument_one_range_lowest = abjad.NumberedPitch(0)

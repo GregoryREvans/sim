@@ -1,11 +1,11 @@
-import abjad
-import evans
-import abjadext.rmakers as rmakers
-from tsmakers.TaleaTimespanMaker import TaleaTimespanMaker
-from sim.Materials.rhythm.Segment_I.rhythm_handlers import *
-from sim.Materials.score_structure.instruments import instruments
 from collections import OrderedDict
 
+import abjad
+import abjadext.rmakers as rmakers
+import evans
+from sim.Materials.rhythm.Segment_I.rhythm_handlers import *
+from sim.Materials.score_structure.instruments import instruments
+from tsmakers.TaleaTimespanMaker import TaleaTimespanMaker
 
 music_specifiers = OrderedDict(
     [(f"Voice {i+1}", None) for i, name in enumerate(instruments)]

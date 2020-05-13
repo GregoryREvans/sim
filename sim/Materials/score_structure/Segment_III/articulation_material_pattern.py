@@ -1,6 +1,5 @@
 from sim.Materials.articulations.Segment_III.articulation_handlers import *
 
-
 key_list_1 = ["articulation_handler_one"]
 
 dict = {"articulation_handler_one": articulation_handler_one}

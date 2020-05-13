@@ -34,7 +34,6 @@ from sim.Materials.pitch.Segment_III.pitches import (
     voice_4_chord_8,
 )
 
-
 piano_pitch_handler_one_1 = evans.PitchHandler(
     pitch_list=voice_1_chord_1, continuous=True, name="voice_1_chord_1"
 )

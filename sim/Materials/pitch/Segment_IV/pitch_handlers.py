@@ -6,7 +6,6 @@ from sim.Materials.pitch.Segment_IV.pitches import (
     voice_4_chord_1,
 )
 
-
 piano_pitch_handler_one_1 = evans.PitchHandler(
     pitch_list=voice_1_chord_1, continuous=True, name="voice_1_chord_1"
 )

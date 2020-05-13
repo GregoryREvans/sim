@@ -1,6 +1,5 @@
 import evans
 
-
 articulation_handler_one = evans.ArticulationHandler(
     articulation_list=[
         "tenuto",

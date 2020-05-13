@@ -1,7 +1,6 @@
 import abjad
 import abjadext.rmakers
 
-
 nonlast_lts = abjad.select().logical_ties()[:-1]
 
 last_leaf = abjad.select().leaf(-1)
