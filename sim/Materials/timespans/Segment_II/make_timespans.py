@@ -2,8 +2,6 @@ from collections import OrderedDict
 
 import abjad
 import abjadext.rmakers as rmakers
-import evans
-from sim.Materials.rhythm.Segment_II.rhythm_handlers import *
 from sim.Materials.score_structure.instruments import instruments
 from tsmakers.TaleaTimespanMaker import TaleaTimespanMaker
 

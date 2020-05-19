@@ -1,14 +1,8 @@
 import abjad
 import evans
 from sim.Materials.score_structure.instruments import (
-    instrument_four_range_highest,
     instrument_four_range_lowest,
     instrument_one_range_highest,
-    instrument_one_range_lowest,
-    instrument_three_range_highest,
-    instrument_three_range_lowest,
-    instrument_two_range_highest,
-    instrument_two_range_lowest,
 )
 
 tone_row = [0, 1, 3, 8, 2, 5, 9, 7, 4, 11, 10, 6]

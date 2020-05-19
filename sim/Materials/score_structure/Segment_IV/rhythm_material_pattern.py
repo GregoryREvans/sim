@@ -1,5 +1,7 @@
-import evans
-from sim.Materials.rhythm.Segment_IV.rhythm_handlers import *
+from sim.Materials.rhythm.Segment_IV.rhythm_handlers import (
+    rhythm_handler_one,
+    silence_maker,
+)
 
 key_list_1 = ["rhythm_handler_one"]
 key_list_2 = ["rhythm_handler_one"]

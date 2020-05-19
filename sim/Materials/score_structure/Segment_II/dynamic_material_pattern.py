@@ -1,4 +1,4 @@
-from sim.Materials.dynamics.Segment_II.dynamic_handlers import *
+from sim.Materials.dynamics.Segment_II.dynamic_handlers import dynamic_handler_one
 
 key_list_1 = ["dynamic_handler_one"]
 

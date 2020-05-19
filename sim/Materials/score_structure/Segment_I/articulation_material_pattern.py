@@ -1,4 +1,6 @@
-from sim.Materials.articulations.Segment_I.articulation_handlers import *
+from sim.Materials.articulations.Segment_I.articulation_handlers import (
+    articulation_handler_one,
+)
 
 key_list_1 = ["articulation_handler_one"]
 

@@ -1,7 +1,7 @@
 import abjad
 import abjadext.rmakers
 import evans
-from sim.Materials.rhythm.Segment_IV.rhythm_makers import *
+from sim.Materials.rhythm.Segment_IV.rhythm_makers import rmaker_one
 
 silence_maker = abjadext.rmakers.stack(
     abjadext.rmakers.NoteRhythmMaker(),
