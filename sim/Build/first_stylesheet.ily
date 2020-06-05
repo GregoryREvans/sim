@@ -14,7 +14,7 @@
 }
 
 \layout {
-    \accidentalStyle dodecaphonic
+    %{ \accidentalStyle dodecaphonic %}
     indent = #0
 	ragged-last = ##t
     ragged-right = ##t
@@ -87,6 +87,10 @@
 		\override Glissando.breakable = ##t
 		%{ \override Glissando.thickness = #2 %}
 		\override Glissando.thickness = #1.8
+		\override KeySignature.whiteout-style = #'outline
+		\override KeySignature.whiteout = 0.25
+		%{ \override KeySignature.X-extent = #'(2 . 2) %}
+		%{ \override KeySignature.X-offset = -1 %}
 		\override Stem.thickness = #0.5
 		\override Staff.thickness = #0.5
 		\override MetronomeMark.font-size = 3
@@ -118,7 +122,7 @@
     }
     \context {
         \Staff \RemoveEmptyStaves
-		pedalSustainStyle = #'mixed
+		%{ pedalSustainStyle = #'mixed %}
 		\remove Time_signature_engraver
 		fontSize = #-3
     }

@@ -38,17 +38,20 @@ maker = evans.SegmentMaker(
     voicewise_persistent_indicators=None,
     # voicewise_stem_directions=["up", "down", "up", "down"],
     voicewise_direct_attachments=[
-        [],
-        [(abjad.select().leaves().get([0], 1000), abjad.Dynamic("pp"))],
+        [(abjad.select().leaves().get([0], 1000),abjad.LilyPondLiteral(r"\accidentalStyle Score.modern \key d \major")),],
         [
+            (abjad.select().leaves().get([0], 1000),abjad.LilyPondLiteral(r"\key d \major")), (abjad.select().leaves().get([0], 1000), abjad.Dynamic("pp")),
+        ],
+        [
+            (abjad.select().leaves().get([0], 1000),abjad.LilyPondLiteral(r"\key d \major")),
             (abjad.select().leaves().get([2], 1000), abjad.Dynamic("p")),
             (
                 abjad.select().leaves().get([0], 1000),
-                abjad.LilyPondLiteral([r"\sustainOn"], format_slot="after"),
+                abjad.LilyPondLiteral([r"""_ \markup{\musicglyph #"pedal.*" \musicglyph #"pedal.Ped" \italic{al fino}}"""], format_slot="after"),
             ),
             (abjad.select().leaves().get([60], 1000), c),
         ],
-        [],
+        [(abjad.select().leaves().get([0], 1000),abjad.LilyPondLiteral(r"\key d \major")),],
     ],
     voicewise_direct_detachments=[
         [],

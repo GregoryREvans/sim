@@ -160,22 +160,23 @@
                     % [Voice 1 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \clef "treble"
+                    \accidentalStyle Score.modern \key gs \minor
                     r2.
 
                     r4
 
                     r8
 
-                    <ef''' af'''>8
+                    <ds''' gs'''>8
                     \ppp
                     ~
                     % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    <ef''' af'''>4.
+                    <ds''' gs'''>4.
                     ~
                     % [Voice 1 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    <ef''' af'''>4
+                    <ds''' gs'''>4
 
                     r8
 
@@ -186,7 +187,7 @@
 
                     r8
 
-                    ef'''2
+                    ds'''2
                     % [Voice 1 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4
@@ -196,14 +197,14 @@
 
                     r4
 
-                    d'''8
+                    css'''8
                     ~
 
-                    d'''2
+                    css'''2
                     ~
                     % [Voice 1 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    d'''8
+                    css'''8
 
                     r4
 
@@ -214,14 +215,14 @@
 
                     r4
 
-                    g'''8
+                    fss'''8
                     ~
                     % [Voice 1 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    g'''4
+                    fss'''4
                     ~
 
-                    g'''8
+                    fss'''8
 
                     r8
 
@@ -229,14 +230,14 @@
 
                     r8
 
-                    af'''8
+                    gs'''8
                     ~
 
-                    af'''4
+                    gs'''4
                     ~
                     % [Voice 1 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    af'''8
+                    gs'''8
 
                     r4
                     % [Voice 1 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -245,14 +246,14 @@
 
                     r8
 
-                    g'''4
+                    fss'''4
                     ~
 
-                    g'''4.
+                    fss'''4.
                     ~
                     % [Voice 1 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    g'''8
+                    fss'''8
 
                     r8
 
@@ -261,7 +262,7 @@
 
                     r4
 
-                    <ef''' af'''>4
+                    <ds''' gs'''>4
 
                     r4
 
@@ -276,7 +277,7 @@
                     r4
                     % [Voice 1 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    ef'''2
+                    ds'''2
                     % [Voice 1 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r8
@@ -293,7 +294,7 @@
                     R1 * 3/8
                     % [Voice 1 measure 18]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    d'''4
+                    css'''4
 
                     r8
 
@@ -307,26 +308,26 @@
 
                     r8
 
-                    g'''8
+                    fss'''8
                     ~
 
-                    g'''4
+                    fss'''4
                     ~
 
-                    g'''8
+                    fss'''8
 
                     r8
 
                     r8
 
-                    af'''8
+                    gs'''8
                     ~
 
-                    af'''4
+                    gs'''4
                     ~
                     % [Voice 1 measure 20]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    af'''4.
+                    gs'''4.
                     % [Voice 1 measure 21]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
@@ -335,11 +336,11 @@
                     R1 * 3/16
                     % [Voice 1 measure 22]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    g'''4
+                    fss'''4
 
                     r8
 
-                    <ef''' af'''>2
+                    <ds''' gs'''>2
                     % [Voice 1 measure 23]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4
@@ -349,14 +350,14 @@
 
                     r4
 
-                    ef'''8
+                    ds'''8
                     ~
 
-                    ef'''2
+                    ds'''2
                     ~
                     % [Voice 1 measure 25]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    ef'''8
+                    ds'''8
 
                     r4
 
@@ -367,14 +368,14 @@
 
                     r4
 
-                    d'''8
+                    css'''8
                     ~
                     % [Voice 1 measure 27]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    d'''4
+                    css'''4
                     ~
 
-                    d'''8
+                    css'''8
 
                     r8
 
@@ -398,14 +399,14 @@
 
                     r8
 
-                    g'''4
+                    fss'''4
                     ~
 
-                    g'''4.
+                    fss'''4.
                     ~
                     % [Voice 1 measure 30]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    g'''8
+                    fss'''8
 
                     r8
 
@@ -414,7 +415,7 @@
 
                     r4
 
-                    af'''4
+                    gs'''4
                     \bar "||"
 
                 }
@@ -431,7 +432,8 @@
                     % [Voice 2 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \clef "treble"
-                    af'2
+                    \key gs \minor
+                    gs'2
                     \pp
 
                     r4
@@ -445,19 +447,19 @@
                     R1 * 3/16
                     % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    bf''4.
+                    as''4.
                     ~
 
-                    bf''4
+                    as''4
                     ~
                     % [Voice 2 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    bf''8
+                    as''8
 
                     r8
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    af''16
+                    gs''16
                     [
 
                     \revert Staff.Stem.stemlet-length
@@ -481,27 +483,27 @@
 
                     r8
 
-                    bf'8
+                    as'8
                     ~
 
-                    bf'4
+                    as'4
                     ~
                     % [Voice 2 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    bf'8
+                    as'8
 
                     r4
 
                     r8
 
-                    af'8
+                    gs'8
                     ~
 
-                    af'4
+                    gs'4
                     ~
                     % [Voice 2 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    af'8
+                    gs'8
 
                     r8
 
@@ -517,19 +519,19 @@
                     r4
                     % [Voice 2 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    bf''4
+                    as''4
 
                     r4
 
                     r8
 
-                    af''8
+                    gs''8
                     ~
 
-                    af''4
+                    gs''4
                     ~
 
-                    af''8
+                    gs''8
 
                     r8
 
@@ -546,7 +548,7 @@
                         b'16
 
                         \revert Staff.Stem.stemlet-length
-                        bf'16
+                        as'16
                         ~
                         ]
 
@@ -554,11 +556,11 @@
                     % [Voice 2 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    bf'16
+                    as'16
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    af'16
+                    gs'16
                     ]
 
                     r4
@@ -570,9 +572,9 @@
                         b''16
                         [
 
-                        bf''8.
+                        as''8.
 
-                        af''8
+                        gs''8
 
                         fs''16
 
@@ -581,7 +583,7 @@
                         b'8
 
                         \revert Staff.Stem.stemlet-length
-                        bf'16
+                        as'16
                         ]
 
                     }
@@ -589,7 +591,7 @@
 
                     r4
 
-                    af'4
+                    gs'4
                     % [Voice 2 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r2
@@ -599,14 +601,14 @@
 
                     r4
 
-                    bf''8
+                    as''8
                     ~
 
-                    bf''4
+                    as''4
                     ~
                     % [Voice 2 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    bf''8
+                    as''8
 
                     r8
 
@@ -615,10 +617,10 @@
 
                     r8
 
-                    af''4
+                    gs''4
                     ~
 
-                    af''2
+                    gs''2
                     % [Voice 2 measure 17]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
@@ -646,15 +648,15 @@
                     \times 4/5 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        bf'16
+                        as'16
                         [
 
-                        af'16
+                        gs'16
 
                         b''8
 
                         \revert Staff.Stem.stemlet-length
-                        bf''16
+                        as''16
                         ~
                         ]
 
@@ -662,10 +664,10 @@
                     % [Voice 2 measure 19]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    bf''8
+                    as''8
                     [
 
-                    af''16
+                    gs''16
 
                     \revert Staff.Stem.stemlet-length
                     fs''16
@@ -682,10 +684,10 @@
 
                         b'8
 
-                        bf'8.
+                        as'8.
 
                         \revert Staff.Stem.stemlet-length
-                        af'16
+                        gs'16
                         ]
 
                     }
@@ -707,10 +709,10 @@
 
                     r8
 
-                    bf''8
+                    as''8
                     ~
 
-                    bf''8
+                    as''8
 
                     r8
 
@@ -722,7 +724,7 @@
                     r8
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    af''16
+                    gs''16
                     [
 
                     \revert Staff.Stem.stemlet-length
@@ -739,7 +741,7 @@
                     b'16
 
                     \revert Staff.Stem.stemlet-length
-                    bf'16
+                    as'16
                     ~
                     ]
 
@@ -747,11 +749,11 @@
                         % [Voice 2 measure 24]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        bf'8
+                        as'8
                         [
 
                         \revert Staff.Stem.stemlet-length
-                        af'16
+                        gs'16
                         ]
 
                     }
@@ -765,11 +767,11 @@
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    bf''16
+                    as''16
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    af''16
+                    gs''16
                     [
 
                     fs''16
@@ -792,11 +794,11 @@
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    bf'16
+                    as'16
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    af'8
+                    gs'8
                     [
 
                     \revert Staff.Stem.stemlet-length
@@ -804,11 +806,11 @@
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    bf''8.
+                    as''8.
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    af''16
+                    gs''16
                     ~
                     ]
 
@@ -816,7 +818,7 @@
                         % [Voice 2 measure 26]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        af''16
+                        gs''16
                         [
 
                         fs''16
@@ -836,29 +838,29 @@
 
                     r8
 
-                    bf'8
+                    as'8
                     ~
 
-                    bf'4
+                    as'4
                     ~
 
-                    bf'8
+                    as'8
 
                     r8
                     % [Voice 2 measure 28]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    af'8
+                    gs'8
                     [
 
                     b''8.
 
                     \revert Staff.Stem.stemlet-length
-                    bf''16
+                    as''16
                     ]
                     % [Voice 2 measure 29]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    af''8
+                    gs''8
 
                     r4
 
@@ -871,20 +873,20 @@
                     b'8
 
                     \revert Staff.Stem.stemlet-length
-                    bf'8
+                    as'8
                     ~
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    bf'16
+                    as'16
                     [
 
-                    af'16
+                    gs'16
 
                     b''8
 
                     \revert Staff.Stem.stemlet-length
-                    bf''8
+                    as''8
                     ]
                     % [Voice 2 measure 30]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -893,7 +895,7 @@
                     \times 4/5 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        af''8.
+                        gs''8.
                         [
 
                         \revert Staff.Stem.stemlet-length
@@ -923,30 +925,31 @@
                     % [Voice 3 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \clef "bass"
+                    \key gs \minor
                     r4
 
-                    af2
+                    e2
                     \pp
 
                     r2
                     % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    fs4.
+                    ds4.
                     ~
                     % [Voice 3 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    fs8
+                    ds8
 
                     r4
 
-                    e4
+                    cs4
                     ~
                     % [Voice 3 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    e4.
+                    cs4.
                     ~
 
-                    e8
+                    cs8
 
                     r8
 
@@ -955,10 +958,10 @@
 
                     r8
 
-                    ef8
+                    b8
                     ~
 
-                    ef8
+                    b8
 
                     r8
 
@@ -968,21 +971,21 @@
                     r4.
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    cs16
+                    as16
                     [
 
-                    b,16
+                    e16
 
                     \revert Staff.Stem.stemlet-length
-                    bf,8
+                    fs8
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    af,8.
+                    e8.
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    af16
+                    ds16
                     ]
                     % [Voice 3 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -994,24 +997,24 @@
                     \times 4/3 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        fs16
+                        cs16
                         [
 
-                        e16
+                        b16
 
                         \revert Staff.Stem.stemlet-length
-                        ef16
+                        as16
                         ]
 
                     }
                     % [Voice 3 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    cs8
+                    e8
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    b,8
+                    fs8
                     ]
 
                     r8
@@ -1019,13 +1022,13 @@
 
                     r8
 
-                    bf,8
+                    e8
                     ~
 
-                    bf,2
+                    e2
                     ~
 
-                    bf,8
+                    e8
 
                     r8
 
@@ -1035,15 +1038,15 @@
                         % [Voice 3 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        af,16
+                        ds16
                         [
 
-                        af16
+                        cs16
 
-                        fs8
+                        b8
 
                         \revert Staff.Stem.stemlet-length
-                        e16
+                        as16
                         ]
 
                     }
@@ -1052,21 +1055,21 @@
                     % [Voice 3 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    ef16
+                    e16
                     [
 
-                    cs8.
+                    fs8.
 
                     \revert Staff.Stem.stemlet-length
-                    b,8
+                    e8
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    bf,16
+                    ds16
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    af,16
+                    cs16
                     ]
 
                     r4
@@ -1076,24 +1079,24 @@
 
                     r8
 
-                    af8
+                    b8
                     ~
 
-                    af4
+                    b4
                     ~
                     % [Voice 3 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    af8
+                    b8
 
                     r8
 
                     r4
 
-                    fs2
+                    as2
                     ~
                     % [Voice 3 measure 14]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    fs4
+                    as4
 
                     r8
 
@@ -1102,32 +1105,32 @@
 
                     r4
 
-                    ef4
+                    fs4
                     ~
                     % [Voice 3 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    ef4
+                    fs4
 
                     r8
 
                     r4
 
-                    cs4
+                    e4
                     ~
                     % [Voice 3 measure 17]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    cs4
+                    e4
 
                     r8
 
-                    b,8
+                    ds8
                     ~
 
-                    b,4
+                    ds4
                     ~
                     % [Voice 3 measure 18]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    b,4.
+                    ds4.
 
                     r4
 
@@ -1135,11 +1138,11 @@
                     \times 4/3 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        bf,8
+                        cs8
                         [
 
                         \revert Staff.Stem.stemlet-length
-                        af,16
+                        b16
                         ]
 
                     }
@@ -1148,34 +1151,34 @@
                     % [Voice 3 measure 19]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    af8
+                    as8
                     [
 
-                    fs16
+                    e16
 
                     \revert Staff.Stem.stemlet-length
-                    e16
+                    fs16
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    ef16
+                    e16
                     [
 
-                    cs16
+                    ds16
 
                     \revert Staff.Stem.stemlet-length
-                    b,8
+                    cs8
                     ]
 
                     r4
 
                     r4
 
-                    bf,4
+                    b4
                     ~
                     % [Voice 3 measure 20]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    bf,4
+                    b4
 
                     r8
                     % [Voice 3 measure 21]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -1185,10 +1188,10 @@
                     \times 4/5 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        af,8.
+                        as8.
                         [
 
-                        af16
+                        e16
 
                         \revert Staff.Stem.stemlet-length
                         fs16
@@ -1208,7 +1211,7 @@
                     e16
 
                     \revert Staff.Stem.stemlet-length
-                    ef8.
+                    ds8.
                     ]
 
                     cs8
@@ -1224,13 +1227,13 @@
                     \times 4/3 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        b,16
+                        b16
                         [
 
-                        bf,16
+                        as16
 
                         \revert Staff.Stem.stemlet-length
-                        af,16
+                        e16
                         ]
 
                     }
@@ -1243,23 +1246,23 @@
                     r4.
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    af16
+                    fs16
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    fs8.
+                    e8.
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    e16
+                    ds16
                     [
-
-                    ef16
 
                     cs16
 
+                    b16
+
                     \revert Staff.Stem.stemlet-length
-                    b,16
+                    as16
                     ]
                     % [Voice 3 measure 25]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1267,24 +1270,24 @@
 
                     r4
 
-                    bf,4
+                    e4
                     ~
                     % [Voice 3 measure 26]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    bf,4
+                    e4
 
                     r8
                     % [Voice 3 measure 27]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r8
 
-                    af,8
+                    fs8
                     ~
 
-                    af,2
+                    fs2
                     ~
 
-                    af,8
+                    fs8
 
                     r8
 
@@ -1294,11 +1297,11 @@
                         % [Voice 3 measure 28]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        af8
+                        e8
                         [
 
                         \revert Staff.Stem.stemlet-length
-                        fs8.
+                        ds8.
                         ]
 
                     }
@@ -1307,25 +1310,25 @@
                     % [Voice 3 measure 29]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    e16
+                    cs16
                     [
 
-                    ef16
+                    b16
                     ~
 
-                    ef16
+                    b16
 
-                    cs16
+                    as16
                     ~
 
-                    cs16
+                    as16
 
                     \revert Staff.Stem.stemlet-length
-                    b,16
+                    e16
                     ~
                     ]
 
-                    b,8
+                    e8
 
                     r4
 
@@ -1338,15 +1341,15 @@
                     \times 6/5 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        bf,8
+                        fs8
                         [
 
-                        af,16
+                        e16
 
-                        af16
+                        ds16
 
                         \revert Staff.Stem.stemlet-length
-                        fs16
+                        cs16
                         ~
                         ]
 
@@ -1354,11 +1357,11 @@
                     % [Voice 3 measure 31]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    fs16
+                    cs16
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    e16
+                    b16
                     ]
 
                     r8
@@ -1380,10 +1383,9 @@
                     % [Voice 4 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \clef "bass"
+                    \key gs \minor
                     r2
-                    \sustainOff
-                    \unaCorda
-                    \sustainOn
+                    _ \markup{\center-column{\line{\italic{una corda al m.45}} \line{\musicglyph #"pedal.*" \musicglyph #"pedal.Ped" \italic{al m.45 \with-color #white .......}}}}
 
                     r16
 
@@ -1405,12 +1407,12 @@
                     r16
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    bf,,16
+                    as,,16
                     ~
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    bf,,8.
+                    as,,8.
                     ]
 
                     r16
@@ -1445,14 +1447,14 @@
 
                     r16
 
-                    ef8.
+                    ds8.
                     ~
                     % [Voice 4 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    ef4.
+                    ds4.
                     ~
 
-                    ef8.
+                    ds8.
 
                     r16
 
@@ -1468,13 +1470,13 @@
 
                     r8.
 
-                    ef16
+                    ds16
                     ~
 
-                    ef4
+                    ds4
                     ~
 
-                    ef8.
+                    ds8.
 
                     r16
                     % [Voice 4 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -1496,27 +1498,27 @@
 
                     r16
 
-                    <fs ef'>8.
+                    <fs ds'>8.
                     ~
 
-                    <fs ef'>4
+                    <fs ds'>4
                     ~
                     % [Voice 4 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    <fs ef'>4
+                    <fs ds'>4
                     ~
 
-                    <fs ef'>16
+                    <fs ds'>16
 
                     r16
                     % [Voice 4 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r8.
 
-                    <af e'>8.
+                    <gs e'>8.
                     ~
 
-                    <af e'>16
+                    <gs e'>16
 
                     r16
 
@@ -1524,14 +1526,14 @@
 
                     r8.
 
-                    <af ef'>8.
+                    <gs ds'>8.
                     ~
                     % [Voice 4 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    <af ef'>4
+                    <gs ds'>4
                     ~
 
-                    <af ef'>16
+                    <gs ds'>16
 
                     r8.
                     % [Voice 4 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -1540,14 +1542,14 @@
 
                     r16
 
-                    g8.
+                    fss8.
                     ~
 
-                    g4
+                    fss4
                     ~
                     % [Voice 4 measure 14]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    g16
+                    fss16
 
                     r16
 
@@ -1574,10 +1576,10 @@
 
                     r8.
 
-                    bf,,16
+                    as,,16
                     ~
 
-                    bf,,8.
+                    as,,8.
 
                     r16
                     % [Voice 4 measure 17]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -1616,16 +1618,16 @@
 
                     r16
 
-                    ef8.
+                    ds8.
                     ~
 
-                    ef4
+                    ds4
                     ~
 
-                    ef4
+                    ds4
                     ~
 
-                    ef16
+                    ds16
 
                     r8.
                     % [Voice 4 measure 20]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -1642,14 +1644,14 @@
 
                     r16
 
-                    ef8.
+                    ds8.
                     ~
                     % [Voice 4 measure 22]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    ef4
+                    ds4
                     ~
 
-                    ef16
+                    ds16
 
                     r16
 
@@ -1670,50 +1672,50 @@
 
                     r16
 
-                    <fs ef'>8.
+                    <fs ds'>8.
                     ~
                     % [Voice 4 measure 24]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    <fs ef'>4.
+                    <fs ds'>4.
                     ~
 
-                    <fs ef'>8.
+                    <fs ds'>8.
 
                     r16
 
                     r16
 
-                    <af e'>8.
+                    <gs e'>8.
                     ~
                     % [Voice 4 measure 25]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    <af e'>16
+                    <gs e'>16
 
                     r16
 
                     r8.
 
-                    <af ef'>16
+                    <gs ds'>16
                     ~
 
-                    <af ef'>4
+                    <gs ds'>4
                     ~
 
-                    <af ef'>8.
+                    <gs ds'>8.
 
                     r16
                     % [Voice 4 measure 26]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r8.
 
-                    g8.
+                    fss8.
                     ~
                     % [Voice 4 measure 27]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    g4
+                    fss4
                     ~
 
-                    g16
+                    fss16
 
                     r8.
 
@@ -1738,10 +1740,10 @@
 
                     r8.
 
-                    bf,,8.
+                    as,,8.
                     ~
 
-                    bf,,16
+                    as,,16
 
                     r16
 

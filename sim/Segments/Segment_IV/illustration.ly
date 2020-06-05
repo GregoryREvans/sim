@@ -98,6 +98,7 @@
                     % [Voice 1 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \clef "treble"
+                    \accidentalStyle Score.dodecaphonic
                     c'''4
                     \ff
                     \arpeggio

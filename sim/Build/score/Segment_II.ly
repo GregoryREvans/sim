@@ -61,6 +61,7 @@
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "treble"
+                    \accidentalStyle Score.dodecaphonic \key c \major
                     r1 * 1/2
 
                     R1 * 1/2
@@ -113,6 +114,7 @@
 
                         \clef "treble"
                         \override Staff.Stem.stemlet-length = 0.75
+                        \key c \major
                         ef'16
                         \mf
                         [
@@ -309,8 +311,9 @@
                     % [Voice 3 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \clef "bass"
+                    \key c \major
                     r2
-                    _ \markup{\italic {tre corde} }
+                    _ \markup{\center-column{\line{\italic{tre corde}} \line{\musicglyph #"pedal.*" 1/2 \musicglyph #"pedal.Ped"}}}
 
                     \times 8/9 {
 
@@ -477,6 +480,7 @@
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "bass"
+                    \key c \major
                     r1 * 1/2
 
                     R1 * 1/2

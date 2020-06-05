@@ -137,6 +137,7 @@
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "treble"
+                    \accidentalStyle Score.modern \key d \major
                     r1 * 1/4
 
                     R1 * 1/4
@@ -283,6 +284,7 @@
                     % [Voice 2 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \clef "treble"
+                    \key d \major
                     fs''2
                     \pp
                     % [Voice 2 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -448,8 +450,9 @@
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "bass"
+                    \key d \major
                     r1 * 1/4
-                    \sustainOn
+                    _ \markup{\musicglyph #"pedal.*" \musicglyph #"pedal.Ped" \italic{al fino}}
 
                     R1 * 1/4
                     % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -634,6 +637,7 @@
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "bass"
+                    \key d \major
                     r1 * 1/4
 
                     R1 * 1/4

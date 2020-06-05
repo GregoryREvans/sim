@@ -24,8 +24,9 @@ maker = evans.SegmentMaker(
     voicewise_persistent_indicators=None,
     # voicewise_stem_directions=["up", "down", "up", "down"],
     voicewise_direct_attachments=[
-        [],
+        [(abjad.select().leaves().get([0], 1000),abjad.LilyPondLiteral(r"\accidentalStyle Score.dodecaphonic \key c \major")), ],
         [
+            (abjad.select().leaves().get([0], 1000),abjad.LilyPondLiteral(r"\key c \major")),
             (abjad.select().leaves().get([0], 1000), abjad.Dynamic("mf")),
             (abjad.select().leaves().get([9], 1000), abjad.Dynamic("mp")),
             (abjad.select().leaves().get([17], 1000), abjad.Dynamic("f")),
@@ -34,6 +35,7 @@ maker = evans.SegmentMaker(
             (abjad.select().leaves().get([42], 1000), abjad.Dynamic("f")),
         ],
         [
+            (abjad.select().leaves().get([0], 1000),abjad.LilyPondLiteral(r"\key c \major")),
             (abjad.select().leaves().get([1], 1000), abjad.Dynamic("mf")),
             (abjad.select().leaves().get([23], 1000), abjad.Dynamic("f")),
             (abjad.select().leaves().get([30], 1000), abjad.Dynamic("mp")),
@@ -41,11 +43,11 @@ maker = evans.SegmentMaker(
             (
                 abjad.select().leaves().get([0], 1000),
                 abjad.LilyPondLiteral(
-                    [r"_ \markup{\italic {tre corde} }"], format_slot="after"
+                    [r"""_ \markup{\center-column{\line{\italic{tre corde}} \line{\musicglyph #"pedal.*" 1/2 \musicglyph #"pedal.Ped"}}}"""], format_slot="after"
                 ),
             ),
         ],
-        [],
+        [(abjad.select().leaves().get([0], 1000),abjad.LilyPondLiteral(r"\key c \major")),],
     ],
     global_direct_attachments=[
         [

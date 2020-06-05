@@ -24,15 +24,30 @@ maker = evans.SegmentMaker(
     voicewise_persistent_indicators=None,
     # voicewise_stem_directions=["up", "down", "up", "down"],
     voicewise_direct_attachments=[
-        [(abjad.select().leaves().get([3], 1000), abjad.Dynamic("ppp"))],
-        [(abjad.select().leaves().get([0], 1000), abjad.Dynamic("pp"))],
-        [(abjad.select().leaves().get([1], 1000), abjad.Dynamic("pp"))],
         [
+            (
+                abjad.select().leaves().get([0], 1000),
+                abjad.LilyPondLiteral(r"\accidentalStyle Score.modern \key gs \minor"),
+            ),
+            (
+                abjad.select().leaves().get([3], 1000), abjad.Dynamic("ppp")
+            ),
+        ],
+        [
+            (abjad.select().leaves().get([0], 1000),abjad.LilyPondLiteral(r"\key gs \minor")),
+            (abjad.select().leaves().get([0], 1000), abjad.Dynamic("pp")),
+        ],
+        [
+            (abjad.select().leaves().get([0], 1000),abjad.LilyPondLiteral(r"\key gs \minor")),
+            (abjad.select().leaves().get([1], 1000), abjad.Dynamic("pp")),
+        ],
+        [
+            (abjad.select().leaves().get([0], 1000),abjad.LilyPondLiteral(r"\key gs \minor")),
             (abjad.select().leaves().get([2], 1000), abjad.Dynamic("ppp")),
             (
                 abjad.select().leaves().get([0], 1000),
                 abjad.LilyPondLiteral(
-                    [r"\sustainOff", r"\unaCorda", r"\sustainOn"], format_slot="after"
+                    [r"""_ \markup{\center-column{\line{\italic{una corda al m.45}} \line{\musicglyph #"pedal.*" \musicglyph #"pedal.Ped" \italic{al m.45 \with-color #white .......}}}}"""], format_slot="after"
                 ),
             ),
         ],
