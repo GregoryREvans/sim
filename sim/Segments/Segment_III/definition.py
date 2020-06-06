@@ -76,7 +76,7 @@ maker = evans.SegmentMaker(
                     right_note=(abjad.Note("c'16")),
                     modulated_beat=(abjad.Note("c'4")),
                     ),
-            ), 
+            ),
         ]
     ],
     tuplet_bracket_noteheads=False,
