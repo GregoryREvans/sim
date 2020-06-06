@@ -187,7 +187,9 @@
 
                     r8
 
+                    \override Score.Arpeggio.arpeggio-direction = #UP
                     ds'''2
+                    \arpeggio
                     % [Voice 1 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4
@@ -282,7 +284,9 @@
 
                     r8
 
+                    \override Score.Arpeggio.arpeggio-direction = #UP
                     cs'''4
+                    \arpeggio
                     ~
 
                     cs'''2
@@ -294,7 +298,9 @@
                     R1 * 3/8
                     % [Voice 1 measure 18]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \override Score.Arpeggio.arpeggio-direction = #DOWN
                     css'''4
+                    \arpeggio
 
                     r8
 
@@ -308,7 +314,9 @@
 
                     r8
 
+                    \override Score.Arpeggio.arpeggio-direction = #DOWN
                     fss'''8
+                    \arpeggio
                     ~
 
                     fss'''4
@@ -363,7 +371,9 @@
 
                     r4
 
+                    \override Score.Arpeggio.arpeggio-direction = #DOWN
                     cs'''4
+                    \arpeggio
                     % [Voice 1 measure 26]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4
@@ -399,7 +409,9 @@
 
                     r8
 
+                    \override Score.Arpeggio.arpeggio-direction = #UP
                     fss'''4
+                    \arpeggio
                     ~
 
                     fss'''4.
@@ -466,8 +478,10 @@
                     fs''16
                     ]
 
+                    \override Score.Arpeggio.arpeggio-direction = #UP
                     \override Staff.Stem.stemlet-length = 0.75
                     cs''16
+                    \arpeggio
                     [
 
                     \revert Staff.Stem.stemlet-length
@@ -617,7 +631,9 @@
 
                     r8
 
+                    \override Score.Arpeggio.arpeggio-direction = #UP
                     gs''4
+                    \arpeggio
                     ~
 
                     gs''2
@@ -629,8 +645,10 @@
                     R1 * 3/8
                     % [Voice 2 measure 18]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \override Score.Arpeggio.arpeggio-direction = #DOWN
                     \override Staff.Stem.stemlet-length = 0.75
                     fs''8
+                    \arpeggio
                     [
 
                     cs''16
@@ -667,7 +685,9 @@
                     as''8
                     [
 
+                    \override Score.Arpeggio.arpeggio-direction = #DOWN
                     gs''16
+                    \arpeggio
 
                     \revert Staff.Stem.stemlet-length
                     fs''16
@@ -805,8 +825,10 @@
                     b''8
                     ]
 
+                    \override Score.Arpeggio.arpeggio-direction = #DOWN
                     \override Staff.Stem.stemlet-length = 0.75
                     as''8.
+                    \arpeggio
                     [
 
                     \revert Staff.Stem.stemlet-length
@@ -870,7 +892,9 @@
 
                     cs''16
 
+                    \override Score.Arpeggio.arpeggio-direction = #UP
                     b'8
+                    \arpeggio
 
                     \revert Staff.Stem.stemlet-length
                     as'8
@@ -1164,6 +1188,7 @@
                     e16
                     [
 
+                    \parenthesize
                     ds16
 
                     \revert Staff.Stem.stemlet-length
@@ -1257,7 +1282,9 @@
                     ds16
                     [
 
+                    \override Score.Arpeggio.arpeggio-direction = #DOWN
                     cs16
+                    \arpeggio
 
                     b16
 
@@ -1318,7 +1345,9 @@
 
                     b16
 
+                    \override Score.Arpeggio.arpeggio-direction = #DOWN
                     as16
+                    \arpeggio
                     ~
 
                     as16
@@ -1685,7 +1714,9 @@
 
                     r16
 
+                    \override Score.Arpeggio.arpeggio-direction = #DOWN
                     <gs e'>8.
+                    \arpeggio
                     ~
                     % [Voice 4 measure 25]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1740,7 +1771,9 @@
 
                     r8.
 
+                    \override Score.Arpeggio.arpeggio-direction = #DOWN
                     as,,8.
+                    \arpeggio
                     ~
 
                     as,,16

@@ -74,7 +74,7 @@
         \remove Bar_number_engraver
 		\remove Mark_engraver
         \accepts TimeSignatureContext
-		\override Arpeggio.arpeggio-direction = #UP
+		%{ \override Arpeggio.arpeggio-direction = #UP %}
 		\override BarLine.bar-extent = #'(-2 . 2)
 		\override BarLine.hair-thickness = #0.9
 		\override BarLine.thick-thickness = #8

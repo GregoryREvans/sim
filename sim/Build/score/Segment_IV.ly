@@ -82,6 +82,7 @@
                 {
                     % [Voice 1 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \override Score.Arpeggio.arpeggio-direction = #UP
                     \clef "treble"
                     \accidentalStyle Score.dodecaphonic
                     c'''4
@@ -122,8 +123,10 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
 
+                            \override Score.Arpeggio.arpeggio-direction = #UP
                             \override Staff.Stem.stemlet-length = 0.75
                             g'''16.
+                            \arpeggio
                             [
 
                             e'''32
@@ -175,8 +178,10 @@
 
                     \times 2/3 {
 
+                        \override Score.Arpeggio.arpeggio-direction = #UP
                         \override Staff.Stem.stemlet-length = 0.75
                         c'''8
+                        \arpeggio
                         [
 
                         f''8
@@ -189,8 +194,10 @@
 
                     \times 2/3 {
 
+                        \override Score.Arpeggio.arpeggio-direction = #UP
                         \override Staff.Stem.stemlet-length = 0.75
                         bf''8
+                        \arpeggio
                         [
 
                         f'''8
@@ -262,7 +269,9 @@
 
                     g''4
 
+                    \override Score.Arpeggio.arpeggio-direction = #DOWN
                     af''4
+                    \arpeggio
 
                     cs''2
                     ~
@@ -363,7 +372,9 @@
 
                     }
 
+                    \override Score.Arpeggio.arpeggio-direction = #DOWN
                     b''2
+                    \arpeggio
                     \bar "||"
 
                 }
@@ -381,6 +392,7 @@
                     \times 2/3 {
                         % [Voice 2 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \override Score.Arpeggio.arpeggio-direction = #UP
                         \clef "treble"
                         fs'2
                         \f
@@ -450,8 +462,10 @@
                     bf'8
                     [
 
+                    \override Score.Arpeggio.arpeggio-direction = #UP
                     \revert Staff.Stem.stemlet-length
                     g'8
+                    \arpeggio
                     ]
 
                     d'4
@@ -489,8 +503,10 @@
 
                     \times 4/5 {
 
+                        \override Score.Arpeggio.arpeggio-direction = #UP
                         \override Staff.Stem.stemlet-length = 0.75
                         c'8.
+                        \arpeggio
                         [
 
                         e'16
@@ -501,8 +517,10 @@
 
                     }
 
+                    \override Score.Arpeggio.arpeggio-direction = #UP
                     \override Staff.Stem.stemlet-length = 0.75
                     d''16
+                    \arpeggio
                     [
 
                     cs''16
@@ -585,46 +603,31 @@
 
                     }
 
-                    \scaleDurations #'(1 . 1) {
+                    \times 8/9 {
+                        % [Voice 2 measure 8]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        \tweak edge-height #'(0.7 . 0)
-                        \times 8/9 {
-                            % [Voice 2 measure 8]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \override Staff.Stem.stemlet-length = 0.75
+                        g'8
+                        [
 
-                            \override Staff.Stem.stemlet-length = 0.75
-                            g'8
-                            [
+                        bf'8
 
-                            bf'8
+                        a'8
 
-                            a'8
+                        e''8
 
-                        }
+                        b'8
 
-                        \tweak edge-height #'(0.7 . 0)
-                        \times 8/9 {
+                        fs''8
 
-                            e''8
+                        f''8
 
-                            b'8
+                        cs''8
 
-                            fs''8
-
-                        }
-
-                        \tweak edge-height #'(0.7 . 0)
-                        \times 8/9 {
-
-                            f''8
-
-                            cs''8
-
-                            \revert Staff.Stem.stemlet-length
-                            a'8
-                            ~
-                            ]
-
-                        }
+                        \revert Staff.Stem.stemlet-length
+                        a'8
+                        ~
+                        ]
 
                     }
                     % [Voice 2 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -638,7 +641,9 @@
 
                     a'4
 
+                    \override Score.Arpeggio.arpeggio-direction = #DOWN
                     fs'2
+                    \arpeggio
 
                     g'4
                     ~
@@ -668,8 +673,10 @@
 
                     \times 4/5 {
 
+                        \override Score.Arpeggio.arpeggio-direction = #DOWN
                         \override Staff.Stem.stemlet-length = 0.75
                         f'8.
+                        \arpeggio
                         [
 
                         af'16
@@ -706,6 +713,7 @@
                     \times 4/5 {
                         % [Voice 3 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \override Score.Arpeggio.arpeggio-direction = #UP
                         \clef "bass"
                         b,2.
                         \f
@@ -742,8 +750,10 @@
 
                         \times 2/3 {
 
+                            \override Score.Arpeggio.arpeggio-direction = #UP
                             \override Staff.Stem.stemlet-length = 0.75
                             fs8
+                            \arpeggio
                             [
 
                             ef8
@@ -825,8 +835,10 @@
                         a,8.
                         [
 
+                        \override Score.Arpeggio.arpeggio-direction = #DOWN
                         \revert Staff.Stem.stemlet-length
                         e8.
+                        \arpeggio
                         ]
 
                         g4.
@@ -929,7 +941,9 @@
 
                         }
 
+                        \override Score.Arpeggio.arpeggio-direction = #DOWN
                         a2
+                        \arpeggio
                         ~
 
                     }
@@ -1016,6 +1030,7 @@
                 {
                     % [Voice 4 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \override Score.Arpeggio.arpeggio-direction = #UP
                     \clef "bass"
                     \override Staff.Stem.stemlet-length = 0.75
                     f,,8
@@ -1057,8 +1072,10 @@
 
                         \times 4/5 {
 
+                            \override Score.Arpeggio.arpeggio-direction = #UP
                             \override Staff.Stem.stemlet-length = 0.75
                             c,8.
+                            \arpeggio
                             [
 
                             a,,16
@@ -1156,47 +1173,32 @@
 
                     }
 
-                    \scaleDurations #'(1 . 1) {
+                    \times 8/9 {
 
-                        \tweak edge-height #'(0.7 . 0)
-                        \times 8/9 {
+                        \override Staff.Stem.stemlet-length = 0.75
+                        f,8
+                        [
 
-                            \override Staff.Stem.stemlet-length = 0.75
-                            f,8
-                            [
+                        d,8
 
-                            d,8
+                        a,8
 
-                            a,8
+                        af,8
 
-                        }
+                        e,8
 
-                        \tweak edge-height #'(0.7 . 0)
-                        \times 8/9 {
+                        ef,,8
+                        \sustainOff
+                        \sustainOn
 
-                            af,8
+                        c,,8
 
-                            e,8
+                        cs,,8
 
-                            ef,,8
-                            \sustainOff
-                            \sustainOn
-
-                        }
-
-                        \tweak edge-height #'(0.7 . 0)
-                        \times 8/9 {
-
-                            c,,8
-
-                            cs,,8
-
-                            \revert Staff.Stem.stemlet-length
-                            fs,,8
-                            ~
-                            ]
-
-                        }
+                        \revert Staff.Stem.stemlet-length
+                        fs,,8
+                        ~
+                        ]
 
                     }
                     % [Voice 4 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -1209,7 +1211,9 @@
 
                         fs,,8.
 
+                        \override Score.Arpeggio.arpeggio-direction = #DOWN
                         af,,4.
+                        \arpeggio
                         \sustainOff
                         \sustainOn
 
@@ -1246,8 +1250,10 @@
 
                         \times 4/5 {
 
+                            \override Score.Arpeggio.arpeggio-direction = #DOWN
                             \override Staff.Stem.stemlet-length = 0.75
                             a,,8.
+                            \arpeggio
                             [
                             \sustainOff
                             \sustainOn

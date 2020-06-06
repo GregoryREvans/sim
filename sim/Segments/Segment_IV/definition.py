@@ -31,19 +31,49 @@ maker = evans.SegmentMaker(
     # voicewise_stem_directions=["up", "down", "up", "down"],
     voicewise_direct_attachments=[
         [
-            (abjad.select().leaves().get([0], 1000),abjad.LilyPondLiteral(r"\accidentalStyle Score.dodecaphonic")), 
+            (abjad.select().leaves().get([0], 1000),abjad.LilyPondLiteral(r"\accidentalStyle Score.dodecaphonic")),
+            (abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before")),
             (abjad.select().leaves().get([0], 1000), abjad.Arpeggio()),
             (abjad.select().leaves().get([0], 1000), abjad.Dynamic("ff")),
+            (abjad.select().leaves().get([10], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before")),
+            (abjad.select().leaves().get([10], 1000), abjad.Arpeggio()),
+            (abjad.select().leaves().get([24], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before")),
+            (abjad.select().leaves().get([24], 1000), abjad.Arpeggio()),
+            (abjad.select().leaves().get([27], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before")),
+            (abjad.select().leaves().get([27], 1000), abjad.Arpeggio()),
+            (abjad.select().leaves().get([45], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before")),
+            (abjad.select().leaves().get([45], 1000), abjad.Arpeggio()),
+            (abjad.select().leaves().get([70], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before")),
+            (abjad.select().leaves().get([70], 1000), abjad.Arpeggio()),
         ],
         [
+            (abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before")),
             (abjad.select().leaves().get([0], 1000), abjad.Arpeggio()),
             (abjad.select().leaves().get([0], 1000), abjad.Dynamic("f")),
+            (abjad.select().leaves().get([17], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before")),
+            (abjad.select().leaves().get([17], 1000), abjad.Arpeggio()),
+            (abjad.select().leaves().get([27], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before")),
+            (abjad.select().leaves().get([27], 1000), abjad.Arpeggio()),
+            (abjad.select().leaves().get([30], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before")),
+            (abjad.select().leaves().get([30], 1000), abjad.Arpeggio()),
+            (abjad.select().leaves().get([63], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before")),
+            (abjad.select().leaves().get([63], 1000), abjad.Arpeggio()),
+            (abjad.select().leaves().get([72], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before")),
+            (abjad.select().leaves().get([72], 1000), abjad.Arpeggio()),
         ],
         [
+            (abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before")),
             (abjad.select().leaves().get([0], 1000), abjad.Arpeggio()),
             (abjad.select().leaves().get([0], 1000), abjad.Dynamic("f")),
+            (abjad.select().leaves().get([8], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before")),
+            (abjad.select().leaves().get([8], 1000), abjad.Arpeggio()),
+            (abjad.select().leaves().get([29], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before")),
+            (abjad.select().leaves().get([29], 1000), abjad.Arpeggio()),
+            (abjad.select().leaves().get([54], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before")),
+            (abjad.select().leaves().get([54], 1000), abjad.Arpeggio()),
         ],
         [
+            (abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before")),
             (abjad.select().leaves().get([0], 1000), abjad.Arpeggio()),
             (abjad.select().leaves().get([0], 1000), abjad.Dynamic("ff")),
             (
@@ -56,6 +86,8 @@ maker = evans.SegmentMaker(
                     [r"\sustainOff", r"\sustainOn"], format_slot="after"
                 ),
             ),
+            (abjad.select().leaves().get([8], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before")),
+            (abjad.select().leaves().get([8], 1000), abjad.Arpeggio()),
             (
                 abjad.select().leaves().get([14], 1000),
                 abjad.LilyPondLiteral(
@@ -86,12 +118,16 @@ maker = evans.SegmentMaker(
                     [r"\sustainOff", r"\sustainOn"], format_slot="after"
                 ),
             ),
+            (abjad.select().leaves().get([43], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before")),
+            (abjad.select().leaves().get([43], 1000), abjad.Arpeggio()),
             (
                 abjad.select().leaves().get([52], 1000),
                 abjad.LilyPondLiteral(
                     [r"\sustainOff", r"\sustainOn"], format_slot="after"
                 ),
             ),
+            (abjad.select().leaves().get([52], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before")),
+            (abjad.select().leaves().get([52], 1000), abjad.Arpeggio()),
         ],
     ],
     global_direct_attachments=[[(abjad.select().leaves().get([0], 1000), mark)]],
