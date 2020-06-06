@@ -130,7 +130,7 @@ maker = evans.SegmentMaker(
             (abjad.select().leaves().get([52], 1000), abjad.Arpeggio()),
         ],
     ],
-    global_direct_attachments=[[(abjad.select().leaves().get([0], 1000), mark)]],
+    global_direct_attachments=[[(abjad.select().leaves().get([0], 1000), mark), (abjad.select().leaves().get([12], 1000), abjad.LilyPondLiteral(r"\break", format_slot="after")), ]],
     tuplet_bracket_noteheads=False,
     add_final_grand_pause=False,
     score_includes=[

@@ -1007,6 +1007,26 @@
                     \override Staff.Stem.stemlet-length = 0.75
                     e8.
                     [
+                    ^ \markup {\whiteout 
+                      %\raise #5.5
+                      \score {
+                        \new Staff \with {
+                          \remove "Time_signature_engraver" 
+                          \remove "Clef_engraver" 
+                          fontSize = #-4
+                          \override StaffSymbol.staff-space = #(magstep -3)
+                        }
+                        {
+                          \clef "bass" \cadenzaOn
+                          e16 ^\markup{\whiteout \halign #CENTER \italic{literally:}} [ e8 d16 ]
+                    	\bar "!" 
+                        }
+                        %\layout {
+                        %  ragged-right = ##t
+                        %  indent = 1\cm
+                        %}
+                      }
+                    }
 
                     \revert Staff.Stem.stemlet-length
                     ds16
@@ -1036,6 +1056,27 @@
                     \override Staff.Stem.stemlet-length = 0.75
                     e8
                     [
+                    ^ \markup {\whiteout 
+                      %\raise #5.5
+                      \score {
+                        \new Staff \with {
+                          \remove "Time_signature_engraver" 
+                          \remove "Clef_engraver" 
+                          fontSize = #-4
+                          \override StaffSymbol.staff-space = #(magstep -3)
+                        }
+                        {
+                          \clef "bass" \cadenzaOn
+                           s32
+                          e8 ^\markup{\whiteout \halign #CENTER \italic{literally:}} f16 [ e8. ] \laissezVibrer
+                    	\bar "!" 
+                        }
+                        %\layout {
+                        %  ragged-right = ##t
+                        %  indent = 1\cm
+                        %}
+                      }
+                    }
 
                     \revert Staff.Stem.stemlet-length
                     fs8
@@ -1081,6 +1122,27 @@
                     \override Staff.Stem.stemlet-length = 0.75
                     e16
                     [
+                    ^ \markup {\whiteout 
+                      %\raise #5.5
+                      \score {
+                        \new Staff \with {
+                          \remove "Time_signature_engraver" 
+                          \remove "Clef_engraver" 
+                          fontSize = #-4
+                          \override StaffSymbol.staff-space = #(magstep -3)
+                        }
+                        {
+                          \clef "bass" \cadenzaOn
+                           s32
+                          e16 ^\markup{\whiteout \halign #CENTER \italic{literally:}} [ f8 ] <g e'>16 [ e8 ]
+                    	\bar "!" 
+                        }
+                        %\layout {
+                        %  ragged-right = ##t
+                        %  indent = 1\cm
+                        %}
+                      }
+                    }
 
                     fs8.
 
@@ -1277,7 +1339,7 @@
                     \revert Staff.Stem.stemlet-length
                     e8.
                     ]
-                    ^ \markup {
+                    ^ \markup {\whiteout 
                       %\raise #5.5
                       \score {
                         \new Staff \with {
@@ -1288,7 +1350,7 @@
                         {
                           \clef "bass" \cadenzaOn
                            s16
-                          d16 ^\markup{\halign #CENTER \italic{literally:}} [ c32 <g e'>32 b16 a16 ]
+                          d16 ^\markup{\whiteout \halign #CENTER \italic{literally:}} [ c32 <g e'>32 b16 a16 ]
                     	\bar "!" 
                         }
                         %\layout {

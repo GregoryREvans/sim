@@ -111,7 +111,7 @@
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
 		\override TupletNumber.font-size = 0.7
-		proportionalNotationDuration = #(ly:make-moment 1 18)
+		proportionalNotationDuration = #(ly:make-moment 1 17)
 		connectArpeggios = ##t
         autoBeaming = ##f
         tupletFullLength = ##t

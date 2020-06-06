@@ -11,9 +11,90 @@ from sim.Materials.timespans.Segment_I.convert_timespans import (
     segment_I_timespans,
 )
 
-ossia = abjad.LilyPondLiteral(
+ossia_1 = abjad.LilyPondLiteral(
     [
-        r"^ \markup {",
+        r"^ \markup {\whiteout ",
+        r"  %\raise #5.5",
+        r"  \score {",
+        r"    \new Staff \with {",
+        r"""      \remove "Time_signature_engraver" """,
+        r"""      \remove "Clef_engraver" """,
+        "      fontSize = #-4",
+        r"      \override StaffSymbol.staff-space = #(magstep -3)",
+        "    }",
+        "    {",
+        r"""      \clef "bass" \cadenzaOn""",
+        # "       s32",
+        r"      e16 ^\markup{\whiteout \halign #CENTER \italic{literally:}} [ e8 d16 ]",
+        r"""	\bar "!" """,
+        "    }",
+        r"    %\layout {",
+        "    %  ragged-right = ##t",
+        r"    %  indent = 1\cm",
+        "    %}",
+        "  }",
+        "}",
+    ],
+    format_slot="after"
+)
+
+ossia_2 = abjad.LilyPondLiteral(
+    [
+        r"^ \markup {\whiteout ",
+        r"  %\raise #5.5",
+        r"  \score {",
+        r"    \new Staff \with {",
+        r"""      \remove "Time_signature_engraver" """,
+        r"""      \remove "Clef_engraver" """,
+        "      fontSize = #-4",
+        r"      \override StaffSymbol.staff-space = #(magstep -3)",
+        "    }",
+        "    {",
+        r"""      \clef "bass" \cadenzaOn""",
+        "       s32",
+        r"      e8 ^\markup{\whiteout \halign #CENTER \italic{literally:}} f16 [ e8. ] \laissezVibrer",
+        r"""	\bar "!" """,
+        "    }",
+        r"    %\layout {",
+        "    %  ragged-right = ##t",
+        r"    %  indent = 1\cm",
+        "    %}",
+        "  }",
+        "}",
+    ],
+    format_slot="after"
+)
+
+ossia_3 = abjad.LilyPondLiteral(
+    [
+        r"^ \markup {\whiteout ",
+        r"  %\raise #5.5",
+        r"  \score {",
+        r"    \new Staff \with {",
+        r"""      \remove "Time_signature_engraver" """,
+        r"""      \remove "Clef_engraver" """,
+        "      fontSize = #-4",
+        r"      \override StaffSymbol.staff-space = #(magstep -3)",
+        "    }",
+        "    {",
+        r"""      \clef "bass" \cadenzaOn""",
+        "       s32",
+        r"      e16 ^\markup{\whiteout \halign #CENTER \italic{literally:}} [ f8 ] <g e'>16 [ e8 ]",
+        r"""	\bar "!" """,
+        "    }",
+        r"    %\layout {",
+        "    %  ragged-right = ##t",
+        r"    %  indent = 1\cm",
+        "    %}",
+        "  }",
+        "}",
+    ],
+    format_slot="after"
+)
+
+ossia_4 = abjad.LilyPondLiteral(
+    [
+        r"^ \markup {\whiteout ",
         r"  %\raise #5.5",
         r"  \score {",
         r"    \new Staff \with {",
@@ -24,7 +105,7 @@ ossia = abjad.LilyPondLiteral(
         "    {",
         r"""      \clef "bass" \cadenzaOn""",
         "       s16",
-        r"      d16 ^\markup{\halign #CENTER \italic{literally:}} [ c32 <g e'>32 b16 a16 ]",
+        r"      d16 ^\markup{\whiteout \halign #CENTER \italic{literally:}} [ c32 <g e'>32 b16 a16 ]",
         r"""	\bar "!" """,
         "    }",
         r"    %\layout {",
@@ -90,8 +171,11 @@ maker = evans.SegmentMaker(
         [
             (abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\key gs \minor")),
             (abjad.select().leaves().get([1], 1000), abjad.Dynamic("pp")),
+            (abjad.select().leaves().get([20], 1000), ossia_1),
+            (abjad.select().leaves().get([27], 1000), ossia_2),
+            (abjad.select().leaves().get([41], 1000), ossia_3),
             (abjad.select().leaves().get([77], 1000), abjad.LilyPondLiteral(r"\parenthesize", format_slot="before")),
-            (abjad.select().leaves().get([103], 1000), ossia),
+            (abjad.select().leaves().get([103], 1000), ossia_4),
             (abjad.select().leaves().get([105], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before")),
             (abjad.select().leaves().get([105], 1000), abjad.Arpeggio()),
             (abjad.select().leaves().get([125], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before")),

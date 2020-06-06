@@ -61,7 +61,8 @@ maker = evans.SegmentMaker(
                     ),
                     modulated_beat=(abjad.Note("c'4")),
                 ),
-            )
+            ),
+            (abjad.select().leaves().get([5], 1000), abjad.LilyPondLiteral(r"\break", format_slot="after")),
         ]
     ],
     tuplet_bracket_noteheads=False,

@@ -68,6 +68,7 @@
 
             \time 4/4                                                          %! scaling time signatures
             s1 * 1
+            \break
 
         }
 
