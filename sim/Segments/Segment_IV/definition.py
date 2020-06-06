@@ -31,7 +31,7 @@ maker = evans.SegmentMaker(
     # voicewise_stem_directions=["up", "down", "up", "down"],
     voicewise_direct_attachments=[
         [
-            (abjad.select().leaves().get([0], 1000),abjad.LilyPondLiteral(r"\accidentalStyle Score.dodecaphonic")),
+            (abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\accidentalStyle Score.dodecaphonic")),
             (abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before")),
             (abjad.select().leaves().get([0], 1000), abjad.Arpeggio()),
             (abjad.select().leaves().get([0], 1000), abjad.Dynamic("ff")),

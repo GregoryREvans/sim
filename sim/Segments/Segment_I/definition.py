@@ -46,7 +46,7 @@ maker = evans.SegmentMaker(
             (abjad.select().leaves().get([92], 1000), abjad.Arpeggio()),
         ],
         [
-            (abjad.select().leaves().get([0], 1000),abjad.LilyPondLiteral(r"\key gs \minor")),
+            (abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\key gs \minor")),
             (abjad.select().leaves().get([0], 1000), abjad.Dynamic("pp")),
             (abjad.select().leaves().get([11], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before")),
             (abjad.select().leaves().get([11], 1000), abjad.Arpeggio()),
@@ -62,7 +62,7 @@ maker = evans.SegmentMaker(
             (abjad.select().leaves().get([138], 1000), abjad.Arpeggio()),
         ],
         [
-            (abjad.select().leaves().get([0], 1000),abjad.LilyPondLiteral(r"\key gs \minor")),
+            (abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\key gs \minor")),
             (abjad.select().leaves().get([1], 1000), abjad.Dynamic("pp")),
             (abjad.select().leaves().get([77], 1000), abjad.LilyPondLiteral(r"\parenthesize", format_slot="before")),
             (abjad.select().leaves().get([105], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before")),
@@ -71,7 +71,7 @@ maker = evans.SegmentMaker(
             (abjad.select().leaves().get([125], 1000), abjad.Arpeggio()),
         ],
         [
-            (abjad.select().leaves().get([0], 1000),abjad.LilyPondLiteral(r"\key gs \minor")),
+            (abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\key gs \minor")),
             (abjad.select().leaves().get([2], 1000), abjad.Dynamic("ppp")),
             (
                 abjad.select().leaves().get([0], 1000),
