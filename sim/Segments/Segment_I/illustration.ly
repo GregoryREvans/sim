@@ -1292,6 +1292,26 @@
                     \revert Staff.Stem.stemlet-length
                     e8.
                     ]
+                    ^ \markup {
+                      %\raise #5.5
+                      \score {
+                        \new Staff \with {
+                          \remove "Time_signature_engraver" 
+                          fontSize = #-4
+                          \override StaffSymbol.staff-space = #(magstep -3)
+                        }
+                        {
+                          \clef "bass" \cadenzaOn
+                           s16
+                          d16 ^\markup{\halign #CENTER \italic{literally:}} [ c32 <g e'>32 b16 a16 ]
+                    	\bar "!" 
+                        }
+                        %\layout {
+                        %  ragged-right = ##t
+                        %  indent = 1\cm
+                        %}
+                      }
+                    }
 
                     \override Staff.Stem.stemlet-length = 0.75
                     ds16

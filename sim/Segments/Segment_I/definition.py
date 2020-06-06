@@ -11,6 +11,32 @@ from sim.Materials.timespans.Segment_I.convert_timespans import (
     segment_I_timespans,
 )
 
+ossia = abjad.LilyPondLiteral(
+    [
+        r"^ \markup {",
+        r"  %\raise #5.5",
+        r"  \score {",
+        r"    \new Staff \with {",
+        r"""      \remove "Time_signature_engraver" """,
+        "      fontSize = #-4",
+        r"      \override StaffSymbol.staff-space = #(magstep -3)",
+        "    }",
+        "    {",
+        r"""      \clef "bass" \cadenzaOn""",
+        "       s16",
+        r"      d16 ^\markup{\halign #CENTER \italic{literally:}} [ c32 <g e'>32 b16 a16 ]",
+        r"""	\bar "!" """,
+        "    }",
+        r"    %\layout {",
+        "    %  ragged-right = ##t",
+        r"    %  indent = 1\cm",
+        "    %}",
+        "  }",
+        "}",
+    ],
+    format_slot="after"
+)
+
 maker = evans.SegmentMaker(
     instruments=insts,
     names=["a", "b", "c", "d"],
@@ -65,6 +91,7 @@ maker = evans.SegmentMaker(
             (abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\key gs \minor")),
             (abjad.select().leaves().get([1], 1000), abjad.Dynamic("pp")),
             (abjad.select().leaves().get([77], 1000), abjad.LilyPondLiteral(r"\parenthesize", format_slot="before")),
+            (abjad.select().leaves().get([103], 1000), ossia),
             (abjad.select().leaves().get([105], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before")),
             (abjad.select().leaves().get([105], 1000), abjad.Arpeggio()),
             (abjad.select().leaves().get([125], 1000), abjad.LilyPondLiteral(r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before")),

@@ -597,7 +597,7 @@
                                 \with-color #black
                                 \right-column {
                                     \line { Miami, Fl. \hspace #0.75 - \hspace #0.75 Spring Valley, Oh. }
-                                    \line { March 2019 \hspace #0.75 - \hspace #0.75 April 2020 }
+                                    \line { March 2019 \hspace #0.75 - \hspace #0.75 June 2020 }
                                 }
                             }
 
@@ -751,7 +751,7 @@
                                 \with-color #black
                                 \right-column {
                                     \line { Miami, Fl. \hspace #0.75 - \hspace #0.75 Spring Valley, Oh. }
-                                    \line { March 2019 \hspace #0.75 - \hspace #0.75 April 2020 }
+                                    \line { March 2019 \hspace #0.75 - \hspace #0.75 June 2020 }
                                 }
                             }
 

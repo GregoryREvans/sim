@@ -6,10 +6,10 @@
 \header {
 	tagline = ##f
 	breakbefore = ##t
-	dedication = \markup \override #'(font-name . "STIXGeneral") \fontsize #0.75 \center-column {"t    o        M    a    t    t        A.        M    a    s    o    n"}
-	title =  \markup \override #'(font-name . "STIXGeneral") \fontsize #6 \bold\center-column {"S i m b e l m y n ë" }
-	subtitle = \markup \override #'(font-name . "STIXGeneral") \fontsize #0.4 \center-column {";    o  r      f  l  o  w  e  r  s     i  n     t  h  e     g  a  p"}
-	subsubtitle = \markup \override #'(font-name . "STIXGeneral") \fontsize #0.25 \center-column {"f   o   r              p   i   a   n   o              a   l   o   n   e"}
+	dedication = \markup \override #'(font-name . "STIXGeneral") \fontsize #2.75 \center-column {"t    o        M    a    t    t        A.        M    a    s    o    n"}
+	title =  \markup \override #'(font-name . "STIXGeneral") \fontsize #8 \bold\center-column {"S i m b e l m y n ë" }
+	subtitle = \markup \override #'(font-name . "STIXGeneral") \fontsize #2.4 \center-column {";    o  r      f  l  o  w  e  r  s     i  n     t  h  e     g  a  p"}
+	subsubtitle = \markup \override #'(font-name . "STIXGeneral") \fontsize #2.25 \center-column {"f   o   r              p   i   a   n   o              a   l   o   n   e"}
 	composer = \markup \override #'(font-name . "STIXGeneral") \fontsize #3 {"Gregory Rowland Evans (*1995)"}
 }
 
