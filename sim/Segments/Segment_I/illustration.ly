@@ -1026,14 +1026,14 @@
                       %\raise #5.5
                       \score {
                         \new Staff \with {
-                          \remove "Time_signature_engraver" 
+                          \remove "Time_signature_engraver" \remove "Key_signature_engraver" 
                           \remove "Clef_engraver" 
                           fontSize = #-4
                           \override StaffSymbol.staff-space = #(magstep -3)
                         }
                         {
                           \clef "bass" \cadenzaOn
-                          e16 ^\markup{\whiteout \halign #CENTER \italic{literally:}} [ e8 d16 ]
+                          e16 ^\markup{\with-dimensions-from \null \whiteout \halign #LEFT \italic{literally:}} [ e8 d16 ]
                     	\bar "!" 
                         }
                         %\layout {
@@ -1075,7 +1075,7 @@
                       %\raise #5.5
                       \score {
                         \new Staff \with {
-                          \remove "Time_signature_engraver" 
+                          \remove "Time_signature_engraver" \remove "Key_signature_engraver" 
                           \remove "Clef_engraver" 
                           fontSize = #-4
                           \override StaffSymbol.staff-space = #(magstep -3)
@@ -1083,7 +1083,7 @@
                         {
                           \clef "bass" \cadenzaOn
                            s32
-                          e8 ^\markup{\whiteout \halign #CENTER \italic{literally:}} f16 [ e8. ] \laissezVibrer
+                          e8 ^\markup{\with-dimensions-from \null \whiteout \halign #LEFT \italic{literally:}} f16 [ e8. ] \laissezVibrer
                     	\bar "!" 
                         }
                         %\layout {
@@ -1141,7 +1141,7 @@
                       %\raise #5.5
                       \score {
                         \new Staff \with {
-                          \remove "Time_signature_engraver" 
+                          \remove "Time_signature_engraver" \remove "Key_signature_engraver" 
                           \remove "Clef_engraver" 
                           fontSize = #-4
                           \override StaffSymbol.staff-space = #(magstep -3)
@@ -1149,7 +1149,7 @@
                         {
                           \clef "bass" \cadenzaOn
                            s32
-                          e16 ^\markup{\whiteout \halign #CENTER \italic{literally:}} [ f8 ] <g e'>16 [ e8 ]
+                          e16 ^\markup{\with-dimensions-from \null \whiteout \halign #LEFT \italic{literally:}} [ f8 ] <g e'>16 [ e8 ]
                     	\bar "!" 
                         }
                         %\layout {
@@ -1358,14 +1358,14 @@
                       %\raise #5.5
                       \score {
                         \new Staff \with {
-                          \remove "Time_signature_engraver" 
+                          \remove "Time_signature_engraver" \remove "Key_signature_engraver" 
                           fontSize = #-4
                           \override StaffSymbol.staff-space = #(magstep -3)
                         }
                         {
                           \clef "bass" \cadenzaOn
                            s16
-                          d16 ^\markup{\whiteout \halign #CENTER \italic{literally:}} [ c32 <g e'>32 b16 a16 ]
+                          d16 ^\markup{\with-dimensions-from \null \whiteout \halign #LEFT \italic{literally:}} [ c32 <g e'>32 b16 a16 ]
                     	\bar "!" 
                         }
                         %\layout {
