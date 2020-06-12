@@ -1018,7 +1018,7 @@
                         }
                         {
                           \clef "bass" \cadenzaOn
-                          e16 ^\markup{\whiteout \halign #CENTER \italic{literally:}} [ e8 d16 ]
+                          e16 ^\markup{\whiteout \halign #LEFT \with-dimensions-from \null \italic{ossia:}} [ e8 d16 ]
                     	\bar "!" 
                         }
                         %\layout {
@@ -1067,8 +1067,7 @@
                         }
                         {
                           \clef "bass" \cadenzaOn
-                           s32
-                          e8 ^\markup{\whiteout \halign #CENTER \italic{literally:}} f16 [ e8. ] \laissezVibrer
+                          e8 ^\markup{\whiteout \halign #LEFT \with-dimensions-from \null \italic{ossia:}} f16 [ e8. ] \laissezVibrer
                     	\bar "!" 
                         }
                         %\layout {
@@ -1133,8 +1132,7 @@
                         }
                         {
                           \clef "bass" \cadenzaOn
-                           s32
-                          e16 ^\markup{\whiteout \halign #CENTER \italic{literally:}} [ f8 ] <g e'>16 [ e8 ]
+                          e16 ^\markup{\whiteout \halign #LEFT \with-dimensions-from \null \italic{ossia:}} [ f8 ] <g e'>16 [ e8 ]
                     	\bar "!" 
                         }
                         %\layout {
@@ -1339,18 +1337,22 @@
                     \revert Staff.Stem.stemlet-length
                     e8.
                     ]
+
+                    \override Staff.Stem.stemlet-length = 0.75
+                    ds16
+                    [
                     ^ \markup {\whiteout 
                       %\raise #5.5
                       \score {
                         \new Staff \with {
                           \remove "Time_signature_engraver" 
+                          \remove "Clef_engraver" 
                           fontSize = #-4
                           \override StaffSymbol.staff-space = #(magstep -3)
                         }
                         {
                           \clef "bass" \cadenzaOn
-                           s16
-                          d16 ^\markup{\whiteout \halign #CENTER \italic{literally:}} [ c32 <g e'>32 b16 a16 ]
+                          d16 ^\markup{\whiteout \halign #LEFT \with-dimensions-from \null \italic{ossia:}} [ c32 <g e'>32 b16 a16 ]
                     	\bar "!" 
                         }
                         %\layout {
@@ -1359,10 +1361,6 @@
                         %}
                       }
                     }
-
-                    \override Staff.Stem.stemlet-length = 0.75
-                    ds16
-                    [
 
                     \override Score.Arpeggio.arpeggio-direction = #DOWN
                     cs16
