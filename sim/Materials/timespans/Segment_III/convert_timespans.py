@@ -21,9 +21,9 @@ from sim.Materials.timespans.Segment_III.make_timespans import (
     rhythm_timespan_list,
 )
 
-########
+# #######
 # rhythm#
-########
+# #######
 rhythm_mat = rhythm_material_list
 
 segment_III_rhythm_timespans = evans.ConvertTimespans.convert_timespans(
@@ -36,9 +36,9 @@ segment_III_rhythm_timespans = evans.ConvertTimespans.convert_timespans(
     split=True,
 )
 
-#######
+# ######
 # pitch#
-#######
+# ######
 pitch_mat = pitch_material_list
 
 segment_III_pitch_timespans = evans.ConvertTimespans.convert_timespans(
@@ -50,9 +50,9 @@ segment_III_pitch_timespans = evans.ConvertTimespans.convert_timespans(
     add_silence=False,
 )
 
-#########
+# ########
 # dynamic#
-#########
+# ########
 dynamic_mat = dynamic_material_list
 
 segment_III_dynamic_timespans = evans.ConvertTimespans.convert_timespans(
@@ -64,9 +64,9 @@ segment_III_dynamic_timespans = evans.ConvertTimespans.convert_timespans(
     add_silence=False,
 )
 
-##############
+# #############
 # articulation#
-##############
+# #############
 articulation_mat = articulation_material_list
 
 segment_III_articulation_timespans = evans.ConvertTimespans.convert_timespans(
@@ -78,9 +78,9 @@ segment_III_articulation_timespans = evans.ConvertTimespans.convert_timespans(
     add_silence=False,
 )
 
-###############
+# ##############
 # all timespans#
-###############
+# ##############
 segment_III_timespans = [
     segment_III_pitch_timespans,
     # segment_I_dynamic_timespans,
