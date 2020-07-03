@@ -21,8 +21,6 @@ maker = evans.SegmentMaker(
     score_template=score,
     time_signatures=time_signatures,
     clef_handlers=clef_handlers,
-    voicewise_persistent_indicators=None,
-    # voicewise_stem_directions=["up", "down", "up", "down"],
     voicewise_direct_attachments=[
         [(abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\accidentalStyle Score.dodecaphonic \key c \major")), ],
         [
@@ -71,10 +69,6 @@ maker = evans.SegmentMaker(
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
         "/Users/evansdsg2/Scores/sim/sim/Build/first_stylesheet.ily",
     ],
-    parts_includes=[
-        "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
-        "/Users/evansdsg2/Scores/sim/sim/Build/parts_stylesheet.ily",
-    ],
     segment_name="Segment_II",
     current_directory=pathlib.Path(__file__).parent,
     build_path=(pathlib.Path(__file__).parent / ".." / ".." / "Build").resolve(),
@@ -85,7 +79,6 @@ maker = evans.SegmentMaker(
     tempo=((1, 4), 80),
     rehearsal_mark="",
     page_break_counts=[90],
-    midi=False,
 )
 
 maker.build_segment()
