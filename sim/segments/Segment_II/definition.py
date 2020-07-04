@@ -1,6 +1,7 @@
 import pathlib
 
 import abjad
+import baca
 import evans
 from sim.Materials.pitch.Segment_II.clef_handlers import clef_handlers
 from sim.Materials.score_structure.Segment_II.time_signatures import time_signatures
@@ -10,6 +11,105 @@ from sim.Materials.timespans.Segment_II.convert_timespans import (
     segment_II_rhythm_timespans,
     segment_II_timespans,
 )
+
+commands = [
+    evans.attach(
+        "Voice 1",
+        abjad.LilyPondLiteral(
+            r"\accidentalStyle Score.dodecaphonic \key c \major"
+        ),
+        baca.leaf(0),
+    ),
+    evans.attach(
+        "Voice 2",
+        abjad.LilyPondLiteral(r"\key c \major"),
+        baca.leaf(0),
+    ),
+    evans.attach(
+        "Voice 2",
+        abjad.Dynamic("mf"),
+        baca.leaf(0),
+    ),
+    evans.attach(
+        "Voice 2",
+        abjad.Dynamic("mp"),
+        baca.leaf(9),
+    ),
+    evans.attach(
+        "Voice 2",
+        abjad.Dynamic("f"),
+        baca.leaf(17),
+    ),
+    evans.attach(
+        "Voice 2",
+        abjad.Dynamic("mf"),
+        baca.leaf(22),
+    ),
+    evans.attach(
+        "Voice 2",
+        abjad.Dynamic("mp"),
+        baca.leaf(34),
+    ),
+    evans.attach(
+        "Voice 2",
+        abjad.Dynamic("f"),
+        baca.leaf(42),
+    ),
+    evans.attach(
+        "Voice 3",
+        abjad.LilyPondLiteral(r"\key c \major"),
+        baca.leaf(0),
+    ),
+    evans.attach(
+        "Voice 3",
+        abjad.Dynamic("mf"),
+        baca.leaf(1),
+    ),
+    evans.attach(
+        "Voice 3",
+        abjad.Dynamic("f"),
+        baca.leaf(23),
+    ),
+    evans.attach(
+        "Voice 3",
+        abjad.Dynamic("mp"),
+        baca.leaf(30),
+    ),
+    evans.attach(
+        "Voice 3",
+        abjad.Dynamic("f"),
+        baca.leaf(38),
+    ),
+    evans.attach(
+        "Voice 3",
+        abjad.LilyPondLiteral(
+            [r"""_ \markup{\center-column{\line{\italic{tre corde}} \line{\musicglyph #"pedal.*" 1/2 \musicglyph #"pedal.Ped"}}}"""], format_slot="after"
+        ),
+        baca.leaf(0),
+    ),
+    evans.attach(
+        "Voice 4",
+        abjad.LilyPondLiteral(r"\key c \major"),
+        baca.leaf(0),
+    ),
+    evans.attach(
+        "Global Context",
+        evans.metric_modulation(
+            metronome_mark=((1, 4), 45),
+            left_note=(abjad.Note("c'32")),
+            right_note=(
+                abjad.Tuplet(multiplier=(8, 9), components=[abjad.Note("c'16")])
+            ),
+            modulated_beat=(abjad.Note("c'4")),
+        ),
+        baca.leaf(0),
+    ),
+    evans.attach(
+        "Global Context",
+        abjad.LilyPondLiteral(r"\break", format_slot="after"),
+        baca.leaf(5),
+    ),
+]
 
 maker = evans.SegmentMaker(
     instruments=insts,
@@ -21,48 +121,7 @@ maker = evans.SegmentMaker(
     score_template=score,
     time_signatures=time_signatures,
     clef_handlers=clef_handlers,
-    voicewise_direct_attachments=[
-        [(abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\accidentalStyle Score.dodecaphonic \key c \major")), ],
-        [
-            (abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\key c \major")),
-            (abjad.select().leaves().get([0], 1000), abjad.Dynamic("mf")),
-            (abjad.select().leaves().get([9], 1000), abjad.Dynamic("mp")),
-            (abjad.select().leaves().get([17], 1000), abjad.Dynamic("f")),
-            (abjad.select().leaves().get([22], 1000), abjad.Dynamic("mf")),
-            (abjad.select().leaves().get([34], 1000), abjad.Dynamic("mp")),
-            (abjad.select().leaves().get([42], 1000), abjad.Dynamic("f")),
-        ],
-        [
-            (abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\key c \major")),
-            (abjad.select().leaves().get([1], 1000), abjad.Dynamic("mf")),
-            (abjad.select().leaves().get([23], 1000), abjad.Dynamic("f")),
-            (abjad.select().leaves().get([30], 1000), abjad.Dynamic("mp")),
-            (abjad.select().leaves().get([38], 1000), abjad.Dynamic("f")),
-            (
-                abjad.select().leaves().get([0], 1000),
-                abjad.LilyPondLiteral(
-                    [r"""_ \markup{\center-column{\line{\italic{tre corde}} \line{\musicglyph #"pedal.*" 1/2 \musicglyph #"pedal.Ped"}}}"""], format_slot="after"
-                ),
-            ),
-        ],
-        [(abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\key c \major")), ],
-    ],
-    global_direct_attachments=[
-        [
-            (
-                abjad.select().leaves().get([0], 1000),
-                evans.metric_modulation(
-                    metronome_mark=((1, 4), 45),
-                    left_note=(abjad.Note("c'32")),
-                    right_note=(
-                        abjad.Tuplet(multiplier=(8, 9), components=[abjad.Note("c'16")])
-                    ),
-                    modulated_beat=(abjad.Note("c'4")),
-                ),
-            ),
-            (abjad.select().leaves().get([5], 1000), abjad.LilyPondLiteral(r"\break", format_slot="after")),
-        ]
-    ],
+    commands=commands,
     tuplet_bracket_noteheads=False,
     add_final_grand_pause=False,
     score_includes=[

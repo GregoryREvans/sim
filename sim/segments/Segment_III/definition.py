@@ -1,6 +1,7 @@
 import pathlib
 
 import abjad
+import baca
 import evans
 from sim.Materials.pitch.Segment_III.clef_handlers import clef_handlers
 from sim.Materials.score_structure.Segment_III.time_signatures import time_signatures
@@ -25,6 +26,71 @@ c = abjad.LilyPondLiteral(
     format_slot="absolute_after",
 )
 
+commands = [
+    evans.attach(
+        "Voice 1",
+        abjad.LilyPondLiteral(r"\accidentalStyle Score.modern \key d \major"),
+        baca.leaf(0),
+    ),
+    evans.attach(
+        "Voice 2",
+        abjad.LilyPondLiteral(r"\key d \major"),
+        baca.leaf(0),
+    ),
+    evans.attach(
+        "Voice 2",
+        abjad.Dynamic("pp"),
+        baca.leaf(0),
+    ),
+    evans.attach(
+        "Voice 3",
+        abjad.LilyPondLiteral(r"\key d \major"),
+        baca.leaf(0),
+    ),
+    evans.attach(
+        "Voice 3",
+        abjad.Dynamic("p"),
+        baca.leaf(2),
+    ),
+    evans.attach(
+        "Voice 3",
+        abjad.LilyPondLiteral(
+            [
+                r"""_ \markup{\musicglyph #"pedal.*" \musicglyph #"pedal.Ped" \italic{al fino}}"""
+            ],
+            format_slot="after"
+        ),
+        baca.leaf(0),
+    ),
+    evans.attach(
+        "Voice 3",
+        c,
+        baca.leaf(60),
+    ),
+    evans.attach(
+        "Voice 4",
+        abjad.LilyPondLiteral(r"\key d \major"),
+        baca.leaf(0),
+    ),
+    evans.detach(
+        "Voice 3",
+        abjad.Markup.musicglyph("scripts.ushortfermata", direction=abjad.Up),
+        baca.leaf(61),
+    ),
+    evans.attach(
+        "Global Context",
+        evans.metric_modulation(
+            metronome_mark=((1, 4), 80),
+            left_note=(
+                abjad.Tuplet(multiplier=(4, 5), components=[abjad.Note("c'8")])
+            ),
+            right_note=(abjad.Note("c'16")),
+            modulated_beat=(abjad.Note("c'4")),
+        ),
+        baca.leaf(0),
+    ),
+]
+
 maker = evans.SegmentMaker(
     instruments=insts,
     names=["a", "b", "c", "d"],
@@ -35,48 +101,7 @@ maker = evans.SegmentMaker(
     score_template=score,
     time_signatures=time_signatures,
     clef_handlers=clef_handlers,
-    voicewise_direct_attachments=[
-        [(abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\accidentalStyle Score.modern \key d \major")), ],
-        [
-            (abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\key d \major")), (abjad.select().leaves().get([0], 1000), abjad.Dynamic("pp")),
-        ],
-        [
-            (abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\key d \major")),
-            (abjad.select().leaves().get([2], 1000), abjad.Dynamic("p")),
-            (
-                abjad.select().leaves().get([0], 1000),
-                abjad.LilyPondLiteral([r"""_ \markup{\musicglyph #"pedal.*" \musicglyph #"pedal.Ped" \italic{al fino}}"""], format_slot="after"),
-            ),
-            (abjad.select().leaves().get([60], 1000), c),
-        ],
-        [(abjad.select().leaves().get([0], 1000), abjad.LilyPondLiteral(r"\key d \major")), ],
-    ],
-    voicewise_direct_detachments=[
-        [],
-        [],
-        [
-            (
-                abjad.select().leaves().get([61], 1000),
-                abjad.Markup.musicglyph("scripts.ushortfermata", direction=abjad.Up),
-            )
-        ],
-        [],
-    ],
-    global_direct_attachments=[
-        [
-            (
-                abjad.select().leaves().get([0], 1000),
-                evans.metric_modulation(
-                    metronome_mark=((1, 4), 80),
-                    left_note=(
-                        abjad.Tuplet(multiplier=(4, 5), components=[abjad.Note("c'8")])
-                    ),
-                    right_note=(abjad.Note("c'16")),
-                    modulated_beat=(abjad.Note("c'4")),
-                ),
-            ),
-        ]
-    ],
+    commands=commands,
     tuplet_bracket_noteheads=False,
     add_final_grand_pause=True,
     score_includes=[
