@@ -1,4 +1,5 @@
 import evans
+
 from sim.Materials.score_structure.instruments import (
     instrument_four_range_highest,
     instrument_four_range_lowest,
