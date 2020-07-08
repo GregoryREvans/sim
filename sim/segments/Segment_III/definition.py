@@ -32,46 +32,22 @@ commands = [
         abjad.LilyPondLiteral(r"\accidentalStyle Score.modern \key d \major"),
         baca.leaf(0),
     ),
-    evans.attach(
-        "Voice 2",
-        abjad.LilyPondLiteral(r"\key d \major"),
-        baca.leaf(0),
-    ),
-    evans.attach(
-        "Voice 2",
-        abjad.Dynamic("pp"),
-        baca.leaf(0),
-    ),
-    evans.attach(
-        "Voice 3",
-        abjad.LilyPondLiteral(r"\key d \major"),
-        baca.leaf(0),
-    ),
-    evans.attach(
-        "Voice 3",
-        abjad.Dynamic("p"),
-        baca.leaf(2),
-    ),
+    evans.attach("Voice 2", abjad.LilyPondLiteral(r"\key d \major"), baca.leaf(0),),
+    evans.attach("Voice 2", abjad.Dynamic("pp"), baca.leaf(0),),
+    evans.attach("Voice 3", abjad.LilyPondLiteral(r"\key d \major"), baca.leaf(0),),
+    evans.attach("Voice 3", abjad.Dynamic("p"), baca.leaf(2),),
     evans.attach(
         "Voice 3",
         abjad.LilyPondLiteral(
             [
                 r"""_ \markup{\musicglyph #"pedal.*" \musicglyph #"pedal.Ped" \italic{al fino}}"""
             ],
-            format_slot="after"
+            format_slot="after",
         ),
         baca.leaf(0),
     ),
-    evans.attach(
-        "Voice 3",
-        c,
-        baca.leaf(60),
-    ),
-    evans.attach(
-        "Voice 4",
-        abjad.LilyPondLiteral(r"\key d \major"),
-        baca.leaf(0),
-    ),
+    evans.attach("Voice 3", c, baca.leaf(60),),
+    evans.attach("Voice 4", abjad.LilyPondLiteral(r"\key d \major"), baca.leaf(0),),
     evans.detach(
         "Voice 3",
         abjad.Markup.musicglyph("scripts.ushortfermata", direction=abjad.Up),
@@ -81,9 +57,7 @@ commands = [
         "Global Context",
         evans.metric_modulation(
             metronome_mark=((1, 4), 80),
-            left_note=(
-                abjad.Tuplet(multiplier=(4, 5), components=[abjad.Note("c'8")])
-            ),
+            left_note=(abjad.Tuplet(multiplier=(4, 5), components=[abjad.Note("c'8")])),
             right_note=(abjad.Note("c'16")),
             modulated_beat=(abjad.Note("c'4")),
         ),

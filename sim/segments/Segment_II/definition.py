@@ -15,83 +15,32 @@ from sim.Materials.timespans.Segment_II.convert_timespans import (
 commands = [
     evans.attach(
         "Voice 1",
-        abjad.LilyPondLiteral(
-            r"\accidentalStyle Score.dodecaphonic \key c \major"
-        ),
+        abjad.LilyPondLiteral(r"\accidentalStyle Score.dodecaphonic \key c \major"),
         baca.leaf(0),
     ),
-    evans.attach(
-        "Voice 2",
-        abjad.LilyPondLiteral(r"\key c \major"),
-        baca.leaf(0),
-    ),
-    evans.attach(
-        "Voice 2",
-        abjad.Dynamic("mf"),
-        baca.leaf(0),
-    ),
-    evans.attach(
-        "Voice 2",
-        abjad.Dynamic("mp"),
-        baca.leaf(9),
-    ),
-    evans.attach(
-        "Voice 2",
-        abjad.Dynamic("f"),
-        baca.leaf(17),
-    ),
-    evans.attach(
-        "Voice 2",
-        abjad.Dynamic("mf"),
-        baca.leaf(22),
-    ),
-    evans.attach(
-        "Voice 2",
-        abjad.Dynamic("mp"),
-        baca.leaf(34),
-    ),
-    evans.attach(
-        "Voice 2",
-        abjad.Dynamic("f"),
-        baca.leaf(42),
-    ),
-    evans.attach(
-        "Voice 3",
-        abjad.LilyPondLiteral(r"\key c \major"),
-        baca.leaf(0),
-    ),
-    evans.attach(
-        "Voice 3",
-        abjad.Dynamic("mf"),
-        baca.leaf(1),
-    ),
-    evans.attach(
-        "Voice 3",
-        abjad.Dynamic("f"),
-        baca.leaf(23),
-    ),
-    evans.attach(
-        "Voice 3",
-        abjad.Dynamic("mp"),
-        baca.leaf(30),
-    ),
-    evans.attach(
-        "Voice 3",
-        abjad.Dynamic("f"),
-        baca.leaf(38),
-    ),
+    evans.attach("Voice 2", abjad.LilyPondLiteral(r"\key c \major"), baca.leaf(0),),
+    evans.attach("Voice 2", abjad.Dynamic("mf"), baca.leaf(0),),
+    evans.attach("Voice 2", abjad.Dynamic("mp"), baca.leaf(9),),
+    evans.attach("Voice 2", abjad.Dynamic("f"), baca.leaf(17),),
+    evans.attach("Voice 2", abjad.Dynamic("mf"), baca.leaf(22),),
+    evans.attach("Voice 2", abjad.Dynamic("mp"), baca.leaf(34),),
+    evans.attach("Voice 2", abjad.Dynamic("f"), baca.leaf(42),),
+    evans.attach("Voice 3", abjad.LilyPondLiteral(r"\key c \major"), baca.leaf(0),),
+    evans.attach("Voice 3", abjad.Dynamic("mf"), baca.leaf(1),),
+    evans.attach("Voice 3", abjad.Dynamic("f"), baca.leaf(23),),
+    evans.attach("Voice 3", abjad.Dynamic("mp"), baca.leaf(30),),
+    evans.attach("Voice 3", abjad.Dynamic("f"), baca.leaf(38),),
     evans.attach(
         "Voice 3",
         abjad.LilyPondLiteral(
-            [r"""_ \markup{\center-column{\line{\italic{tre corde}} \line{\musicglyph #"pedal.*" 1/2 \musicglyph #"pedal.Ped"}}}"""], format_slot="after"
+            [
+                r"""_ \markup{\center-column{\line{\italic{tre corde}} \line{\musicglyph #"pedal.*" 1/2 \musicglyph #"pedal.Ped"}}}"""
+            ],
+            format_slot="after",
         ),
         baca.leaf(0),
     ),
-    evans.attach(
-        "Voice 4",
-        abjad.LilyPondLiteral(r"\key c \major"),
-        baca.leaf(0),
-    ),
+    evans.attach("Voice 4", abjad.LilyPondLiteral(r"\key c \major"), baca.leaf(0),),
     evans.attach(
         "Global Context",
         evans.metric_modulation(

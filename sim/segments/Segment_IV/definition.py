@@ -27,244 +27,143 @@ commands = [
     evans.attach(
         "Voice 1",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #UP",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before"
         ),
         baca.leaf(0),
     ),
-    evans.attach(
-        "Voice 1",
-        abjad.Arpeggio(),
-        baca.leaf(0),
-    ),
-    evans.attach(
-        "Voice 1",
-        abjad.Dynamic("ff"),
-        baca.leaf(0),
-    ),
+    evans.attach("Voice 1", abjad.Arpeggio(), baca.leaf(0),),
+    evans.attach("Voice 1", abjad.Dynamic("ff"), baca.leaf(0),),
     evans.attach(
         "Voice 1",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #UP",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before"
         ),
         baca.leaf(10),
     ),
-    evans.attach(
-        "Voice 1",
-        abjad.Arpeggio(),
-        baca.leaf(10),
-    ),
+    evans.attach("Voice 1", abjad.Arpeggio(), baca.leaf(10),),
     evans.attach(
         "Voice 1",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #UP",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before"
         ),
         baca.leaf(24),
     ),
-    evans.attach(
-        "Voice 1",
-        abjad.Arpeggio(),
-        baca.leaf(24),
-    ),
+    evans.attach("Voice 1", abjad.Arpeggio(), baca.leaf(24),),
     evans.attach(
         "Voice 1",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #UP",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before"
         ),
         baca.leaf(27),
     ),
-    evans.attach(
-        "Voice 1",
-        abjad.Arpeggio(),
-        baca.leaf(27),
-    ),
+    evans.attach("Voice 1", abjad.Arpeggio(), baca.leaf(27),),
     evans.attach(
         "Voice 1",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #DOWN",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before"
         ),
         baca.leaf(45),
     ),
-    evans.attach(
-        "Voice 1",
-        abjad.Arpeggio(),
-        baca.leaf(45),
-    ),
+    evans.attach("Voice 1", abjad.Arpeggio(), baca.leaf(45),),
     evans.attach(
         "Voice 1",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #DOWN",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before"
         ),
         baca.leaf(70),
     ),
-    evans.attach(
-        "Voice 1",
-        abjad.Arpeggio(),
-        baca.leaf(70),
-    ),
+    evans.attach("Voice 1", abjad.Arpeggio(), baca.leaf(70),),
     evans.attach(
         "Voice 2",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #UP",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before"
         ),
         baca.leaf(0),
     ),
-    evans.attach(
-        "Voice 2",
-        abjad.Arpeggio(),
-        baca.leaf(0),
-    ),
-    evans.attach(
-        "Voice 2",
-        abjad.Dynamic("f"),
-        baca.leaf(0),
-    ),
+    evans.attach("Voice 2", abjad.Arpeggio(), baca.leaf(0),),
+    evans.attach("Voice 2", abjad.Dynamic("f"), baca.leaf(0),),
     evans.attach(
         "Voice 2",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #UP",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before"
         ),
         baca.leaf(17),
     ),
-    evans.attach(
-        "Voice 2",
-        abjad.Arpeggio(),
-        baca.leaf(17),
-    ),
+    evans.attach("Voice 2", abjad.Arpeggio(), baca.leaf(17),),
     evans.attach(
         "Voice 2",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #UP",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before"
         ),
         baca.leaf(27),
     ),
-    evans.attach(
-        "Voice 2",
-        abjad.Arpeggio(),
-        baca.leaf(27),
-    ),
+    evans.attach("Voice 2", abjad.Arpeggio(), baca.leaf(27),),
     evans.attach(
         "Voice 2",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #UP",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before"
         ),
         baca.leaf(30),
     ),
-    evans.attach(
-        "Voice 2",
-        abjad.Arpeggio(),
-        baca.leaf(30),
-    ),
+    evans.attach("Voice 2", abjad.Arpeggio(), baca.leaf(30),),
     evans.attach(
         "Voice 2",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #DOWN",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before"
         ),
         baca.leaf(63),
     ),
-    evans.attach(
-        "Voice 2",
-        abjad.Arpeggio(),
-        baca.leaf(63),
-    ),
+    evans.attach("Voice 2", abjad.Arpeggio(), baca.leaf(63),),
     evans.attach(
         "Voice 2",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #DOWN",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before"
         ),
         baca.leaf(72),
     ),
-    evans.attach(
-        "Voice 2",
-        abjad.Arpeggio(),
-        baca.leaf(72),
-    ),
+    evans.attach("Voice 2", abjad.Arpeggio(), baca.leaf(72),),
     evans.attach(
         "Voice 3",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #UP",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before"
         ),
         baca.leaf(0),
     ),
-    evans.attach(
-        "Voice 3",
-        abjad.Arpeggio(),
-        baca.leaf(0),
-    ),
-    evans.attach(
-        "Voice 3",
-        abjad.Dynamic("f"),
-        baca.leaf(0),
-    ),
+    evans.attach("Voice 3", abjad.Arpeggio(), baca.leaf(0),),
+    evans.attach("Voice 3", abjad.Dynamic("f"), baca.leaf(0),),
     evans.attach(
         "Voice 3",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #UP",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before"
         ),
         baca.leaf(8),
     ),
-    evans.attach(
-        "Voice 3",
-        abjad.Arpeggio(),
-        baca.leaf(8),
-    ),
+    evans.attach("Voice 3", abjad.Arpeggio(), baca.leaf(8),),
     evans.attach(
         "Voice 3",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #DOWN",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before"
         ),
         baca.leaf(29),
     ),
-    evans.attach(
-        "Voice 3",
-        abjad.Arpeggio(),
-        baca.leaf(29),
-    ),
+    evans.attach("Voice 3", abjad.Arpeggio(), baca.leaf(29),),
     evans.attach(
         "Voice 3",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #DOWN",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before"
         ),
         baca.leaf(54),
     ),
-    evans.attach(
-        "Voice 3",
-        abjad.Arpeggio(),
-        baca.leaf(54),
-    ),
+    evans.attach("Voice 3", abjad.Arpeggio(), baca.leaf(54),),
     evans.attach(
         "Voice 4",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #UP",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before"
         ),
         baca.leaf(0),
     ),
-    evans.attach(
-        "Voice 4",
-        abjad.Arpeggio(),
-        baca.leaf(0),
-    ),
-    evans.attach(
-        "Voice 4",
-        abjad.Dynamic("ff"),
-        baca.leaf(0),
-    ),
+    evans.attach("Voice 4", abjad.Arpeggio(), baca.leaf(0),),
+    evans.attach("Voice 4", abjad.Dynamic("ff"), baca.leaf(0),),
     evans.attach(
         "Voice 4",
         abjad.LilyPondLiteral([r"\sustainOn"], format_slot="after"),
@@ -272,97 +171,64 @@ commands = [
     ),
     evans.attach(
         "Voice 4",
-        abjad.LilyPondLiteral(
-            [r"\sustainOff", r"\sustainOn"], format_slot="after"
-        ),
+        abjad.LilyPondLiteral([r"\sustainOff", r"\sustainOn"], format_slot="after"),
         baca.leaf(7),
     ),
     evans.attach(
         "Voice 4",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #UP",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #UP", format_slot="before"
         ),
         baca.leaf(8),
     ),
+    evans.attach("Voice 4", abjad.Arpeggio(), baca.leaf(8),),
     evans.attach(
         "Voice 4",
-        abjad.Arpeggio(),
-        baca.leaf(8),
-    ),
-    evans.attach(
-        "Voice 4",
-        abjad.LilyPondLiteral(
-            [r"\sustainOff", r"\sustainOn"], format_slot="after"
-        ),
+        abjad.LilyPondLiteral([r"\sustainOff", r"\sustainOn"], format_slot="after"),
         baca.leaf(14),
     ),
     evans.attach(
         "Voice 4",
-        abjad.LilyPondLiteral(
-            [r"\sustainOff", r"\sustainOn"], format_slot="after"
-        ),
+        abjad.LilyPondLiteral([r"\sustainOff", r"\sustainOn"], format_slot="after"),
         baca.leaf(21),
     ),
     evans.attach(
         "Voice 4",
-        abjad.LilyPondLiteral(
-            [r"\sustainOff", r"\sustainOn"], format_slot="after"
-        ),
+        abjad.LilyPondLiteral([r"\sustainOff", r"\sustainOn"], format_slot="after"),
         baca.leaf(28),
     ),
     evans.attach(
         "Voice 4",
-        abjad.LilyPondLiteral(
-            [r"\sustainOff", r"\sustainOn"], format_slot="after"
-        ),
+        abjad.LilyPondLiteral([r"\sustainOff", r"\sustainOn"], format_slot="after"),
         baca.leaf(37),
     ),
     evans.attach(
         "Voice 4",
-        abjad.LilyPondLiteral(
-            [r"\sustainOff", r"\sustainOn"], format_slot="after"
-        ),
+        abjad.LilyPondLiteral([r"\sustainOff", r"\sustainOn"], format_slot="after"),
         baca.leaf(43),
     ),
     evans.attach(
         "Voice 4",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #DOWN",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before"
         ),
         baca.leaf(43),
     ),
+    evans.attach("Voice 4", abjad.Arpeggio(), baca.leaf(43),),
     evans.attach(
         "Voice 4",
-        abjad.Arpeggio(),
-        baca.leaf(43),
-    ),
-    evans.attach(
-        "Voice 4",
-        abjad.LilyPondLiteral(
-            [r"\sustainOff", r"\sustainOn"], format_slot="after"
-        ),
+        abjad.LilyPondLiteral([r"\sustainOff", r"\sustainOn"], format_slot="after"),
         baca.leaf(52),
     ),
     evans.attach(
         "Voice 4",
         abjad.LilyPondLiteral(
-            r"\override Score.Arpeggio.arpeggio-direction = #DOWN",
-            format_slot="before"
+            r"\override Score.Arpeggio.arpeggio-direction = #DOWN", format_slot="before"
         ),
         baca.leaf(52),
     ),
-    evans.attach(
-        "Voice 4",
-        abjad.Arpeggio(),
-        baca.leaf(52),
-    ),
-    evans.attach(
-        "Global Context",
-        mark,
-        baca.leaf(0),
-    ),
+    evans.attach("Voice 4", abjad.Arpeggio(), baca.leaf(52),),
+    evans.attach("Global Context", mark, baca.leaf(0),),
     evans.attach(
         "Global Context",
         abjad.LilyPondLiteral(r"\break", format_slot="after"),
