@@ -79,7 +79,7 @@ maker = evans.SegmentMaker(
         "/Users/evansdsg2/Scores/sim/sim/build/first_stylesheet.ily",
     ],
     segment_name="Segment_II",
-    current_directory=pathlib.Path(__file__)resolve().parent,
+    current_directory=pathlib.Path(__file__).resolve().parent,
     cutaway=False,
     beam_pattern="meter",
     beam_rests=False,
