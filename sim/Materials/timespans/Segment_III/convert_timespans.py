@@ -1,10 +1,5 @@
-import pathlib
-
 import evans
 
-from sim.Materials.score_structure.Segment_III.articulation_material_pattern import (
-    articulation_material_list,
-)
 from sim.Materials.score_structure.Segment_III.dynamic_material_pattern import (
     dynamic_material_list,
 )
@@ -16,68 +11,52 @@ from sim.Materials.score_structure.Segment_III.rhythm_material_pattern import (
 )
 from sim.Materials.score_structure.Segment_III.time_signatures import bounds
 from sim.Materials.timespans.Segment_III.make_timespans import (
-    articulation_timespan_list,
     dynamic_timespan_list,
     pitch_timespan_list,
     rhythm_timespan_list,
 )
 
+from .make_timespans import music_specifiers
+
+voice_names = [specifier for specifier in music_specifiers]
+
 # #######
 # rhythm#
 # #######
-rhythm_mat = rhythm_material_list
+rhythm_mat = evans.CyclicList(rhythm_material_list, continuous=True)
 
-segment_III_rhythm_timespans = evans.ConvertTimespans.convert_timespans(
-    materials=rhythm_mat,
-    ts_list=rhythm_timespan_list,
-    bounds=bounds,
-    segment_name="Segment_III_rhythm_timespans",
-    current_directory=pathlib.Path(__file__).parent,
-    add_silence=True,
-    split=True,
+for voice in voice_names:
+    for span in rhythm_timespan_list:
+        if span.voice_name == voice:
+            span._handler = rhythm_mat(r=1)[0]
+
+segment_III_rhythm_timespans = evans.timespan.make_split_list(
+    rhythm_timespan_list, bounds
 )
 
 # ######
 # pitch#
 # ######
-pitch_mat = pitch_material_list
+pitch_mat = evans.CyclicList(pitch_material_list, continuous=True)
 
-segment_III_pitch_timespans = evans.ConvertTimespans.convert_timespans(
-    materials=pitch_mat,
-    ts_list=pitch_timespan_list,
-    bounds=bounds,
-    segment_name="Segment_III_pitch_timespans",
-    current_directory=pathlib.Path(__file__).parent,
-    add_silence=False,
-)
+for voice in voice_names:
+    for span in pitch_timespan_list:
+        if span.voice_name == voice:
+            span._handler = rhythm_mat(r=1)[0]
+
+segment_III_pitch_timespans = pitch_timespan_list
 
 # ########
 # dynamic#
 # ########
-dynamic_mat = dynamic_material_list
+dynamic_mat = evans.CyclicList(dynamic_material_list, continuous=True)
 
-segment_III_dynamic_timespans = evans.ConvertTimespans.convert_timespans(
-    materials=dynamic_mat,
-    ts_list=dynamic_timespan_list,
-    bounds=bounds,
-    segment_name="Segment_III_dynamic_timespans",
-    current_directory=pathlib.Path(__file__).parent,
-    add_silence=False,
-)
+for voice in voice_names:
+    for span in dynamic_timespan_list:
+        if span.voice_name == voice:
+            span._handler = dynamic_mat(r=1)[0]
 
-# #############
-# articulation#
-# #############
-articulation_mat = articulation_material_list
-
-segment_III_articulation_timespans = evans.ConvertTimespans.convert_timespans(
-    materials=articulation_mat,
-    ts_list=articulation_timespan_list,
-    bounds=bounds,
-    segment_name="Segment_III_articulation_timespans",
-    current_directory=pathlib.Path(__file__).parent,
-    add_silence=False,
-)
+segment_III_dynamic_timespans = dynamic_timespan_list
 
 # ##############
 # all timespans#
@@ -85,5 +64,4 @@ segment_III_articulation_timespans = evans.ConvertTimespans.convert_timespans(
 segment_III_timespans = [
     segment_III_pitch_timespans,
     # segment_I_dynamic_timespans,
-    # segment_I_articulation_timespans,
 ]
