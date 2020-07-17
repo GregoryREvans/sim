@@ -1,2 +1,0 @@
-import abjad
-handler_to_value = OrderedDict([('silence maker', OrderedDict([('state', OrderedDict([('divisions_consumed', 1), ('logical_ties_produced', 1)]))])), ('rhythm_handler_one', OrderedDict([('state', OrderedDict([('divisions_consumed', 130), ('logical_ties_produced', 130)]))]))])

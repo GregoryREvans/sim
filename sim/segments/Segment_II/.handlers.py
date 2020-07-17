@@ -1,2 +1,0 @@
-import abjad
-handler_to_value = OrderedDict([('chord_1', OrderedDict([('count', -1)])), ('chord_2', OrderedDict([('count', 50)])), ('chord_3', OrderedDict([('count', 41)])), ('chord_4', OrderedDict([('count', -1)]))])
