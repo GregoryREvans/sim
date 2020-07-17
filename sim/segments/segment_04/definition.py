@@ -5,9 +5,9 @@ import baca
 import evans
 
 from sim.materials.pitch.segment_04.clef_handlers import clef_handlers
-from sim.materials.score_structure.segment_04.time_signatures import time_signatures
 from sim.materials.score_structure.instruments import instruments as insts
 from sim.materials.score_structure.score_structure import score
+from sim.materials.score_structure.segment_04.time_signatures import time_signatures
 from sim.materials.timespans.segment_04.convert_timespans import (
     segment_04_rhythm_timespans,
     segment_04_timespans,
