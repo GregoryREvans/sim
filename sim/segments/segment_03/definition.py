@@ -9,8 +9,8 @@ from sim.materials.score_structure.instruments import instruments as insts
 from sim.materials.score_structure.score_structure import score
 from sim.materials.score_structure.segment_03.time_signatures import time_signatures
 from sim.materials.timespans.segment_03.convert_timespans import (
-    segment_03_rhythm_timespans,
-    segment_03_timespans,
+    handler_commands,
+    rhythm_commands,
 )
 
 c = abjad.LilyPondLiteral(
@@ -71,8 +71,8 @@ maker = evans.SegmentMaker(
     names=["a", "b", "c", "d"],
     abbreviations=["a", "b", "c", "d"],
     name_staves=False,
-    rhythm_timespans=segment_03_rhythm_timespans,
-    handler_timespans=segment_03_timespans,
+    rhythm_commands=rhythm_commands,
+    handler_commands=handler_commands,
     score_template=score,
     time_signatures=time_signatures,
     clef_handlers=clef_handlers,

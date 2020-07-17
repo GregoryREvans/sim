@@ -9,8 +9,8 @@ from sim.materials.score_structure.instruments import instruments as insts
 from sim.materials.score_structure.score_structure import score
 from sim.materials.score_structure.segment_04.time_signatures import time_signatures
 from sim.materials.timespans.segment_04.convert_timespans import (
-    segment_04_rhythm_timespans,
-    segment_04_timespans,
+    handler_commands,
+    rhythm_commands,
 )
 
 met = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 30)
@@ -242,8 +242,8 @@ maker = evans.SegmentMaker(
     names=["a", "b", "c", "d"],
     abbreviations=["a", "b", "c", "d"],
     name_staves=False,
-    rhythm_timespans=segment_04_rhythm_timespans,
-    handler_timespans=segment_04_timespans,
+    rhythm_commands=rhythm_commands,
+    handler_commands=handler_commands,
     score_template=score,
     time_signatures=time_signatures,
     clef_handlers=clef_handlers,
