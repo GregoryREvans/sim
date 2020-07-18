@@ -62,7 +62,7 @@
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "treble"
-                    \accidentalStyle Score.dodecaphonic \key c \major
+                    \accidentalStyle Score.dodecaphonic \key c \major          %! applying indicators
                     r1 * 1/2
 
                     R1 * 1/2
@@ -110,6 +110,7 @@
                 \context Voice = "Voice 2"
                 {
 
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                     \times 8/9 {
                         % [Voice 2 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -186,6 +187,7 @@
                     g'8
                     ]
 
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                     \times 8/9 {
 
                         \override Staff.Stem.stemlet-length = 0.75
@@ -214,6 +216,7 @@
                     }
 
                     \tweak text #tuplet-number::calc-fraction-text
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "16")
                     \times 4/3 {
                         % [Voice 2 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -255,6 +258,7 @@
                     f'16
                     ]
 
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                     \times 4/5 {
                         % [Voice 2 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -278,6 +282,7 @@
                     d''8
                     ]
 
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                     \times 4/5 {
                         % [Voice 2 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -316,6 +321,7 @@
                     r2
                     _ \markup{\center-column{\line{\italic{tre corde}} \line{\musicglyph #"pedal.*" 1/2 \musicglyph #"pedal.Ped"}}}
 
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                     \times 8/9 {
 
                         \override Staff.Stem.stemlet-length = 0.75
@@ -344,6 +350,7 @@
                     }
 
                     \tweak text #tuplet-number::calc-fraction-text
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 12) "16")
                     \times 12/13 {
                         % [Voice 3 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -380,6 +387,7 @@
                     }
 
                     \tweak text #tuplet-number::calc-fraction-text
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 4) "8")
                     \times 4/3 {
 
                         ef8
@@ -393,6 +401,7 @@
                     af4
                     ~
 
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                     \times 4/5 {
                         % [Voice 3 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -481,7 +490,7 @@
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "bass"
-                    \key c \major
+                    \key c \major                                              %! applying indicators
                     r1 * 1/2
 
                     R1 * 1/2

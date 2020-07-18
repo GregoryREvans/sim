@@ -254,3 +254,27 @@ Segment runtime: 5 seconds
  Pre-handlers runtime: 1 second
  Handlers runtime: 2 seconds
  Post-handlers runtime: 2 seconds
+
+2020-07-17 23:30:27
+Segment runtime: 5 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 4 seconds
+ Post-handlers runtime: 1 second
+
+2020-07-17 23:53:06
+Segment runtime: 5 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 4 seconds
+ Post-handlers runtime: 1 second
+
+2020-07-17 23:55:31
+Segment runtime: 5 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 4 seconds
+ Post-handlers runtime: 1 second
+
+2020-07-18 00:00:44
+Segment runtime: 5 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 4 seconds
+ Post-handlers runtime: 1 second

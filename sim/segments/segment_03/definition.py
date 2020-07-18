@@ -36,7 +36,7 @@ commands = [
     evans.attach("Voice 2", abjad.LilyPondLiteral(r"\key d \major"), baca.leaf(0),),
     evans.attach("Voice 2", abjad.Dynamic("pp"), baca.leaf(0),),
     evans.attach("Voice 3", abjad.LilyPondLiteral(r"\key d \major"), baca.leaf(0),),
-    evans.attach("Voice 3", abjad.Dynamic("p"), baca.leaf(2),),
+    evans.attach("Voice 3", abjad.Dynamic("p"), baca.leaf(1),),
     evans.attach(
         "Voice 3",
         abjad.LilyPondLiteral(
@@ -47,12 +47,12 @@ commands = [
         ),
         baca.leaf(0),
     ),
-    evans.attach("Voice 3", c, baca.leaf(60),),
+    evans.attach("Voice 3", c, baca.leaf(59),),
     evans.attach("Voice 4", abjad.LilyPondLiteral(r"\key d \major"), baca.leaf(0),),
     evans.detach(
         "Voice 3",
         abjad.Markup.musicglyph("scripts.ushortfermata", direction=abjad.Up),
-        baca.leaf(61),
+        baca.leaf(60),
     ),
     evans.attach(
         "Global Context",
@@ -71,12 +71,30 @@ maker = evans.SegmentMaker(
     names=["a", "b", "c", "d"],
     abbreviations=["a", "b", "c", "d"],
     name_staves=False,
-    rhythm_commands=rhythm_commands,
-    handler_commands=handler_commands,
     score_template=score,
     time_signatures=time_signatures,
     clef_handlers=clef_handlers,
-    commands=commands,
+    commands=[
+        rhythm_commands,
+        evans.call(
+            "score",
+            evans.SegmentMaker.transform_brackets,
+            abjad.select().components(abjad.Score),
+        ),
+        evans.call(
+            "score",
+            evans.SegmentMaker.rewrite_meter,
+            abjad.select().components(abjad.Score),
+        ),
+        "skips",
+        handler_commands,
+        evans.call(
+            "score",
+            evans.SegmentMaker.beam_score,
+            abjad.select().components(abjad.Score),
+        ),
+        commands,
+    ],
     tuplet_bracket_noteheads=False,
     add_final_grand_pause=True,
     score_includes=[

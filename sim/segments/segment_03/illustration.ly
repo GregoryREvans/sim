@@ -137,7 +137,7 @@
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "treble"
-                    \accidentalStyle Score.modern \key d \major
+                    \accidentalStyle Score.modern \key d \major                %! applying indicators
                     r1 * 1/4
 
                     R1 * 1/4
@@ -450,9 +450,9 @@
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "bass"
-                    \key d \major
+                    \key d \major                                              %! applying indicators
                     r1 * 1/4
-                    _ \markup{\musicglyph #"pedal.*" \musicglyph #"pedal.Ped" \italic{al fino}}
+                    _ \markup{\musicglyph #"pedal.*" \musicglyph #"pedal.Ped" \italic{al fino}} %! applying indicators
 
                     R1 * 1/4
                     % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -637,7 +637,7 @@
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "bass"
-                    \key d \major
+                    \key d \major                                              %! applying indicators
                     r1 * 1/4
 
                     R1 * 1/4
