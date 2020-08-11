@@ -22,8 +22,8 @@ p_rows = [abjad.PitchSegment(_) for _ in new_sequences]
 i_rows = [abjad.PitchSegment(_).invert() for _ in new_sequences]
 
 pairs = zip(p_rows, i_rows)
-first_pattern = evans.CyclicList(lst=[0, 1], continuous=True, count=-1)
-second_pattern = evans.CyclicList(lst=[1, 0], continuous=True, count=-1)
+first_pattern = evans.CyclicList(lst=[0, 1], forget=False, count=-1)
+second_pattern = evans.CyclicList(lst=[1, 0], forget=False, count=-1)
 first_sequence = [pair[first_pattern(r=1)[0]] for pair in pairs]
 
 pairs = zip(p_rows, i_rows)
@@ -32,7 +32,7 @@ sequences = first_sequence + second_sequence
 
 transpositions = evans.CyclicList(
     lst=[6, 10, 11, 4, 7, 9, 5, 2, 8, 3, 1, 0, 6, 2, 1, 8, 5, 3, 7, 10, 4, 9, 11, 12],
-    continuous=True,
+    forget=False,
     count=-1,
 )
 

@@ -20,7 +20,7 @@ voice_names = [specifier for specifier in music_specifiers]
 # #######
 # rhythm#
 # #######
-rhythm_mat = evans.CyclicList(rhythm_material_list, continuous=True)
+rhythm_mat = evans.CyclicList(rhythm_material_list, forget=False)
 
 for voice in voice_names:
     for span in rhythm_timespan_list:
@@ -47,7 +47,7 @@ evans.timespan.intercalate_silences(
 # ######
 # pitch#
 # ######
-pitch_mat = evans.CyclicList(pitch_material_list, continuous=True)
+pitch_mat = evans.CyclicList(pitch_material_list, forget=False)
 
 for voice in voice_names:
     for span in pitch_timespan_list:

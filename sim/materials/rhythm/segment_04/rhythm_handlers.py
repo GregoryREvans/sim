@@ -12,5 +12,5 @@ silence_maker_ = abjadext.rmakers.stack(
 silence_maker = evans.RhythmHandler(rmaker=silence_maker_, name="silence maker")
 
 rhythm_handler_one = evans.RhythmHandler(
-    rmaker=rmaker_one, continuous=True, name="rhythm_handler_one"
+    rmaker=rmaker_one, forget=False, name="rhythm_handler_one"
 )
