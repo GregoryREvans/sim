@@ -33,10 +33,26 @@ commands = [
         abjad.LilyPondLiteral(r"\accidentalStyle Score.modern \key d \major"),
         baca.leaf(0),
     ),
-    evans.attach("Voice 2", abjad.LilyPondLiteral(r"\key d \major"), baca.leaf(0),),
-    evans.attach("Voice 2", abjad.Dynamic("pp"), baca.leaf(0),),
-    evans.attach("Voice 3", abjad.LilyPondLiteral(r"\key d \major"), baca.leaf(0),),
-    evans.attach("Voice 3", abjad.Dynamic("p"), baca.leaf(1),),
+    evans.attach(
+        "Voice 2",
+        abjad.LilyPondLiteral(r"\key d \major"),
+        baca.leaf(0),
+    ),
+    evans.attach(
+        "Voice 2",
+        abjad.Dynamic("pp"),
+        baca.leaf(0),
+    ),
+    evans.attach(
+        "Voice 3",
+        abjad.LilyPondLiteral(r"\key d \major"),
+        baca.leaf(0),
+    ),
+    evans.attach(
+        "Voice 3",
+        abjad.Dynamic("p"),
+        baca.leaf(1),
+    ),
     evans.attach(
         "Voice 3",
         abjad.LilyPondLiteral(
@@ -47,8 +63,16 @@ commands = [
         ),
         baca.leaf(0),
     ),
-    evans.attach("Voice 3", c, baca.leaf(59),),
-    evans.attach("Voice 4", abjad.LilyPondLiteral(r"\key d \major"), baca.leaf(0),),
+    evans.attach(
+        "Voice 3",
+        c,
+        baca.leaf(59),
+    ),
+    evans.attach(
+        "Voice 4",
+        abjad.LilyPondLiteral(r"\key d \major"),
+        baca.leaf(0),
+    ),
     evans.detach(
         "Voice 3",
         abjad.Markup.musicglyph("scripts.ushortfermata", direction=abjad.Up),

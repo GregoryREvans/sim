@@ -41,7 +41,13 @@ for span in segment_03_rhythm_timespans:
     rhythm_commands.append(r_command)
 
 evans.timespan.intercalate_silences(
-    rhythm_commands, voice_names=["Voice 1", "Voice 2", "Voice 3", "Voice 4",],
+    rhythm_commands,
+    voice_names=[
+        "Voice 1",
+        "Voice 2",
+        "Voice 3",
+        "Voice 4",
+    ],
 )
 
 # ######
