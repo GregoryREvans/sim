@@ -103,7 +103,7 @@
             s1 * 1/2
             % [Global Context measure 21]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-            \once \override TimeSignature.color = #white                       %! applying ending skips
+            \once \override Score.TimeSignature.stencil = ##f                  %! applying ending skips
             \time 1/8                                                          %! scaling time signatures
             s1 * 1/8
 

@@ -92,8 +92,8 @@ commands = [
 
 maker = evans.SegmentMaker(
     instruments=insts,
-    names=["a", "b", "c", "d"],
-    abbreviations=["a", "b", "c", "d"],
+    names=['"a"', '"b"', '"c"', '"d"'],
+    abbreviations=['"a"', '"b"', '"c"', '"d"'],
     name_staves=False,
     score_template=score,
     time_signatures=time_signatures,
