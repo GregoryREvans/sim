@@ -1,6 +1,0 @@
-[submodule "test"]
-	path = test
-	url = https://github.com/GregoryREvans/test.git
-[submodule "sim/test"]
-	path = sim/test
-	url = https://github.com/GregoryREvans/test.git
