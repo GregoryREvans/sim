@@ -8,7 +8,7 @@ from sim.materials.score_structure.instruments import (
 
 tone_row = [0, 1, 3, 8, 2, 5, 9, 7, 4, 11, 10, 6]
 
-sets = evans.josephus(len(tone_row), 2)
+sets = evans.Sequence([_ for _ in range(len(tone_row))]).josephus(2)
 
 new_sequences = []
 
