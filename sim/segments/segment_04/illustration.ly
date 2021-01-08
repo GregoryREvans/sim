@@ -799,38 +799,34 @@
                         }
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "4")
-                        \times 5/4 {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 8 5) "4")
+                        \times 5/8 {
                             % [Voice 3 measure 2]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                            af2
+                            af1
 
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "4")
                             \times 2/3 {
 
                                 \override Score.Arpeggio.arpeggio-direction = #UP
-                                \override Staff.Stem.stemlet-length = 0.75
-                                fs8
+                                fs4
                                 \arpeggio
-                                [
 
-                                ef8
+                                ef4
 
-                                bf8
+                                bf4
 
                             }
 
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "4")
                             \times 2/3 {
 
-                                a8
+                                a4
 
-                                f8
+                                f4
 
-                                \revert Staff.Stem.stemlet-length
-                                ef8
+                                ef4
                                 ~
-                                ]
 
                             }
 
@@ -982,38 +978,34 @@
                         }
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "4")
-                        \times 5/4 {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 8 5) "4")
+                        \times 5/8 {
 
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "4")
                             \times 2/3 {
                                 % [Voice 3 measure 9]                          %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
-                                [
+                                bf,,4
 
-                                b,,8
+                                b,,4
 
-                                ef,8
+                                ef,4
 
                             }
 
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "4")
                             \times 2/3 {
 
-                                c8
+                                c4
 
-                                ef8
+                                ef4
 
-                                \revert Staff.Stem.stemlet-length
-                                d8
-                                ]
+                                d4
 
                             }
 
                             \override Score.Arpeggio.arpeggio-direction = #DOWN
-                            a2
+                            a1
                             \arpeggio
                             ~
 
@@ -1134,46 +1126,46 @@
                         ~
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "4")
-                        \times 5/4 {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 8 5) "4")
+                        \times 5/8 {
 
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "4")
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "2")
                             \times 2/3 {
                                 % [Voice 4 measure 2]                          %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                                g,,4
+                                g,,2
 
-                                bf,,4
+                                bf,,2
 
-                                d,4
+                                d,2
                                 \sustainOff
                                 \sustainOn
 
                             }
 
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                             \times 4/5 {
 
                                 \override Score.Arpeggio.arpeggio-direction = #UP
-                                \override Staff.Stem.stemlet-length = 0.75
-                                c,8.
+                                c,4.
                                 \arpeggio
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                a,,8
                                 [
 
-                                a,,16
-
-                                e,16
+                                e,8
 
                             }
 
-                            ef,16
-
-                            b,,16
+                            ef,8
 
                             \revert Staff.Stem.stemlet-length
-                            a,,8
-                            ~
+                            b,,8
                             ]
+
+                            a,,4
+                            ~
 
                         }
 
@@ -1329,37 +1321,37 @@
                         ~
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "4")
-                        \times 5/4 {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 8 5) "4")
+                        \times 5/8 {
                             % [Voice 4 measure 9]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                            fs,,2
+                            fs,,1
 
-                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
+                            \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                             \times 4/5 {
 
                                 \override Score.Arpeggio.arpeggio-direction = #DOWN
-                                \override Staff.Stem.stemlet-length = 0.75
-                                a,,8.
+                                a,,4.
                                 \arpeggio
-                                [
                                 \sustainOff
                                 \sustainOn
 
-                                af,,16
+                                \override Staff.Stem.stemlet-length = 0.75
+                                af,,8
+                                [
 
-                                ef,16
+                                ef,8
 
                             }
 
-                            bf,,16
-
-                            f,16
+                            bf,,8
 
                             \revert Staff.Stem.stemlet-length
-                            e,8
-                            ~
+                            f,8
                             ]
+
+                            e,4
+                            ~
 
                         }
 
