@@ -343,7 +343,9 @@ commands = [
         abjad.Arpeggio(),
         baca.selectors.leaf(125),
     ),
-    evans.attach("Voice 4", abjad.LilyPondLiteral(r"\key gs \minor"), baca.selectors.leaf(0)),
+    evans.attach(
+        "Voice 4", abjad.LilyPondLiteral(r"\key gs \minor"), baca.selectors.leaf(0)
+    ),
     evans.attach("Voice 4", abjad.Dynamic("ppp"), baca.selectors.leaf(2)),
     evans.attach(
         "Voice 4",
