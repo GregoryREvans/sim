@@ -17,67 +17,67 @@ commands = [
     evans.attach(
         "Voice 1",
         abjad.LilyPondLiteral(r"\accidentalStyle Score.dodecaphonic \key c \major"),
-        baca.leaf(0),
+        baca.selectors.leaf(0),
     ),
     evans.attach(
         "Voice 2",
         abjad.LilyPondLiteral(r"\key c \major"),
-        baca.leaf(0),
+        baca.selectors.leaf(0),
     ),
     evans.attach(
         "Voice 2",
         abjad.Dynamic("mf"),
-        baca.leaf(0),
+        baca.selectors.leaf(0),
     ),
     evans.attach(
         "Voice 2",
         abjad.Dynamic("mp"),
-        baca.leaf(9),
+        baca.selectors.leaf(9),
     ),
     evans.attach(
         "Voice 2",
         abjad.Dynamic("f"),
-        baca.leaf(17),
+        baca.selectors.leaf(17),
     ),
     evans.attach(
         "Voice 2",
         abjad.Dynamic("mf"),
-        baca.leaf(22),
+        baca.selectors.leaf(22),
     ),
     evans.attach(
         "Voice 2",
         abjad.Dynamic("mp"),
-        baca.leaf(34),
+        baca.selectors.leaf(34),
     ),
     evans.attach(
         "Voice 2",
         abjad.Dynamic("f"),
-        baca.leaf(42),
+        baca.selectors.leaf(42),
     ),
     evans.attach(
         "Voice 3",
         abjad.LilyPondLiteral(r"\key c \major"),
-        baca.leaf(0),
+        baca.selectors.leaf(0),
     ),
     evans.attach(
         "Voice 3",
         abjad.Dynamic("mf"),
-        baca.leaf(1),
+        baca.selectors.leaf(1),
     ),
     evans.attach(
         "Voice 3",
         abjad.Dynamic("f"),
-        baca.leaf(23),
+        baca.selectors.leaf(23),
     ),
     evans.attach(
         "Voice 3",
         abjad.Dynamic("mp"),
-        baca.leaf(30),
+        baca.selectors.leaf(30),
     ),
     evans.attach(
         "Voice 3",
         abjad.Dynamic("f"),
-        baca.leaf(38),
+        baca.selectors.leaf(38),
     ),
     evans.attach(
         "Voice 3",
@@ -87,12 +87,12 @@ commands = [
             ],
             format_slot="after",
         ),
-        baca.leaf(0),
+        baca.selectors.leaf(0),
     ),
     evans.attach(
         "Voice 4",
         abjad.LilyPondLiteral(r"\key c \major"),
-        baca.leaf(0),
+        baca.selectors.leaf(0),
     ),
     evans.attach(
         "Global Context",
@@ -104,12 +104,12 @@ commands = [
             ),
             modulated_beat=(abjad.Note("c'4")),
         ),
-        baca.leaf(0),
+        baca.selectors.leaf(0),
     ),
     evans.attach(
         "Global Context",
         abjad.LilyPondLiteral(r"\break", format_slot="after"),
-        baca.leaf(5),
+        baca.selectors.leaf(5),
     ),
 ]
 

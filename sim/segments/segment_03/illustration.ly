@@ -4,14 +4,6 @@
 \include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily"           %! abjad.LilyPondFile._get_formatted_includes()
 \include "/Users/evansdsg2/Scores/sim/sim/build/first_stylesheet.ily"          %! abjad.LilyPondFile._get_formatted_includes()
 
-\header {                                                                      %! abjad.LilyPondFile._get_formatted_blocks()
-    tagline = ##f
-}                                                                              %! abjad.LilyPondFile._get_formatted_blocks()
-
-\layout {}
-
-\paper {}
-
 \score {                                                                       %! abjad.LilyPondFile._get_formatted_blocks()
 
     \context Score = "Simbelmyne Score"
@@ -23,11 +15,7 @@
 
             \tempo 4=50
             \time 2/4                                                          %! scaling time signatures
-            \mark \markup {
-                \bold
-                    {
-                    }
-                }
+            \mark \markup \bold {  }
             s1 * 1/2
             ^ \markup {
               \huge
@@ -265,10 +253,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 1/16
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \bar "|."
                         \stopStaff                                             %! applying ending skips
 
@@ -433,10 +418,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 1/16
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \bar "|."
                         \stopStaff                                             %! applying ending skips
 
@@ -627,6 +609,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 1/16
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \bar "|."
                         \stopStaff                                             %! applying ending skips
 
@@ -784,10 +767,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 1/16
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \bar "|."
                         \stopStaff                                             %! applying ending skips
 

@@ -8,11 +8,7 @@
 
             \tempo 4=50
             \time 2/4                                                          %! scaling time signatures
-            \mark \markup {
-                \bold
-                    {
-                    }
-                }
+            \mark \markup \bold {  }
             s1 * 1/2
             ^ \markup {
               \huge
@@ -250,10 +246,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 1/16
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \bar "|."
                         \stopStaff                                             %! applying ending skips
 
@@ -418,10 +411,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 1/16
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \bar "|."
                         \stopStaff                                             %! applying ending skips
 
@@ -612,6 +602,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 1/16
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \bar "|."
                         \stopStaff                                             %! applying ending skips
 
@@ -769,10 +760,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 1/16
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \bar "|."
                         \stopStaff                                             %! applying ending skips
 

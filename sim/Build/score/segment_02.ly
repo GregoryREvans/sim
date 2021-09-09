@@ -8,11 +8,7 @@
 
             \tempo 4=80
             \time 4/4                                                          %! scaling time signatures
-            \mark \markup {
-                \bold
-                    {
-                    }
-                }
+            \mark \markup \bold {  }
             s1 * 1
             ^ \markup {
               \huge

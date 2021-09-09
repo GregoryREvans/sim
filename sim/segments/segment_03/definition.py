@@ -31,27 +31,27 @@ commands = [
     evans.attach(
         "Voice 1",
         abjad.LilyPondLiteral(r"\accidentalStyle Score.modern \key d \major"),
-        baca.leaf(0),
+        baca.selectors.leaf(0),
     ),
     evans.attach(
         "Voice 2",
         abjad.LilyPondLiteral(r"\key d \major"),
-        baca.leaf(0),
+        baca.selectors.leaf(0),
     ),
     evans.attach(
         "Voice 2",
         abjad.Dynamic("pp"),
-        baca.leaf(0),
+        baca.selectors.leaf(0),
     ),
     evans.attach(
         "Voice 3",
         abjad.LilyPondLiteral(r"\key d \major"),
-        baca.leaf(0),
+        baca.selectors.leaf(0),
     ),
     evans.attach(
         "Voice 3",
         abjad.Dynamic("p"),
-        baca.leaf(1),
+        baca.selectors.leaf(1),
     ),
     evans.attach(
         "Voice 3",
@@ -61,22 +61,26 @@ commands = [
             ],
             format_slot="after",
         ),
-        baca.leaf(0),
+        baca.selectors.leaf(0),
     ),
     evans.attach(
         "Voice 3",
         c,
-        baca.leaf(59),
+        baca.selectors.leaf(59),
     ),
     evans.attach(
         "Voice 4",
         abjad.LilyPondLiteral(r"\key d \major"),
-        baca.leaf(0),
+        baca.selectors.leaf(0),
     ),
     evans.detach(
         "Voice 3",
-        abjad.Markup.musicglyph("scripts.ushortfermata", direction=abjad.Up),
-        baca.leaf(60),
+        abjad.Markup(
+            r"""\markup \musicglyph #"scripts.ushortfermata" """,
+            direction=abjad.Up,
+            literal=True,
+        ),
+        baca.selectors.leaf(60),
     ),
     evans.attach(
         "Global Context",
@@ -86,7 +90,7 @@ commands = [
             right_note=(abjad.Note("c'16")),
             modulated_beat=(abjad.Note("c'4")),
         ),
-        baca.leaf(0),
+        baca.selectors.leaf(0),
     ),
 ]
 
