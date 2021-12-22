@@ -1,9 +1,9 @@
 import abjad
-handler_to_value = abjad.OrderedDict(
+handler_to_value = dict(
     [
         (
             'chord_1',
-            abjad.OrderedDict(
+            dict(
                 [
                     ('pitch_count', -1),
                     ('chord_boolean_count', -1),
@@ -13,7 +13,7 @@ handler_to_value = abjad.OrderedDict(
             ),
         (
             'chord_2',
-            abjad.OrderedDict(
+            dict(
                 [
                     ('pitch_count', 50),
                     ('chord_boolean_count', -1),
@@ -23,7 +23,7 @@ handler_to_value = abjad.OrderedDict(
             ),
         (
             'chord_3',
-            abjad.OrderedDict(
+            dict(
                 [
                     ('pitch_count', 41),
                     ('chord_boolean_count', -1),
@@ -33,7 +33,7 @@ handler_to_value = abjad.OrderedDict(
             ),
         (
             'chord_4',
-            abjad.OrderedDict(
+            dict(
                 [
                     ('pitch_count', -1),
                     ('chord_boolean_count', -1),
