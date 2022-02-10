@@ -369,8 +369,8 @@ maker = evans.SegmentMaker(
     tuplet_bracket_noteheads=False,
     add_final_grand_pause=False,
     score_includes=[
-        "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
-        "/Users/evansdsg2/Scores/sim/sim/build/first_stylesheet.ily",
+        "/Users/gregoryevans/abjad/docs/source/_stylesheets/abjad.ily",
+        "/Users/gregoryevans/Scores/sim/sim/build/first_stylesheet.ily",
     ],
     segment_name="segment_04",
     current_directory=pathlib.Path(__file__).resolve().parent,
